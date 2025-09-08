@@ -22,6 +22,74 @@ IDEMenu_Tools,Tools,Tools,,Main menu entry for tools
 IDEMenu_Layouts,Layouts,Layouts,,Layouts
 IDEMenu_Marketplace,Marketplace,Marketplace,,Main menu entry for marketplace
 IDEMenu_Help,Help,Help,,Main menu entry for HELP
+$win_IDEMenuHelpAbout,About,About,,Windows version of the About main menu entry
+$mac_IDEMenuHelpAbout,About GameMaker,About GameMaker,,Mac version of the About main menu entry
+$linux_IDEMenuHelpAbout,About,About,,Linux version of the About main menu entry
+IDEMenu_Help_About,${IDEMenuHelpAbout},${IDEMenuHelpAbout},,Help menu item for actual About
+File_Menu_Preferences,Preferences,Preferences,,The Preferences menu item
+HideGameMaker_Menu_Title,Hide GameMaker,Hide GameMaker,,Hide GameMaker menu entry for Mac
+HideOthers_Menu_Title,Hide Others,Hide Others,,Hide others menu entry for Mac
+ShowAll_Menu_Title,Show All,Show All,,Show all windows menu entry for Mac
+File_Menu_Exit,${FileMenuExit},${FileMenuExit},,The Exit program menu item
+$win_FileMenuExit,Exit,Exit,,Windows version of the Exit main menu entry
+$mac_FileMenuExit,Quit,Quit,,Mac version of the Exit main menu entry
+$linux_FileMenuExit,Exit,Exit,,Linux version of the Exit main menu entry
+File_Menu_NewProject,New Project,New Project,,The New Project menu item
+File_Menu_OpenProject,Open Project,Open Project,,The Open Project menu item
+File_Menu_ImportProject,Import Project,Import Project,,The Import project menu item
+File_Menu_RecentProjects,Recent Projects,Recent Projects,,The Recent Projects menu item
+File_Menu_Save,Save Project,Save Project,,The Save menu item
+File_Menu_SaveAs,Save Project As,Save Project As,,The Save As menu item
+File_Menu_ExportProject,Export Project,Export Project,,The Export Project menu item
+File_Menu_NewIDE,New IDE,New IDE,,Start a new instance of the IDE from the file menu
+Edit_Menu_Undo,Undo,Undo,,Undo menu entry
+Edit_Menu_Redo,Redo,Redo,,Redo menu entry
+Edit_Menu_Search,Search & Replace,Search & Replace,,"Edit menu ""Search & Replace"""
+Window_Minimize,Minimize,Minimize,,Minimize window context menu entry
+BringAllToFront_Menu_Title,Bring All To Front,Bring All To Front,,Bring all windows to front menu entry for Mac
+Views_Menu_AssetBrowser,Asset Browser,Asset Browser,,Views menu entry for resources
+Views_Menu_Output,Output,Output,,Views menu entry for the output panel
+Views_Menu_SearchResults,Search Results,Search Results,,Views menu entry for the search results panel
+Views_Menu_SourceControl,Source Control Output,Source Control Output,,Views menu entry for the source control output window
+Views_Menu_Breakpoints,Breakpoints,Breakpoints,,Views menu entry for the breakpoints window
+Views_Menu_CompileErrors,Compile Errors,Compile Errors,,Views menu entry for the compile errors window
+Views_Menu_SyntaxErrors,Syntax Errors,Syntax Errors,,Open Syntax Errors Window
+Views_Menu_Inspector,Inspector,Inspector,,Views menu entry for inspector
+Views_Menu_Recent_Windows,Recent Windows,Recent Windows,,Recent activated windows menu option
+Views_Menu_Macros,IDE Environment Variables,IDE Environment Variables,,View Macros window
+Prefabs_OpenPrefabLibrary,Prefab Library,Prefab Library,,Prefab Library
+IDEMenu_Texturepage,Texture Groups,Texture Groups,,Texture group manager
+IDEMenu_Audiogroups,Audio Groups,Audio Groups,,Audio group manager
+IDEMenu_SoundMixer,Sound Mixer,Sound Mixer,,Open Sound Mixer
+Views_Menu_ImageGenerator,Generate Project Images,Generate Project Images,,the ide menu entry for opening the project image generator window
+Package_CreateLocalPackage,Create Local Package,Create Local Package,,create local package menu entry
+Package_ImportLocalPackage,Import Local Package,Import Local Package,,import local package menu entry
+Marketplace_Go,Open Marketplace,Open Marketplace,,Open Marketplace
+IDEMenu_SaveLayout,Save Layout,Save Layout,,Main menu entry for save layouts
+IDEMenu_LoadLayout,Load Layout,Load Layout,,Main menu entry for load layouts
+IDEMenu_ResetLayout,Reset Layout,Reset Layout,,Main menu entry for resetting the layout
+IDEMenu_ShowAllWindows,Show All Windows,Show All Windows,,Show all windows - the name for the menu bar
+IDEMenu_CloseAllWindows,Close All Windows,Close All Windows,,Close all windows - the name for the menu bar
+IDEMenu_Help_Help,Open Manual,Open Manual,,Help menu item for actual help
+IDEMenu_Help_KnowledgeBase,Knowledge Base,Knowledge Base,,Help menu item for knowledge base
+IDEMenu_Help_ReportBug,Contact Us,Contact Us,,Help menu item for report a bug page
+IDEMenu_Help_CreateBugPackage,Upload a Bug/Ticket Sample,Upload a Bug/Ticket Sample,,Menu Item for creating a bug package
+IDEMenu_Help_CreateBugReport,Report a GameMaker Bug,Report a GameMaker Bug,,menu item for creating and sending a bug report
+IDEMenu_Help_LogFile,${ShowLogFileInExplorer},${ShowLogFileInExplorer},,Help menu item for taking the user to the log file location
+$win_ShowLogFileInExplorer,Open Log In Explorer,Open Log In Explorer,,Windows version of Show Log In Explorer
+$mac_ShowLogFileInExplorer,Reveal Log In Finder,Reveal Log In Finder,,Mac version of Show Log In Explorer
+$linux_ShowLogFileInExplorer,Reveal Log In File Manager,Reveal Log In File Manager,,Linux version of Show Log In Explorer
+IDEMenu_Help_YYG,GameMaker.io,GameMaker.io,,Help menu item for main yoyogames website
+IDEMenu_Help_GMC,GameMaker Community,GameMaker Community,,Help menu item for gmc forums
+IDEMenu_Help_ReleaseNotes,Release Notes,Release Notes,,Help menu item for release notes
+IDEMenu_Help_SDKS,Required SDKs,Required SDKs,,Help menu item for the required sdks page
+$win_OpenProjectInExplorer,Open Project In Explorer,Open Project In Explorer,,Windows version of Open Project In Explorer
+$mac_OpenProjectInExplorer,Show Project In Finder,Show Project In Finder,,Mac version of Open Project In Explorer
+$linux_OpenProjectInExplorer,Show Project In File Manager,Show Project In File Manager,,Linux version of Open Project In Explorer
+IDEMenu_Help_OpenInExplorer,${OpenProjectInExplorer},${OpenProjectInExplorer},,Help menu item for opening the explorer window at the current project's location
+Update_System_fonts,Refresh System Fonts,Refresh System Fonts,,Refresh system fonts ide menu entry
+IDEMenu_Help_Licenses,Licences,Licences,,Help menu item for licences
+IDEMenu_Check_For_Updates,Check for Updates,Check for Updates,,Help menu item for check for updates
 IDETooltip_LaptopMode_On,On,On,,On text
 IDETooltip_LaptopMode_Off,Off,Off,,Off text
 IDETooltip_LaptopMode_Description,"In Laptop Mode you can pan, scroll and zoom by moving the mouse over an area\nwhile holding ${LaptopLZoomKey} to zoom and Left Alt to pan and scroll.\nUse ${LaptopRHSKeys} for non-mouse interactions while Laptop Mode is enabled.","In Laptop Mode you can pan, scroll and zoom by moving the mouse over an area\nwhile holding ${LaptopLZoomKey} to zoom and Left Alt to pan and scroll.\nUse ${LaptopRHSKeys} for non-mouse interactions while Laptop Mode is enabled.",,IDE toolbar laptop mode description
@@ -41,9 +109,12 @@ UpdateDialogDownloadNow,Download now,Download now,,Update new version dialog - d
 UpdateDialogRemindMe,Remind me later,Remind me later,,Update new version dialog - remind me later button
 UpdateDialogLabel,New version is available! \nYou are on v{0}\nNew version is {1},New version is available! \nYou are on v{0}\nNew version is {1},,Update new version dialog - tell user which version they are on and which version update will take them to
 UpdateDialogReleaseNotes,View Release notes,View Release notes,,Update new version dialog - view release notes button
-UpdateDialogTitle,New Version,New Version,,Update new version dialog title
-UpdateDialog_ViewReleaseNotes,View release notes,View release notes,,view release notes
-UpdateDialog_IgnoreUpdate,Ignore this update,Ignore this update,,ignore this update
+UpdateDialogTitle,IDE Update,IDE Update,,IDE Update dialog title
+UpdateDialogRestartNow,Restart Now,Restart Now,,Restart Now
+UpdateDialogUpdateOnClose,Update On Close IDE,Update On Close IDE,,Update On Close
+UpdateDialog_ViewReleaseNotes,Release Notes,Release Notes,,view release notes
+UpdateDialog_IgnoreUpdate,Skip Update,Skip Update,,Skip update
+install_IDE_update,Restart requested to install IDE update.,Restart requested to install IDE update.,,Restart IDE to install update
 RSS_Download_Exception,Could not reach the RSS feed: {0},Could not reach the RSS feed: {0},,A message which is shown when the RSS feed is not accessible
 Splash_CheckingRSS,Checking RSS...,Checking RSS...,,Checking RSS...
 Dialog_Confirm,Confirm,Confirm,,"Dialog ""confirm"" heading"
@@ -63,6 +134,7 @@ TargetSelection_Platform_operagx,GX.games,GX.games,DO NOT TRANSLATE,the opera gx
 TargetSelection_Platform_ps4,PlayStation 4,PlayStation 4,,the ps4 platform title in the platform selection list
 TargetSelection_Platform_ps5,PlayStation 5,PlayStation 5,,the ps5 platform title in the platform selection list
 TargetSelection_Platform_switch,Switch,Switch,DO NOT TRANSLATE,Switch
+TargetSelection_Platform_switch2,Switch 2,Switch 2,DO NOT TRANSLATE,Switch 2
 TargetSelection_Platform_Windows,Windows,Windows,DO NOT TRANSLATE,the windows platform title in the platform selection list
 TargetSelection_Platform_xboxseriesxs,Xbox One & Series X/S,Xbox One & Series X/S,DO NOT TRANSLATE,the Xbox One & Series X/S platform title in the platform selection list
 TargetSelection_Platform_Mac,macOS,macOS,DO NOT TRANSLATE,the mac platform title in the platform selection list
@@ -97,8 +169,19 @@ UserLogin_Continue,Continue,Continue,,continue label
 UserLogin_MaxDevice,Maximum sign ins exceeded \nYou can manage your account sessions at {0},Maximum sign ins exceeded \nYou can manage your account sessions at {0},,User Login Error response 29
 User_OK,OK,OK,,User Login - two step authentication ok button
 runtime_selection,Runtime Selection,Runtime Selection,,Runtime Selection Window title
-runtime_onstartup_change,Do you want to change your current runtime to the matching IDE version {0}?,Do you want to change your current runtime to the matching IDE version {0}?,,Change current runtime to the version matching the IDE
+runtime_onstartup_change,Do you want to change your current runtime to the latest installed version: {0}?,Do you want to change your current runtime to the latest installed version: {0}?,,Change current runtime to the version matching the IDE
 UserLogin_OfflineError,Unable to take user offline,Unable to take user offline,,offline error
 opera_env_sso_confirm,"You are using a custom environment for Opera GX settings. If you use Opera Single Sign-on, these settings will be overriden. Do you wish to proceed anyway?","You are using a custom environment for Opera GX settings. If you use Opera Single Sign-on, these settings will be overriden. Do you wish to proceed anyway?",,Warning shown when a user tries to log-in via Opera SSO with a custom environment
 CodeSnippets_ConversionWarning,An old code snippets format was detected. Would you like to convert these to the new format?,An old code snippets format was detected. Would you like to convert these to the new format?,,Code snippets conversion warning
 IDETooltip_Notifications,Notifications,Notifications,,IDE toolbar notifications tooltip
+runtime_dns_ResolvingFailed,DNS resolving has failed,DNS resolving has failed,,A title of the warning which is shown when after the IDE failed to resolve an address against an alternative DNS
+runtime_dns_ResolvingFailedMessage,Could not resolve {0} with an alternative DNS. A system DNS has been used,Could not resolve {0} with an alternative DNS. A system DNS has been used,,Could not use an alternative DNS
+ThemeError_MissingComma,"Error in theme at '{0}', check all entries are separated with commas","Error in theme at '{0}', check all entries are separated with commas",,error in skin theme message
+SplashScreen_PluginLoadFailed,Failed to load a required plug-in.  Please try restarting GameMaker.  If the problem persists please reinstall GameMaker.,Failed to load a required plug-in.  Please try restarting GameMaker.  If the problem persists please reinstall GameMaker.,,Error message when you fail to load a required plugin dll
+SplashScreen_PluginLoadFailedTitle,Failed to load a required plug-in,Failed to load a required plug-in,,Title for error message when you fail to load a required plugin dll
+SplashScreen_UserPluginLoadFailed,A failure occurred while loading user plugins. Consult your ui.log for more details,A failure occurred while loading user plugins. Consult your ui.log for more details,,Failed loading user plugin
+SplashScreen_UserPluginLoadFailedTitle,Failed loading a user plugin,Failed loading a user plugin,,Failed loading a user plugin
+RuntimeDownload_FailedTitle,Runtime install incomplete,Runtime install incomplete,,Runtime download failed title
+RuntimeDownload_Failed,The selected runtime could not fully install,The selected runtime could not fully install,,Runtime download failed message
+ConvertedRemapsSavePrompt,Your remaps file has been converted to a new format. Would you like to save it? This format is not compatible with older versions of GameMaker.,Your remaps file has been converted to a new format. Would you like to save it? This format is not compatible with older versions of GameMaker.,,Conversion remap prompt
+StyleError_LoadError,Error in style file {0}\n Reason: {1},Error in style file {0}\n Reason: {1},,error when loading style

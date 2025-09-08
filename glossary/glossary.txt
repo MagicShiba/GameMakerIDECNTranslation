@@ -6,7 +6,7 @@ joints	节点	物理引擎中的连接的关节。
 PrimitiveBuilder	图元构建器
 Strip Image	长带图	依次带状排列的多帧图片，可以导入切割作为精灵使用
 Tileset	图块集	图块设置，采取图块的集合。
-Viewport	视口	视野中的画面实际描绘的区域或者平面。
+Viewport	视口	视图中的画面实际描绘的区域或者平面。
 tile set	图块集	tileset,tile set都是图块集的意思。
 Tilemap	图块地图
 Dock	停靠栏
@@ -43,7 +43,6 @@ function	函数
 arguments	参数
 coordinate	坐标
 position	位置
-vector	向量
 orthographic	正交的
 local	局部
 local	本地
@@ -55,7 +54,7 @@ perspective	透视的
 dimensions	维度
 dimensions	标架
 dimensions	尺度
-view	视野
+view	视图
 Array	数组
 elements	元素
 stack	栈
@@ -80,11 +79,37 @@ Addon	附加组件	add-ons，addon，附加组件，外接组件。
 Chain	连接线	链，连接，连接线
 Home Indicator	Home横条	苹果设备的术语
 provisioning profile	预置描述文件	苹果设备应用开发的专用术语
-Hinting	一种字体渲染微调的机制
+Hinting	微调	一种字体渲染微调的机制
 Inspector	检查器、审查器	在 IDE 类环境中应该翻译为检查器或审查器，直译为检查员等
 gamepad	手柄 游戏手柄
 RMB	鼠标右键	Right Mouse Button
 LMB	鼠标左键	Left Mouse Button
-Set head position (in frames) of sequence instance ${sequenceelmid} to ${var}	将序列实例${sequenceelmid}的头部位置(以帧为单位)设置为${var}
-Gutter	间隙
-Gutter	间隙
+perform	执行
+operation	运算
+operation	操作
+flex panel	弹性布局(flex panel)
+struct	结构
+animation curve	动画曲线
+asset	资源
+listener	侦听器
+This function	此函数
+solid	固体
+persistent	持久
+absolute	绝对
+relative	相对
+destroy	销毁
+surface	表面
+handle	句柄
+game room	游戏房间
+sprite	精灵
+primitive	图元
+fixtures	固定装置
+motor	马达
+camera	摄像机
+track	轨道
+SDF Effects	SDF 效果
+vector	矢量
+vector	向量
+Prefab Collection	预制件集
+Origin	原点
+Bug	Bug

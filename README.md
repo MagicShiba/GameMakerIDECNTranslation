@@ -1,12 +1,9 @@
-# GameMaker Studio 2 IDE Translation.
+# GameMaker IDE Chinese Translation.
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGamemakerChina%2Fgms2translation.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FGamemakerChina%2Fgms2translation?ref=badge_shield)
-
 
 Currently only Simplified Chinese and English.
 
-汉化文件位于仓库的 [gh-pages](https://github.com/GamemakerChina/gms2translation/tree/gh-pages) 分支
-
-Require [omegat-gms2-ide-csv-filter](https://github.com/GamemakerChina/omegat-gms2-ide-csv-filter) plugin.
+参与翻译需要 [omegat-gms2-ide-csv-filter](https://github.com/GamemakerChina/omegat-gms2-ide-csv-filter) 插件.
 
 ## Usage
 
@@ -26,11 +23,18 @@ GameMaker Studio 2 Mobile (限 Steam)
 GameMaker Studio 2 UWP (限 Steam)
 ```
 
-### 2023.4.0.84 - 最新
+### 2024.1400 - 最新
+`chinese.csv` 和 `chinese_dnd.csv` 放在 Gamemaker安装目录的 `Plugins\chinese` 文件夹内。
+`chinese_startup.csv` 放在 Gamemaker安装目录的 `Languages` 内。
+```
+Gamemaker\Plugins\chinese\chinese.csv
+Gamemaker\Plugins\chinese\chinese_dnd.csv
+Gamemaker\Languages\chinese_startup.csv
+```
 
-下载 `chinese.zip` 并解压，其中 `chinese_startup.csv` 粘贴到 IDE 目录的 `Language` 文件夹下，`Chinese` 文件夹内的文件（包含该文件夹）粘贴并覆盖到 IDE 目录的 `Plugins\GMBaseIDELanguages\Languages` 文件夹下。
 
 ### 2.0.6.136 - 2023.2.0.71
+如果你需要旧版翻译请查看原始仓库发布页
 
 下载 `chinese.csv` 和 `chinese_dnd.csv`（如果有)，粘贴到 IDE 目录的 `Language` 文件夹下。
 
