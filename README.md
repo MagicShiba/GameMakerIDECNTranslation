@@ -1,5 +1,4 @@
 # GameMaker IDE Chinese Translation.
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGamemakerChina%2Fgms2translation.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FGamemakerChina%2Fgms2translation?ref=badge_shield)
 
 Currently only Simplified Chinese and English.
 
@@ -46,6 +45,3 @@ Gamemaker\Languages\chinese_startup.csv
  - Tencent Translation ([https://github.com/GamemakerChina/omegat-tencent-plugin](https://github.com/GamemakerChina/omegat-tencent-plugin))
  - Caiyun ([https://gitee.com/xffish/omegat-caiyun-interpreter-plugin](https://gitee.com/xffish/omegat-caiyun-interpreter-plugin))
  - Youdao Translation ([https://gitee.com/xffish/omegat-youdao-plugin](https://gitee.com/xffish/omegat-youdao-plugin))
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FGamemakerChina%2Fgms2translation.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FGamemakerChina%2Fgms2translation?ref=badge_large)

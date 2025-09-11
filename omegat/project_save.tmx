@@ -19785,8 +19785,8 @@
       <tuv lang="en-US">
         <seg>Absolute nodes do not take up space in its flex container</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T014153Z" creationid="hxyyg" creationdate="20250907T014138Z">
-        <seg>绝对定位(Absolute)节点不会占用其弹性容器中的空间</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T061123Z" creationid="hxyyg" creationdate="20250907T014138Z">
+        <seg>绝对定位(Absolute)节点不会占用其flex容器中的空间</seg>
       </tuv>
     </tu>
     <tu>
@@ -21824,8 +21824,8 @@ Add-ons应该怎么翻译？</note>
       <tuv lang="en-US">
         <seg>Align</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="LiarOnce" changedate="20220310T061132Z" creationid="LiarOnce" creationdate="20220310T061051Z">
-        <seg>对齐(Align)</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250911T053807Z" creationid="LiarOnce" creationdate="20220310T061051Z">
+        <seg>对齐</seg>
       </tuv>
     </tu>
     <tu>
@@ -44249,8 +44249,8 @@ addon，这个和上面的提到的plugins有什么不同。</note>
       <tuv lang="en-US">
         <seg>Flex Properties</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T011958Z" creationid="hxyyg" creationdate="20250907T011958Z">
-        <seg>弹性(Flex)属性</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T060604Z" creationid="hxyyg" creationdate="20250907T011958Z">
+        <seg>Flex属性</seg>
       </tuv>
     </tu>
     <tu>
@@ -45727,8 +45727,8 @@ addon，这个和上面的提到的plugins有什么不同。</note>
       <tuv lang="en-US">
         <seg>GM1020 - The function '{0}' takes no less than {1} arguments but {2} are provided.</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="90952" changedate="20221109T170054Z" creationid="90952" creationdate="20221109T162006Z">
-        <seg>GM1020 - 函数 '{0}' 接受不少于 {1} 个参数，但提供了 {2}个。</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T173913Z" creationid="90952" creationdate="20221109T162006Z">
+        <seg>GM1020 - 函数 '{0}' 接受至少 {1} 个参数，但提供了 {2} 个。</seg>
       </tuv>
     </tu>
     <tu>
@@ -59072,16 +59072,16 @@ Genre，类型，种类; 体裁，样式; 风俗画。它是指艺术创作中�
       <tuv lang="en-US">
         <seg>Laid out according to the flex algorithm</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T014143Z" creationid="hxyyg" creationdate="20250907T014143Z">
-        <seg>根据弹性算法布局</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T061142Z" creationid="hxyyg" creationdate="20250907T014143Z">
+        <seg>根据flex算法布局</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>Laid out according to the flow of the flex container it is part of</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T014127Z" creationid="hxyyg" creationdate="20250907T014127Z">
-        <seg>根据其所属的弹性容器的流程进行布局</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T061123Z" creationid="hxyyg" creationdate="20250907T014127Z">
+        <seg>根据其所属的flex容器的流程进行布局</seg>
       </tuv>
     </tu>
     <tu>
@@ -67381,8 +67381,8 @@ The Tile Set Editor 有相关说明，选中了就会假定房间外面布满了
       <tuv lang="en-US">
         <seg>Padding Left</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T012541Z" creationid="hxyyg" creationdate="20250907T012541Z">
-        <seg>左对齐</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250909T074807Z" creationid="hxyyg" creationdate="20250907T012541Z">
+        <seg>左填充</seg>
       </tuv>
     </tu>
     <tu>
@@ -70389,8 +70389,8 @@ CocoaPods：适用于 iOS 的第三方开源库管理工具</note>
       <tuv lang="en-US">
         <seg>Preview All Sides</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T003815Z" creationid="hxyyg" creationdate="20250907T003815Z">
-        <seg>预览所有侧栏</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250909T074942Z" creationid="hxyyg" creationdate="20250907T003815Z">
+        <seg>预览所有侧边</seg>
       </tuv>
     </tu>
     <tu>
@@ -80750,8 +80750,8 @@ dll情境后面，调知中心前面，根据参考信息“Choose to submit all
       <tuv lang="en-US">
         <seg>Set stretch and maintain aspect for new instances in auto-created flex panels</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T092949Z" creationid="hxyyg" creationdate="20250907T092949Z">
-        <seg>在自动创建的弹性面板中设置新实例的拉伸和保持比例</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T061158Z" creationid="hxyyg" creationdate="20250907T092949Z">
+        <seg>在自动创建的flex面板中设置新实例的拉伸和保持比例</seg>
       </tuv>
     </tu>
     <tu>
@@ -96190,8 +96190,8 @@ dll情境后面，调知中心前面，根据参考信息“Choose to submit all
       <tuv lang="en-US">
         <seg>Wrap Reverse</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T083144Z" creationid="hxyyg" creationdate="20250907T083144Z">
-        <seg>反向包装</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250908T060456Z" creationid="hxyyg" creationdate="20250907T083144Z">
+        <seg>反向换行</seg>
       </tuv>
     </tu>
     <tu>
