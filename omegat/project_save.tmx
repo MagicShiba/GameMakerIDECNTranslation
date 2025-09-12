@@ -750,6 +750,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>"An error prevented creation of the zip attachment. Send report anyway?"</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T011847Z" creationid="hxyyg" creationdate="20250912T011847Z">
+        <seg>"由于发生错误，无法创建 ZIP 附件。是否仍然发送报告？"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>"An error report has been created so that we can examine and prevent issues like this.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="LiarOnce" changedate="20220407T092359Z" creationid="liaronce" creationdate="20210228T135127Z">
@@ -2216,8 +2224,8 @@
       <tuv lang="en-US">
         <seg>"Could not find a version of ProjectTool. Please install via the Package Manager, or set a path via Preferences -&gt; General Settings -&gt; Paths"</seg>
       </tuv>
-      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T184132Z" creationid="hxyyg" creationdate="20250907T184132Z">
-        <seg>"找不到ProjectTool的版本。请通过包管理器安装，或在 偏好设置 -&gt; 常规设置 -&gt; 路径 中设置路径。"</seg>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T011930Z" creationid="hxyyg" creationdate="20250907T184132Z">
+        <seg>"找不到 ProjectTool 的版本。请通过包管理器安装，或在"偏好设置"-&gt;"常规设置"-&gt;"路径"中设置路径。"</seg>
       </tuv>
     </tu>
     <tu>
@@ -4922,6 +4930,14 @@
       </tuv>
       <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T184811Z" creationid="hxyyg" creationdate="20250907T184811Z">
         <seg>"关于GameMaker的所有信息，请查阅手册 [](https://manual.gamemaker.io/)  或按下F1键。"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>"For all GameMaker info, check out the manual at []({0}) or hit the F1 key."</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T012019Z" creationid="hxyyg" creationdate="20250912T012019Z">
+        <seg>"对于所有GameMaker信息，请查看手册位于[]({0})或按下F1键。"</seg>
       </tuv>
     </tu>
     <tu>
@@ -22772,6 +22788,14 @@ Add-ons应该怎么翻译？</note>
       </tuv>
       <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T003822Z" creationid="hxyyg" creationdate="20250907T003822Z">
         <seg>加载检查器布局时发生未知错误</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>An update for ProjectTool is currently being installed. Please wait a short while before trying again.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T012005Z" creationid="hxyyg" creationdate="20250912T012005Z">
+        <seg>ProjectTool(项目转换工具) 正在安装更新，请稍等片刻后再尝试。</seg>
       </tuv>
     </tu>
     <tu>
@@ -45813,6 +45837,14 @@ addon，这个和上面的提到的plugins有什么不同。</note>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>GM1030 - The identifier '{0}' is reserved and cannot be used as a variable or macro name.</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T011834Z" creationid="hxyyg" creationdate="20250912T011834Z">
+        <seg>GM1030 - 标识符 '{0}' 已保留，不能用作变量或宏的名称。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>GM1031 - The name '{0}' is an asset or constant and cannot be assigned to.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="90952" changedate="20221109T170054Z" creationid="90952" creationdate="20221109T162619Z">
@@ -57447,6 +57479,14 @@ Genre，类型，种类; 体裁，样式; 风俗画。它是指艺术创作中�
       </tuv>
       <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T003553Z" creationid="hxyyg" creationdate="20250907T003553Z">
         <seg>检查物体</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Inspect {0}</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T011752Z" creationid="hxyyg" creationdate="20250912T011752Z">
+        <seg>检查器 {0}</seg>
       </tuv>
     </tu>
     <tu>
@@ -70864,6 +70904,14 @@ CocoaPods：适用于 iOS 的第三方开源库管理工具</note>
       </tuv>
       <tuv lang="zh-CN" changeid="LiarOnce" changedate="20231019T162715Z" creationid="LiarOnce" creationdate="20231019T162715Z">
         <seg>项目工具</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Project Tool Install in Progress</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T011851Z" creationid="hxyyg" creationdate="20250912T011851Z">
+        <seg>项目工具安装中。</seg>
       </tuv>
     </tu>
     <tu>
@@ -89855,6 +89903,14 @@ dll情境后面，调知中心前面，根据参考信息“Choose to submit all
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20180922T070612Z" creationid="deciia" creationdate="20180922T070612Z">
         <seg>该物体无源代码</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This package requires an IDE restart to take effect. Would you like to restart now?</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20250912T012029Z" creationid="hxyyg" creationdate="20250912T012029Z">
+        <seg>此包需要 IDE 重启才能生效。您现在要重启吗？</seg>
       </tuv>
     </tu>
     <tu>

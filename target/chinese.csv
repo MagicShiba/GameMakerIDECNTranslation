@@ -518,6 +518,7 @@ Inspector_UndoError,An error occurred while attempting to undo a change.,尝试�
 Inspector_RedoError,An error occurred while attempting to redo a change.,尝试重做更改时发生错误。,,Redo error message
 Inspector_CreateNewAssetType,New {0},新建 {0},,new (asset type name)
 Inspector_EditAssetType,Edit {0},编辑 {0},,edit (asset type name)
+Inspector_InspectAssetType,Inspect {0},检查器 {0},,inspect (asset type name)
 Inspector_AlignIcons,Align,对齐,,inspector align icons label
 Inspector_AlignTT,Align element(s) to edges / centre of canvas area,将元素对齐到画布区域的边缘/中心,,align tooltip
 Inspector_Alignment,Justification,对齐调整,,inspector alignment label
@@ -6533,7 +6534,6 @@ ggs_allow_game_statistics,Allow anonymous game statistics,允许匿名游戏统�
 LicenceExcluded_ggs_allow_game_statistics,Statistics cannot be turned off on 'Creator' platforms,无法在 'Creator' 平台上关闭统计信息,Do not localise 'Creator' it's a product name,Trial stats tooltip on checkbox
 LicenceFree_ggs_allow_game_statistics,Statistics cannot be turned off in GameMaker Trial,在 GameMaker 试用版中无法关闭统计信息,,Trial stats tooltip on checkbox
 ggs_statistics_off,Are you sure you want to turn statistics off?\n\nAnonymous statistics allow us to provide developers with info about their target audience and focus development in key areas,您确定要关闭统计信息吗？\n\n匿名统计信息允许我们向开发人员提供有关其目标受众的信息，并重点关注关键领域的开发,,Message when turning off anonymous statistics
-ggs_statistics_choice,Automatic response to turning off anonymous statistics,自动响应关闭匿名统计,,Confirm dialog option
 ResourceTree_DataFileAlreadyExists,Included file '{0}' already exists.\nOperation cancelled.,项目内含文件（Included file） '{0}' 已经存在。\n操作被取消。,,Warn the user that an included file already exists and therefore the operation has been cancelled
 RestoreResourceName_DirectoryFailure,Renaming failed: unable to restore directory '{0}' to its original name. Please see the output panel for more details.,重命名失败：无法将目录 '{0}' 还原到其原始名称。详情请参阅输出面板。,,Error message when attempting to restore a bad resource rename fails
 RestoreResourceName_FilesFailure,Renaming failed: unable to restore files to their correct state. Please see the output panel for more details.,重命名失败：无法将文件还原到其正确的状态。详情请参阅输出面板。,,Error message when attempting to restore a bad resource rename fails
@@ -8483,7 +8483,7 @@ Feather_GM1026,GM1026 - Left-hand side of postfix expression must be a variable.
 Feather_GM1027,GM1027 - A string literal was unexpected at this time.,GM1027 - 一个意外的字面字符串，不该在此出现。,,Feather rule
 Feather_GM1028,GM1028 - Accessor is intended for type of '{0}' but '{1}' appears instead.,GM1028 - 访问器适用于 '{0}' 类型，但出现 '{1}' 。,,Feather rule
 Feather_GM1029,GM1029 - Potentially dangerous or unintended implicit cast from '{0}' to '{1}'.,GM1029 - 从 '{0}' 到 '{1}' 存在潜在危险或意外隐式强制转换。,,Feather rule
-Feather_GM1030,GM1030 - The identifier '{0}' is reserved and cannot be used as a variable name.,GM1030 - 标识符 '{0}' 是保留的，不能用作变量名。,,Feather rule
+Feather_GM1030,GM1030 - The identifier '{0}' is reserved and cannot be used as a variable or macro name.,GM1030 - 标识符 '{0}' 已保留，不能用作变量或宏的名称。,,Feather rule
 Feather_GM1031,GM1031 - The name '{0}' is an asset or constant and cannot be assigned to.,GM1031 - 名称 '{0}' 是资产或常量，无法分配。,,Feather rule
 Feather_GM1032,GM1032 - No references to arguments {0} but references argument {1},GM1032 - 没有引用参数 {0} 却引用参数 {1},,Feather rule
 Feather_GM1033,GM1033 - Possibly unintended or misplaced semicolon.,GM1033 - 可能是无意的或错位的分号。,,Feather rule
@@ -9774,6 +9774,7 @@ BugReport_RTMismatchMsg2,"(This IDE expects runtime {0}, but any newer {1} runti
 BugReport_RTMismatchMsg3,"If this IDE and runtime are also not the current releases, we do recommend updating your GameMaker install, as the issue may also have been fixed already.","如果这个IDE和运行时不是最新版本，我们建议更新你的GameMaker安装，因为问题可能已经得到修复。",,runtime mismatch msg
 BugReport_ChangeRuntime,Change Runtime,更改运行时,,change runtime button
 BugReport_ReportAnyway,Report Anyway,报告-无论如何,,report anyway
+BugReport_SendReportAnyway,"An error prevented creation of the zip attachment. Send report anyway?","由于发生错误，无法创建 ZIP 附件。是否仍然发送报告？",,if project-slimming or zip creation failed
 ListBoxEnum_eBugReportVis_Public,Public,公开,,public
 ListBoxEnum_eBugReportVis_Private,Private,私有,,public
 ListBoxEnum_eBugRepYesNo_Yes,Attach privately,私密附加,,yes
@@ -10037,7 +10038,9 @@ Plugins_FailedLoading,"Startup plugins failed to load. Please submit a bug repor
 ProjectToolPrefs,Project Tool,项目工具,,Project tools prefs title
 ProjectTool_PathToProjectTool,Path to Project Tool,项目工具路径,,project tool path pref
 ProjectTool_Missing_Title,Project Tool Missing,项目工具缺失,,Project tool missing title
-ProjectTool_Missing,"Could not find a version of ProjectTool. Please install via the Package Manager, or set a path via Preferences -> General Settings -> Paths","找不到ProjectTool的版本。请通过包管理器安装，或在 偏好设置 -> 常规设置 -> 路径 中设置路径。",,Missing Project Tool
+ProjectTool_Missing,"Could not find a version of ProjectTool. Please install via the Package Manager, or set a path via Preferences -> General Settings -> Paths","找不到 ProjectTool 的版本。请通过包管理器安装，或在"偏好设置"->"常规设置"->"路径"中设置路径。",,Missing Project Tool
+ProjectTool_Installing_Title,Project Tool Install in Progress,项目工具安装中。,null,null
+ProjectTool_Installing,An update for ProjectTool is currently being installed. Please wait a short while before trying again.,ProjectTool(项目转换工具) 正在安装更新，请稍等片刻后再尝试。,null,null
 ProjectTool_Upgrade_Title,Check for Project Tool Update,检查项目工具更新,,Check for Project Tool Update Title
 ProjectTool_Upgrade_Message,Open the Package Manager to check for an updated Project Tool?,打开包管理器以检查项目工具是否已更新？,,Open the Package Manager to check for an updated Project Tool?
 OutputPanel_ProjectHealth,Project Health,项目健康,,Project health window title
@@ -10068,7 +10071,7 @@ IDEOnBoarding_Tab_Name,Welcome Tab,欢迎选项卡,,Name for onboarding tab
 IDEOnBoarding_Ins_Text_1,"Here you'll see the properties of the asset you've selected, and can change them.","在这里，您将看到所选资源的属性，并可以更改它们。",,IDE onboarding inspector text paragraph 1
 IDEOnBoarding_Ins_Text_2,"Click on your 'Room' ![](ide://{0}) in the Asset Browser to see its properties here.","点击 '房间' ![](ide://{0}) 在资源浏览器中查看其属性。",,IDE onboarding inspector text paragraph 2
 IDEOnBoarding_Output_Text,"When you play your game, you'll see any errors or debug messages here. You can close or collapse windows if you don't need them just yet.","当你运行你的游戏时，你会在这里看到任何错误或调试消息。你可以关闭或折叠窗口，如果你现在不需要它们的话。",,IDE onboarding output text
-IDEOnBoarding_Help_Text,"For all GameMaker info, check out the manual at [](https://manual.gamemaker.io/) or hit the F1 key.","关于GameMaker的所有信息，请查阅手册 [](https://manual.gamemaker.io/)  或按下F1键。",,IDE onboarding help text
+IDEOnBoarding_Help_Text,"For all GameMaker info, check out the manual at []({0}) or hit the F1 key.","对于所有GameMaker信息，请查看手册位于[]({0})或按下F1键。",,IDE onboarding help text
 IDEOnBoarding_AB_Text_1,"This is where you create and organise your game's assets like images (sprites), code, and rooms (game levels).","这是您创建和组织游戏资源（如图像（精灵）、代码和房间（游戏关卡））的地方。",,IDE onboarding asset browser text paragraph 1
 IDEOnBoarding_AB_Text_2,"Clicking  ![](ide://{0}) lets you create an asset of any type.\n\nTry creating an object and add it to your room.","点击 ![](ide://{0}) 允许你创建任何类型的资源。\n\n尝试创建一个物体并将其添加到你的房间中。",,IDE onboarding asset browser text paragraph 2
 IDEOnBoarding_Play_Text_1,"Above you will see the toolbar.","在您上方可以看到工具栏。",,IDE onboarding play text 1
@@ -10083,3 +10086,4 @@ PackageMan_DisableUpdateNotifications,Disable update notifications,禁用更新�
 Project_Slim,Slimmed,精简,,Create a Slimmed Project
 PackageMan_EnableAutomaticUpdates,Enable automatic updates,启用自动更新,null,null
 PackageMan_DisableAutomaticUpdates,Disable automatic updates,禁用自动更新,null,null
+PackageMan_PromptRestart,This package requires an IDE restart to take effect. Would you like to restart now?,此包需要 IDE 重启才能生效。您现在要重启吗？,null,null

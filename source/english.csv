@@ -518,6 +518,7 @@ Inspector_UndoError,An error occurred while attempting to undo a change.,An erro
 Inspector_RedoError,An error occurred while attempting to redo a change.,An error occurred while attempting to redo a change.,,Redo error message
 Inspector_CreateNewAssetType,New {0},New {0},,new (asset type name)
 Inspector_EditAssetType,Edit {0},Edit {0},,edit (asset type name)
+Inspector_InspectAssetType,Inspect {0},Inspect {0},,inspect (asset type name)
 Inspector_AlignIcons,Align,Align,,inspector align icons label
 Inspector_AlignTT,Align element(s) to edges / centre of canvas area,Align element(s) to edges / centre of canvas area,,align tooltip
 Inspector_Alignment,Justification,Justification,,inspector alignment label
@@ -6533,7 +6534,6 @@ ggs_allow_game_statistics,Allow anonymous game statistics,Allow anonymous game s
 LicenceExcluded_ggs_allow_game_statistics,Statistics cannot be turned off on 'Creator' platforms,Statistics cannot be turned off on 'Creator' platforms,Do not localise 'Creator' it's a product name,Trial stats tooltip on checkbox
 LicenceFree_ggs_allow_game_statistics,Statistics cannot be turned off in GameMaker Trial,Statistics cannot be turned off in GameMaker Trial,,Trial stats tooltip on checkbox
 ggs_statistics_off,Are you sure you want to turn statistics off?\n\nAnonymous statistics allow us to provide developers with info about their target audience and focus development in key areas,Are you sure you want to turn statistics off?\n\nAnonymous statistics allow us to provide developers with info about their target audience and focus development in key areas,,Message when turning off anonymous statistics
-ggs_statistics_choice,Automatic response to turning off anonymous statistics,Automatic response to turning off anonymous statistics,,Confirm dialog option
 ResourceTree_DataFileAlreadyExists,Included file '{0}' already exists.\nOperation cancelled.,Included file '{0}' already exists.\nOperation cancelled.,,Warn the user that an included file already exists and therefore the operation has been cancelled
 RestoreResourceName_DirectoryFailure,Renaming failed: unable to restore directory '{0}' to its original name. Please see the output panel for more details.,Renaming failed: unable to restore directory '{0}' to its original name. Please see the output panel for more details.,,Error message when attempting to restore a bad resource rename fails
 RestoreResourceName_FilesFailure,Renaming failed: unable to restore files to their correct state. Please see the output panel for more details.,Renaming failed: unable to restore files to their correct state. Please see the output panel for more details.,,Error message when attempting to restore a bad resource rename fails
@@ -8483,7 +8483,7 @@ Feather_GM1026,GM1026 - Left-hand side of postfix expression must be a variable.
 Feather_GM1027,GM1027 - A string literal was unexpected at this time.,GM1027 - A string literal was unexpected at this time.,,Feather rule
 Feather_GM1028,GM1028 - Accessor is intended for type of '{0}' but '{1}' appears instead.,GM1028 - Accessor is intended for type of '{0}' but '{1}' appears instead.,,Feather rule
 Feather_GM1029,GM1029 - Potentially dangerous or unintended implicit cast from '{0}' to '{1}'.,GM1029 - Potentially dangerous or unintended implicit cast from '{0}' to '{1}'.,,Feather rule
-Feather_GM1030,GM1030 - The identifier '{0}' is reserved and cannot be used as a variable name.,GM1030 - The identifier '{0}' is reserved and cannot be used as a variable name.,,Feather rule
+Feather_GM1030,GM1030 - The identifier '{0}' is reserved and cannot be used as a variable or macro name.,GM1030 - The identifier '{0}' is reserved and cannot be used as a variable or macro name.,,Feather rule
 Feather_GM1031,GM1031 - The name '{0}' is an asset or constant and cannot be assigned to.,GM1031 - The name '{0}' is an asset or constant and cannot be assigned to.,,Feather rule
 Feather_GM1032,GM1032 - No references to arguments {0} but references argument {1},GM1032 - No references to arguments {0} but references argument {1},,Feather rule
 Feather_GM1033,GM1033 - Possibly unintended or misplaced semicolon.,GM1033 - Possibly unintended or misplaced semicolon.,,Feather rule
@@ -9774,6 +9774,7 @@ BugReport_RTMismatchMsg2,"(This IDE expects runtime {0}, but any newer {1} runti
 BugReport_RTMismatchMsg3,"If this IDE and runtime are also not the current releases, we do recommend updating your GameMaker install, as the issue may also have been fixed already.","If this IDE and runtime are also not the current releases, we do recommend updating your GameMaker install, as the issue may also have been fixed already.",,runtime mismatch msg
 BugReport_ChangeRuntime,Change Runtime,Change Runtime,,change runtime button
 BugReport_ReportAnyway,Report Anyway,Report Anyway,,report anyway
+BugReport_SendReportAnyway,"An error prevented creation of the zip attachment. Send report anyway?","An error prevented creation of the zip attachment. Send report anyway?",,if project-slimming or zip creation failed
 ListBoxEnum_eBugReportVis_Public,Public,Public,,public
 ListBoxEnum_eBugReportVis_Private,Private,Private,,public
 ListBoxEnum_eBugRepYesNo_Yes,Attach privately,Attach privately,,yes
@@ -10038,6 +10039,8 @@ ProjectToolPrefs,Project Tool,Project Tool,,Project tools prefs title
 ProjectTool_PathToProjectTool,Path to Project Tool,Path to Project Tool,,project tool path pref 
 ProjectTool_Missing_Title,Project Tool Missing,Project Tool Missing,,Project tool missing title
 ProjectTool_Missing,"Could not find a version of ProjectTool. Please install via the Package Manager, or set a path via Preferences -> General Settings -> Paths","Could not find a version of ProjectTool. Please install via the Package Manager, or set a path via Preferences -> General Settings -> Paths",,Missing Project Tool
+ProjectTool_Installing_Title,Project Tool Install in Progress,Project Tool Install in Progress,,
+ProjectTool_Installing,An update for ProjectTool is currently being installed. Please wait a short while before trying again.,An update for ProjectTool is currently being installed. Please wait a short while before trying again.,,
 ProjectTool_Upgrade_Title,Check for Project Tool Update,Check for Project Tool Update,,Check for Project Tool Update Title
 ProjectTool_Upgrade_Message,Open the Package Manager to check for an updated Project Tool?,Open the Package Manager to check for an updated Project Tool?,,Open the Package Manager to check for an updated Project Tool?
 OutputPanel_ProjectHealth,Project Health,Project Health,,Project health window title
@@ -10068,7 +10071,7 @@ IDEOnBoarding_Tab_Name,Welcome Tab,Welcome Tab,,Name for onboarding tab
 IDEOnBoarding_Ins_Text_1,"Here you'll see the properties of the asset you've selected, and can change them.","Here you'll see the properties of the asset you've selected, and can change them.",,IDE onboarding inspector text paragraph 1
 IDEOnBoarding_Ins_Text_2,"Click on your 'Room' ![](ide://{0}) in the Asset Browser to see its properties here.","Click on your 'Room' ![](ide://{0}) in the Asset Browser to see its properties here.",,IDE onboarding inspector text paragraph 2
 IDEOnBoarding_Output_Text,"When you play your game, you'll see any errors or debug messages here. You can close or collapse windows if you don't need them just yet.","When you play your game, you'll see any errors or debug messages here. You can close or collapse windows if you don't need them just yet.",,IDE onboarding output text
-IDEOnBoarding_Help_Text,"For all GameMaker info, check out the manual at [](https://manual.gamemaker.io/) or hit the F1 key.","For all GameMaker info, check out the manual at [](https://manual.gamemaker.io/) or hit the F1 key.",,IDE onboarding help text
+IDEOnBoarding_Help_Text,"For all GameMaker info, check out the manual at []({0}) or hit the F1 key.","For all GameMaker info, check out the manual at []({0}) or hit the F1 key.",,IDE onboarding help text
 IDEOnBoarding_AB_Text_1,"This is where you create and organise your game's assets like images (sprites), code, and rooms (game levels).","This is where you create and organise your game's assets like images (sprites), code, and rooms (game levels).",,IDE onboarding asset browser text paragraph 1
 IDEOnBoarding_AB_Text_2,"Clicking  ![](ide://{0}) lets you create an asset of any type.\n\nTry creating an object and add it to your room.","Clicking  ![](ide://{0}) lets you create an asset of any type.\n\nTry creating an object and add it to your room.",,IDE onboarding asset browser text paragraph 2
 IDEOnBoarding_Play_Text_1,"Above you will see the toolbar.","Above you will see the toolbar.",,IDE onboarding play text 1
@@ -10083,3 +10086,4 @@ PackageMan_DisableUpdateNotifications,Disable update notifications,Disable updat
 Project_Slim,Slimmed,Slimmed,,Create a Slimmed Project
 PackageMan_EnableAutomaticUpdates,Enable automatic updates,Enable automatic updates,,
 PackageMan_DisableAutomaticUpdates,Disable automatic updates,Disable automatic updates,,
+PackageMan_PromptRestart,This package requires an IDE restart to take effect. Would you like to restart now?,This package requires an IDE restart to take effect. Would you like to restart now?,,
