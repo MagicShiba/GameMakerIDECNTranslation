@@ -4,6 +4,8 @@ Currently only Simplified Chinese and English.
 
 参与翻译需要 [omegat-gms2-ide-csv-filter](https://github.com/GamemakerChina/omegat-gms2-ide-csv-filter) 插件.
 
+函数翻译请查看[GM函数提示中文翻译](https://github.com/MagicShiba/GameMaker-GmlSpec-CN-Translation)
+
 ## Usage
 
 ### IDE 目录
@@ -37,8 +39,8 @@ Gamemaker\Languages\chinese_startup.csv
 
 下载 `chinese.csv` 和 `chinese_dnd.csv`（如果有)，粘贴到 IDE 目录的 `Language` 文件夹下。
 
-## Machine Translation Plugin reference 
-
+## OmegaT机器插件翻译参考
+ - 自定义LLM翻译 [(openai api translate plugin)](https://github.com/MagicShiba/omegat-plugin-openai-api-translate)
  - Google Translation (built-in or [https://sourceforge.net/projects/omegat-gt-without-api-key/](https://sourceforge.net/projects/omegat-gt-without-api-key/))
  - Microsoft Translation (built-in)
  - DeepL (built-in)
