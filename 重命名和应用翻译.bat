@@ -3,12 +3,17 @@ setlocal
 
 :: 设置目标子目录名称
 set "target_dir=target"
-set "gmside_dir=D:\SP-ENG\GMSB\"
+::改为自己实际安装位置
+set "gmside_dir=D:\SP-ENG\GMSB\" 
 
 :: 完整路径
 set engman=%target_dir%\english.csv
 set engdnd=%target_dir%\english_dnd.csv
 set engsta=%target_dir%\english_startup.csv
+
+del target\chinese.csv
+del target\chinese_dnd.csv
+del target\chinese_startup.csv
 
 :: 执行重命名操作
 ren "%engman%" chinese.csv

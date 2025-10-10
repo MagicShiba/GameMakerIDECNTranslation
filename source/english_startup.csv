@@ -131,6 +131,7 @@ TargetSelection_Platform_android,Android,Android,DO NOT TRANSLATE,the android pl
 TargetSelection_Platform_HTML5,HTML5,HTML5,DO NOT TRANSLATE,the html5 platform title in the platform selection list
 TargetSelection_Platform_Linux,Ubuntu,Ubuntu,DO NOT TRANSLATE,the linux platform title in the platform selection list
 TargetSelection_Platform_operagx,GX.games,GX.games,DO NOT TRANSLATE,the opera gx platform title in the platform selection list
+TargetSelection_Platform_reddit,Reddit,Reddit,DO NOT TRANSLATE,the reddit/devvit platform title in the platform selection list
 TargetSelection_Platform_ps4,PlayStation 4,PlayStation 4,,the ps4 platform title in the platform selection list
 TargetSelection_Platform_ps5,PlayStation 5,PlayStation 5,,the ps5 platform title in the platform selection list
 TargetSelection_Platform_switch,Switch,Switch,DO NOT TRANSLATE,Switch

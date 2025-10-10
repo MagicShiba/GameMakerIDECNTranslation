@@ -635,6 +635,7 @@ Inspector_Category_Textures,Textures,Textures,,textures category
 Inspector_PrefabArg,Prefab: {0},Prefab: {0},,prefab [name] label
 Inspector_Prefab,Prefab,Prefab,,prefab
 Inspector_OpenPrefabCollection,Open Collection,Open Collection,,open prefab collection
+Inspector_OpenPrefab,Open Prefab,Open Prefab,,open / navigate to prefab
 Inspector_Precision,Precision,Precision,,precision label
 Inspector_ClipHiddenGeometry,Clip Hidden Geometry,Clip Hidden Geometry,,Clip Hidden Geometry button label
 PSys_DrawOrder,Draw Order,Draw Order,,particle system draw order
@@ -1188,10 +1189,12 @@ IncludedFilesPlatform_TV_OS,tvOS,tvOS,DO NOT TRANSLATE,included files platform l
 IncludedFilesPlatform_AmazonFire,Amazon Fire,Amazon Fire,DO NOT TRANSLATE,Amazon Fire platform list entry
 IncludedFilesPlatform_WASM,WASM,WASM,DO NOT TRANSLATE,WASM platform list entry
 IncludedFilesPlatform_OPERAGX,GX.games,GX.games,DO NOT TRANSLATE,Opera GX platform list entry
+IncludedFilesPlatform_Reddit,Reddit,Reddit,DO NOT TRANSLATE,Reddit platform list entry
 IncludedFile_Refresh,Refresh Included Files,Refresh Included Files,,Refresh Included Files list from disk
 wasm,WASM,WASM,DO NOT TRANSLATE,WASM Platform settings entry
 operagx,GX.games,GX.games,DO NOT TRANSLATE,Opera GX Platform settings entry
 OperaGX,GX.games,GX.games,DO NOT TRANSLATE,Opera GX Platform settings entry
+reddit,Reddit,Reddit,DO NOT TRANSLATE,Reddit Platform settings entry
 InstanceProperties_CreationCode,Creation Code,Creation Code,,instance properties button caption for opening the creation code
 InstanceProperties_EditObject,Edit Object,Edit Object,,instance properties button caption for opening the object for edit
 InstanceProperties_FlipX,Flip X,Flip X,,instance properties checkbox label for flip x
@@ -3284,6 +3287,8 @@ ggs_gxc_mod_guid,Select Mod,Select Mod,,A caption for the mod selection dropdown
 ggs_team_name,Team Name,Team Name,,Team Name
 ggs_internal_share_url,Internal Share URL,Internal Share URL,,Internal Share URL
 ggs_public_share_url,Public Share URL,Public Share URL,,Public Share URL
+reddit_devvit_project_id,Devvit Project Id,Devvit Project Id,,Devvit Project Id
+reddit_devvit_project_path,Devvit Project Path,Devvit Project Path,,Devvit Project Path
 ImagePath_ImageError,Error Selecting Image,Error Selecting Image,,Error when using image_path gadget to select an image
 ImagePath_NotExpectedDimensions,The image is expected to be of {0}x{1} but received {2}x{3},The image is expected to be of {0}x{1} but received {2}x{3},,Image wrong size with 0x1 being expected size and 2x3 being the image size
 ImagePath_NotExpectedAlpha,The image is expected to have an alpha channel (i.e. be 32-bit),The image is expected to have an alpha channel (i.e. be 32-bit),,The image needs to have an alpha channel but the selected one does not
@@ -3898,7 +3903,10 @@ codeeditor_debuggermakesdocumentsreadonly,Lock Documents when Debugger is Active
 codeeditor_autotrimwhitespaceonbackspace,Trim leading whitespace on backspace,Trim leading whitespace on backspace,,Trim leading whitespace on backspace
 codeeditor_autoinsertseparatingwhitespace,Insert separating whitespace when joining lines,Insert separating whitespace when joining lines,,Insert separating whitespace when joining lines
 codeeditor_usestrictselectioncommenting,Prefer strict commenting of selected text over commenting selected lines,Prefer strict commenting of selected text over commenting selected lines,,Prefer strict commenting of selected text over commenting selected lines
-codeeditor_disableeagercodecompletioninvocation,Disable Space Bar with Code Completion,Disable Space Bar with Code Completion,,Disable Space Bar with Code Completion
+TextEditor_Options_Label_CodeCompletion,\n\nCode Completion,\n\nCode Completion,,Code Completion
+codeeditor_enableeagercodecompletioninvocationonwhitespace,Invoke Code Completion List in contextually appropriate locations after Spacebar,Invoke Code Completion List in contextually appropriate locations after Spacebar,,Invoke Code Completion List in contextually appropriate locations after Spacebar
+codeeditor_enableeagercodecompletioninvocationonbrace,Invoke Code Completion List when typing function call arguments,Invoke Code Completion List when typing function call arguments,,Invoke Code Completion List when typing function call arguments
+codeeditor_enableeagerparametertooltipwhentextcursorinarguments,Always show Parameter Tooltip when Text Cursor is inside a function call's arguments,Always show Parameter Tooltip when Text Cursor is inside a function call's arguments,,Always show Parameter Tooltip when Text Cursor is inside a function call's arguments
 dialogeditor_textcolours,Text colours and style,Text colours and style,,Text colours and style in Dialog Editor
 dialogeditor_options,Options,Options,,Options in Dialog Editor
 sourcecontrolgit_username,Commit username,Commit username,,Username to commit as for source control git
@@ -3984,6 +3992,7 @@ TargetSelection_Platform_ps5,PlayStation 5,PlayStation 5,,the ps5 platform title
 TargetSelection_Platform_xboxseriesxs,Xbox One & Series X/S,Xbox One & Series X/S,DO NOT TRANSLATE,the Xbox One & Series X/S platform title in the platform selection list
 TargetSelection_Platform_wasm,WASM,WASM,DO NOT TRANSLATE,the WASM platform title in the platform selection list
 TargetSelection_Platform_operagx,GX.games,GX.games,DO NOT TRANSLATE,the opera gx platform title in the platform selection list
+TargetSelection_Platform_reddit,Reddit,Reddit,DO NOT TRANSLATE,the reddit/devvit platform title in the platform selection list
 TargetSelection_Runtime_VM,GMS2 VM,GMS2 VM,DO NOT TRANSLATE, the VM (Virtual Machine) title in the runtime selection list
 TargetSelection_Runtime_YYC,GMS2 YYC,GMS2 YYC,DO NOT TRANSLATE, the yyc title in the runtime selection list
 TargetSelection_Runtime_Javascript,JavaScript,JavaScript,DO NOT TRANSLATE, the javascript title in the runtime selection list
@@ -4331,7 +4340,9 @@ gx_package_upload_game,Upload as Game,Upload as Game,,gx upload as game
 gx_package_upload_wallpaper,Upload as Live Wallpaper Mod,Upload as Live Wallpaper Mod,,gx upload as wallpaper
 gx_package_upload_gamestrip,Upload as Game Strip Mod,Upload as Game Strip Mod,,gx upload as game strip
 gx_package_zip,Save locally as a zip,Save locally as a zip,,gx save locally as a zip
+reddit_package_zip,Package as Zip for manual uploading,Package as Zip for manual uploading,,reddit save locally as a zip
 operagx_package_default_type,Default packaging type,Default packaging type,,opera gx Default Packaging Type
+reddit_package_default_type,Default packaging type,Default packaging type,,opera gx Default Packaging Type
 mac_package_nsis,Package as DMG,Package as DMG,,Package as DMG
 mac_package_zip,Package as Zip,Package as Zip,,Package as Zip
 mac_package_remember,Remember Packaging Option?,Remember Packaging Option?,,Remember Packaging Option?
@@ -4359,6 +4370,9 @@ ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Game,Game,Game,,gx package choic
 ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Wallpaper,Live Wallpaper,Live Wallpaper,,gx package choice wallpaper
 ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Gamestrip,Game Strip,Game Strip,,gx package choice game strip
 ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Zip,Zip File,Zip File,,gx package choice zip
+ListBoxEnum_RedditPackageChoice_RedditPackage_Game,Game,Game,,reddit package choice game
+ListBoxEnum_RedditPackageChoice_RedditPackage_Zip,Zip,Zip,,reddit package choice zip
+ListBoxEnum_RedditPackageChoice_RedditPackage_Show,Show Dialog,Show Dialog,,Show Dialog
 ListBoxEnum_MacPackageChoice_MacPackage_Dmg,Create DMG Installer,Create DMG Installer,,Create DMG Installer
 ListBoxEnum_MacPackageChoice_MacPackage_Zip,Create Zip Archive,Create Zip Archive,,Create Zip Archive
 ListBoxEnum_MacPackageChoice_MacPackage_Show,Show Dialog,Show Dialog,,Show Dialog
@@ -6024,6 +6038,7 @@ Validate_NameLength,Resource name must be between {2} and {1} characters long,Re
 Validate_InvalidFolderName,Folder name contains invalid characters: {0},Folder name contains invalid characters: {0},,validation error message for folder names
 GMLVisual_ResourceSelection_DropLabel,Drop here to assign asset,Drop here to assign asset,,GML Visual Resource Input label
 TextureGroups_OpenResource,Open,Open,,Open Resource
+TextureGroups_InspectResource,Inspect,Inspect,,Inspect Resource
 RemoteWorker_WindowTitle,Settings for {0},Settings for {0},,Remote worker window title
 RemoteWorker_PlatformNotSupportedTitle,Remote Worker - Platform Not Supported,Remote Worker - Platform Not Supported,,Platform is not supported on this remote worker title
 RemoteWorker_ErrorTitle,Remote Worker Error,Remote Worker Error,,Remote worker error
@@ -6478,6 +6493,9 @@ StartPage_Offline,This link cannot be opened as you are currently offline.,This 
 debuggerporttouse,Debugger port,Debugger port,,Port for Debugger to use label in Settings
 debuggershoweventicons,Show event icons in Debugger Resource View,Show event icons in Debugger Resource View,,debugger show event icons pref
 realtimedebugging,Enable real-time debugging,Enable real-time debugging,,Enable real-time debugging label in Settings
+PrefDebugger_LayoutRestore,Debugger window layout,Debugger window layout,,debugger window layout pref title
+PrefDebugger_LayoutUseCurrent,Open Debugger on current window,Open Debugger on current window,,debugger layout option open on current window
+PrefDebugger_LayoutRestoreDesktops,Restore Debugger child windows,Restore Debugger child windows,,debugger layout option restore windows
 syntaxcheckingdelay,Syntax Checking delay (ms),Syntax Checking delay (ms),,Syntax Checking delay (ms) setting label
 codecompletiondelay,Code Completion delay (ms),Code Completion delay (ms),,Code Completion delay (ms) setting label
 ggs_draw_colour,Default draw colour,Default draw colour,,the option for the default draw colour
@@ -6893,6 +6911,7 @@ Linux,Ubuntu,Ubuntu,DO NOT TRANSLATE,Ubuntu preference group subheading
 WebAssembly,WASM,WASM,DO NOT TRANSLATE,WASM preference group subheading
 Wasm,WASM,WASM,DO NOT TRANSLATE,WASM preference group subheading
 Opera GX,GX.games,GX.games,DO NOT TRANSLATE,Opera GX preference group subheading
+Reddit,Reddit,Reddit,DO NOT TRANSLATE,Reddit preference group subheading
 Xbox Live,Xbox Live,Xbox Live,DO NOT TRANSLATE,Xbox Live options group subheading
 Dialogue Editor,Dialog Editor,Dialog Editor,,Dialog Editor preference group subheading
 Options,Options,Options,,Options preference group subheading
@@ -7246,7 +7265,6 @@ FileFilter_XboxOneDevPackage,Xbox One Developer Package,Xbox One Developer Packa
 FileFilter_XboxSeriesDevPackage,Xbox Series X/S Developer Package,Xbox Series X/S Developer Package,,
 FileFilter_XboxOneSubmissionPackage,Xbox One Submission Package,Xbox One Submission Package,,
 FileFilter_XboxSeriesSubmissionPackage,Xbox Series X/S Submission Package,Xbox Series X/S Submission Package,,
-FileFilter_RemapsFile,Remaps File,Remaps File,,
 XboxDeploySubmissionPackageError_Title,Error,Error,,
 XboxDeploySubmissionPackageError_Message,Submission packages cannot be launched on an Xbox development kit,Submission packages cannot be launched on an Xbox development kit,,
 tvOS,tvOS,tvOS,,tvOS label for game options
@@ -9492,6 +9510,7 @@ RedefineKeys_ColourPickerSubtool,Colour Picker subtool,Colour Picker subtool,,co
 RedefineKeys_BrushScalerSubtool,Brush Scaler subtool,Brush Scaler subtool,,brush scaler
 RedefineKeys_brush_from_selection,Make Brush from Selection,Make Brush from Selection,,image editor make brush from selection
 RedefineKeys_ToggleOverwriteMode,Toggle Overwrite Mode,Toggle Overwrite Mode,,Toggle overwrite mode
+RedefineKeys_AcceptCodeCompletionItem,Accept Code Completion Item,Accept Code Completion Item,,Accept Code Completion Item
 RedefineKeys_OpenPackageManagerUI,Open Package Manager,Open Package Manager,,Open Package Manager hotkey
 GMPM_FileHelp,The contents of the 'package.json' file which contains the packages to fetch.,The contents of the 'package.json' file which contains the packages to fetch.,,Label for GMPM Package File field
 GMPM_InstallDir,The root directory where the packages will be installed into.,The root directory where the packages will be installed into.,,Label for GMPM Package Install Directory field
@@ -10087,3 +10106,4 @@ Project_Slim,Slimmed,Slimmed,,Create a Slimmed Project
 PackageMan_EnableAutomaticUpdates,Enable automatic updates,Enable automatic updates,,
 PackageMan_DisableAutomaticUpdates,Disable automatic updates,Disable automatic updates,,
 PackageMan_PromptRestart,This package requires an IDE restart to take effect. Would you like to restart now?,This package requires an IDE restart to take effect. Would you like to restart now?,,
+RedefineKeys_SoftConflictWarning,The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?,The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?,,

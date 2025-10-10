@@ -19831,6 +19831,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Accept Code Completion Item</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072219Z" creationid="hxyyg" creationdate="20251010T072219Z">
+        <seg>接受代码补全项</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Accept Spine licence</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20180922T051323Z" creationid="deciia" creationdate="20180922T051323Z">
@@ -22490,6 +22498,14 @@ Add-ons应该怎么翻译？</note>
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20180925T200201Z" creationid="deciia" creationdate="20170105T081956Z">
         <seg>始终安全安装 APK</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Always show Parameter Tooltip when Text Cursor is inside a function call's arguments</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072135Z" creationid="hxyyg" creationdate="20251010T072135Z">
+        <seg>始终在文本光标位于函数调用的参数内时显示参数工具提示。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35152,6 +35168,14 @@ Add-ons应该怎么翻译？</note>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Debugger window layout</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072205Z" creationid="hxyyg" creationdate="20251010T072205Z">
+        <seg>调试器窗口布局</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Debugging</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="LiarOnce" changedate="20220528T234817Z" creationid="deciia" creationdate="20170314T162723Z">
@@ -37109,6 +37133,22 @@ Add-ons应该怎么翻译？</note>
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20170105T070326Z" creationid="deciia" creationdate="20170105T070326Z">
         <seg>设备：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Devvit Project Id</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072015Z" creationid="hxyyg" creationdate="20251010T072015Z">
+        <seg>Devvit 项目 ID</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Devvit Project Path</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072020Z" creationid="hxyyg" creationdate="20251010T072020Z">
+        <seg>Devvit 项目路径</seg>
       </tuv>
     </tu>
     <tu>
@@ -57475,6 +57515,14 @@ Genre，类型，种类; 体裁，样式; 风俗画。它是指艺术创作中�
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Inspect</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072202Z" creationid="hxyyg" creationdate="20251010T072202Z">
+        <seg>检查器</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Inspect Object</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T003553Z" creationid="hxyyg" creationdate="20250907T003553Z">
@@ -58249,6 +58297,22 @@ Genre，类型，种类; 体裁，样式; 风俗画。它是指艺术创作中�
       </tuv>
       <tuv lang="zh-CN" changeid="liaronce" changedate="20200820T140122Z" creationid="liaronce" creationdate="20200820T140122Z">
         <seg>无形</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Invoke Code Completion List in contextually appropriate locations after Spacebar</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072112Z" creationid="hxyyg" creationdate="20251010T072112Z">
+        <seg>在情境上适当的位置调用代码补全列表，并在按下空格键后执行。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Invoke Code Completion List when typing function call arguments</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072118Z" creationid="hxyyg" creationdate="20251010T072118Z">
+        <seg>在键入函数调用参数时，调用代码补全列表。</seg>
       </tuv>
     </tu>
     <tu>
@@ -65590,6 +65654,14 @@ Genre，类型，种类; 体裁，样式; 风俗画。它是指艺术创作中�
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Open Debugger on current window</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072209Z" creationid="hxyyg" creationdate="20251010T072209Z">
+        <seg>在当前窗口打开调试器</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Open Device Editor</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20170105T070551Z" creationid="deciia" creationdate="20170105T070551Z">
@@ -65863,6 +65935,14 @@ The Tile Set Editor 有相关说明，选中了就会假定房间外面布满了
       </tuv>
       <tuv lang="zh-CN" changeid="LiarOnce" changedate="20220527T150757Z" creationid="LiarOnce" creationdate="20220527T150757Z">
         <seg>打开物理窗口</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Open Prefab</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T071955Z" creationid="hxyyg" creationdate="20251010T071955Z">
+        <seg>打开预制件</seg>
       </tuv>
     </tu>
     <tu>
@@ -67319,6 +67399,14 @@ The Tile Set Editor 有相关说明，选中了就会假定房间外面布满了
       </tuv>
       <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T165020Z" creationid="hxyyg" creationdate="20250907T165020Z">
         <seg>打包为 Arm64 ZIP 压缩包</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Package as Zip for manual uploading</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072138Z" creationid="hxyyg" creationdate="20251010T072138Z">
+        <seg>打包为 ZIP 文件，以便手动上传</seg>
       </tuv>
     </tu>
     <tu>
@@ -72156,6 +72244,14 @@ Provisioning 就是维护和预置,或者称之为设置的过程。(野小喵 �
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Reddit</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T071943Z" creationid="hxyyg" creationdate="20251010T071943Z">
+        <seg>Reddit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Redefine Keys</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="36011" changedate="20170317T142058Z" creationid="36011" creationdate="20170317T142058Z">
@@ -74170,6 +74266,14 @@ Provisioning 就是维护和预置,或者称之为设置的过程。(野小喵 �
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20180922T031934Z" creationid="deciia" creationdate="20180922T031934Z">
         <seg>恢复</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Restore Debugger child windows</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072214Z" creationid="hxyyg" creationdate="20251010T072214Z">
+        <seg>恢复调试器子窗口</seg>
       </tuv>
     </tu>
     <tu>
@@ -88317,6 +88421,14 @@ dll情境后面，调知中心前面，根据参考信息“Choose to submit all
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T071935Z" creationid="hxyyg" creationdate="20251010T071935Z">
+        <seg>快捷键 {0} 已绑定到 {1}。这可能会导致在这些位置 {2} 无法正常工作。您确定要继续吗？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The image '{0}' cannot be loaded.</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="liaronce" changedate="20200820T143328Z" creationid="liaronce" creationdate="20200820T143328Z">
@@ -97558,6 +97670,14 @@ dll情境后面，调知中心前面，根据参考信息“Choose to submit all
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Zip</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072147Z" creationid="hxyyg" creationdate="20251010T072143Z">
+        <seg>Zip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Zip File</seg>
       </tuv>
       <tuv lang="zh-CN" changeid="hxyyg" changedate="20250907T165052Z" creationid="hxyyg" creationdate="20250907T165052Z">
@@ -97810,6 +97930,14 @@ dll情境后面，调知中心前面，根据参考信息“Choose to submit all
       </tuv>
       <tuv lang="zh-CN" changeid="deciia" changedate="20170104T042535Z" creationid="deciia" creationdate="20170104T042535Z">
         <seg>\n现在是 v{0}\n新版本是 {1}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>\n\nCode Completion</seg>
+      </tuv>
+      <tuv lang="zh-CN" changeid="hxyyg" changedate="20251010T072057Z" creationid="hxyyg" creationdate="20251010T072057Z">
+        <seg>\n\n代码补全</seg>
       </tuv>
     </tu>
     <tu>

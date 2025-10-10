@@ -3,6 +3,7 @@ credentials.properties
 *~
 /omegat/*.bak
 /omegat/project_stat*txt
+/target/*
 /.vscode/*
 /_index/*
 /omegat/last_entry.properties

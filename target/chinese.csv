@@ -635,6 +635,7 @@ Inspector_Category_Textures,Textures,纹理,,textures category
 Inspector_PrefabArg,Prefab: {0},预制件: {0},,prefab [name] label
 Inspector_Prefab,Prefab,预制件,,prefab
 Inspector_OpenPrefabCollection,Open Collection,打开收藏,,open prefab collection
+Inspector_OpenPrefab,Open Prefab,打开预制件,,open / navigate to prefab
 Inspector_Precision,Precision,精度,,precision label
 Inspector_ClipHiddenGeometry,Clip Hidden Geometry,裁剪隐藏几何？,,Clip Hidden Geometry button label
 PSys_DrawOrder,Draw Order,绘图顺序,,particle system draw order
@@ -1188,10 +1189,12 @@ IncludedFilesPlatform_TV_OS,tvOS,tvOS,DO NOT TRANSLATE,included files platform l
 IncludedFilesPlatform_AmazonFire,Amazon Fire,Amazon Fire,DO NOT TRANSLATE,Amazon Fire platform list entry
 IncludedFilesPlatform_WASM,WASM,WASM,DO NOT TRANSLATE,WASM platform list entry
 IncludedFilesPlatform_OPERAGX,GX.games,GX.games,DO NOT TRANSLATE,Opera GX platform list entry
+IncludedFilesPlatform_Reddit,Reddit,Reddit,DO NOT TRANSLATE,Reddit platform list entry
 IncludedFile_Refresh,Refresh Included Files,刷新包含的文件,,Refresh Included Files list from disk
 wasm,WASM,WASM,DO NOT TRANSLATE,WASM Platform settings entry
 operagx,GX.games,GX.games,DO NOT TRANSLATE,Opera GX Platform settings entry
 OperaGX,GX.games,GX.games,DO NOT TRANSLATE,Opera GX Platform settings entry
+reddit,Reddit,Reddit,DO NOT TRANSLATE,Reddit Platform settings entry
 InstanceProperties_CreationCode,Creation Code,初始化代码,,instance properties button caption for opening the creation code
 InstanceProperties_EditObject,Edit Object,编辑物体,,instance properties button caption for opening the object for edit
 InstanceProperties_FlipX,Flip X,翻转 X,,instance properties checkbox label for flip x
@@ -3284,6 +3287,8 @@ ggs_gxc_mod_guid,Select Mod,选择模块,,A caption for the mod selection dropdo
 ggs_team_name,Team Name,团队名称,,Team Name
 ggs_internal_share_url,Internal Share URL,内部共享 URL,,Internal Share URL
 ggs_public_share_url,Public Share URL,公共共享 URL,,Public Share URL
+reddit_devvit_project_id,Devvit Project Id,Devvit 项目 ID,,Devvit Project Id
+reddit_devvit_project_path,Devvit Project Path,Devvit 项目路径,,Devvit Project Path
 ImagePath_ImageError,Error Selecting Image,选择图像出错,,Error when using image_path gadget to select an image
 ImagePath_NotExpectedDimensions,The image is expected to be of {0}x{1} but received {2}x{3},图像应为{0} x {1}，但收到{2} x {3},,Image wrong size with 0x1 being expected size and 2x3 being the image size
 ImagePath_NotExpectedAlpha,The image is expected to have an alpha channel (i.e. be 32-bit),图像预计有一个alpha通道（即32位）,,The image needs to have an alpha channel but the selected one does not
@@ -3898,7 +3903,10 @@ codeeditor_debuggermakesdocumentsreadonly,Lock Documents when Debugger is Active
 codeeditor_autotrimwhitespaceonbackspace,Trim leading whitespace on backspace,在删除时去除开头的空白字符,,Trim leading whitespace on backspace
 codeeditor_autoinsertseparatingwhitespace,Insert separating whitespace when joining lines,连接行时插入分隔空格,,Insert separating whitespace when joining lines
 codeeditor_usestrictselectioncommenting,Prefer strict commenting of selected text over commenting selected lines,优先对选定的文本进行严格注释，而不是对选定的行进行注释,,Prefer strict commenting of selected text over commenting selected lines
-codeeditor_disableeagercodecompletioninvocation,Disable Space Bar with Code Completion,禁用空格键代码补全,,Disable Space Bar with Code Completion
+TextEditor_Options_Label_CodeCompletion,\n\nCode Completion,\n\n代码补全,,Code Completion
+codeeditor_enableeagercodecompletioninvocationonwhitespace,Invoke Code Completion List in contextually appropriate locations after Spacebar,在情境上适当的位置调用代码补全列表，并在按下空格键后执行。,,Invoke Code Completion List in contextually appropriate locations after Spacebar
+codeeditor_enableeagercodecompletioninvocationonbrace,Invoke Code Completion List when typing function call arguments,在键入函数调用参数时，调用代码补全列表。,,Invoke Code Completion List when typing function call arguments
+codeeditor_enableeagerparametertooltipwhentextcursorinarguments,Always show Parameter Tooltip when Text Cursor is inside a function call's arguments,始终在文本光标位于函数调用的参数内时显示参数工具提示。,,Always show Parameter Tooltip when Text Cursor is inside a function call's arguments
 dialogeditor_textcolours,Text colours and style,文字颜色和样式,,Text colours and style in Dialog Editor
 dialogeditor_options,Options,选项,,Options in Dialog Editor
 sourcecontrolgit_username,Commit username,提交的用户名,,Username to commit as for source control git
@@ -3984,6 +3992,7 @@ TargetSelection_Platform_ps5,PlayStation 5,PlayStation 5,,the ps5 platform title
 TargetSelection_Platform_xboxseriesxs,Xbox One & Series X/S,Xbox One & Series X/S,DO NOT TRANSLATE,the Xbox One & Series X/S platform title in the platform selection list
 TargetSelection_Platform_wasm,WASM,WASM,DO NOT TRANSLATE,the WASM platform title in the platform selection list
 TargetSelection_Platform_operagx,GX.games,GX.games,DO NOT TRANSLATE,the opera gx platform title in the platform selection list
+TargetSelection_Platform_reddit,Reddit,Reddit,DO NOT TRANSLATE,the reddit/devvit platform title in the platform selection list
 TargetSelection_Runtime_VM,GMS2 VM,GMS2 VM,DO NOT TRANSLATE, the VM (Virtual Machine) title in the runtime selection list
 TargetSelection_Runtime_YYC,GMS2 YYC,GMS2 YYC,DO NOT TRANSLATE, the yyc title in the runtime selection list
 TargetSelection_Runtime_Javascript,JavaScript,JavaScript,DO NOT TRANSLATE, the javascript title in the runtime selection list
@@ -4331,7 +4340,9 @@ gx_package_upload_game,Upload as Game,作为游戏上传,,gx upload as game
 gx_package_upload_wallpaper,Upload as Live Wallpaper Mod,作为实时壁纸模组上传,,gx upload as wallpaper
 gx_package_upload_gamestrip,Upload as Game Strip Mod,上载为游戏条带模组,,gx upload as game strip
 gx_package_zip,Save locally as a zip,保存为zip文件到本地,,gx save locally as a zip
+reddit_package_zip,Package as Zip for manual uploading,打包为 ZIP 文件，以便手动上传,,reddit save locally as a zip
 operagx_package_default_type,Default packaging type,默认程序包类型,,opera gx Default Packaging Type
+reddit_package_default_type,Default packaging type,默认程序包类型,,opera gx Default Packaging Type
 mac_package_nsis,Package as DMG,打包为DMG,,Package as DMG
 mac_package_zip,Package as Zip,打包为Zip,,Package as Zip
 mac_package_remember,Remember Packaging Option?,记住打包选项？,,Remember Packaging Option?
@@ -4359,6 +4370,9 @@ ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Game,Game,游戏,,gx package cho
 ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Wallpaper,Live Wallpaper,实时壁纸,,gx package choice wallpaper
 ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Gamestrip,Game Strip,游戏条带,,gx package choice game strip
 ListBoxEnum_OperaGXPackageChoice_OperaGXPackage_Zip,Zip File,Zip文件,,gx package choice zip
+ListBoxEnum_RedditPackageChoice_RedditPackage_Game,Game,游戏,,reddit package choice game
+ListBoxEnum_RedditPackageChoice_RedditPackage_Zip,Zip,Zip,,reddit package choice zip
+ListBoxEnum_RedditPackageChoice_RedditPackage_Show,Show Dialog,显示对话框,,Show Dialog
 ListBoxEnum_MacPackageChoice_MacPackage_Dmg,Create DMG Installer,创建DMG安装程序,,Create DMG Installer
 ListBoxEnum_MacPackageChoice_MacPackage_Zip,Create Zip Archive,创建 Zip 文档,,Create Zip Archive
 ListBoxEnum_MacPackageChoice_MacPackage_Show,Show Dialog,显示对话框,,Show Dialog
@@ -6024,6 +6038,7 @@ Validate_NameLength,Resource name must be between {2} and {1} characters long,�
 Validate_InvalidFolderName,Folder name contains invalid characters: {0},文件夹名称包含无效字符：{0},,validation error message for folder names
 GMLVisual_ResourceSelection_DropLabel,Drop here to assign asset,拖拽到此处以分配资源,,GML Visual Resource Input label
 TextureGroups_OpenResource,Open,打开,,Open Resource
+TextureGroups_InspectResource,Inspect,检查器,,Inspect Resource
 RemoteWorker_WindowTitle,Settings for {0},{0}的设置,,Remote worker window title
 RemoteWorker_PlatformNotSupportedTitle,Remote Worker - Platform Not Supported,远程工作者（Worker） - 平台不受支持,,Platform is not supported on this remote worker title
 RemoteWorker_ErrorTitle,Remote Worker Error,远程工作者错误,,Remote worker error
@@ -6478,6 +6493,9 @@ StartPage_Offline,This link cannot be opened as you are currently offline.,你�
 debuggerporttouse,Debugger port,调试器端口,,Port for Debugger to use label in Settings
 debuggershoweventicons,Show event icons in Debugger Resource View,在调试器资源视图中显示事件图标,,debugger show event icons pref
 realtimedebugging,Enable real-time debugging,应用实时调试,,Enable real-time debugging label in Settings
+PrefDebugger_LayoutRestore,Debugger window layout,调试器窗口布局,,debugger window layout pref title
+PrefDebugger_LayoutUseCurrent,Open Debugger on current window,在当前窗口打开调试器,,debugger layout option open on current window
+PrefDebugger_LayoutRestoreDesktops,Restore Debugger child windows,恢复调试器子窗口,,debugger layout option restore windows
 syntaxcheckingdelay,Syntax Checking delay (ms),语法检查延迟 （毫秒）,,Syntax Checking delay (ms) setting label
 codecompletiondelay,Code Completion delay (ms),代码补全延迟 （毫秒）,,Code Completion delay (ms) setting label
 ggs_draw_colour,Default draw colour,默认绘制颜色,,the option for the default draw colour
@@ -6893,6 +6911,7 @@ Linux,Ubuntu,Ubuntu,DO NOT TRANSLATE,Ubuntu preference group subheading
 WebAssembly,WASM,WASM,DO NOT TRANSLATE,WASM preference group subheading
 Wasm,WASM,WASM,DO NOT TRANSLATE,WASM preference group subheading
 Opera GX,GX.games,GX.games,DO NOT TRANSLATE,Opera GX preference group subheading
+Reddit,Reddit,Reddit,DO NOT TRANSLATE,Reddit preference group subheading
 Xbox Live,Xbox Live,Xbox Live,DO NOT TRANSLATE,Xbox Live options group subheading
 Dialogue Editor,Dialog Editor,对话框编辑器,,Dialog Editor preference group subheading
 Options,Options,选项,,Options preference group subheading
@@ -7246,7 +7265,6 @@ FileFilter_XboxOneDevPackage,Xbox One Developer Package,Xbox One 开发人员包
 FileFilter_XboxSeriesDevPackage,Xbox Series X/S Developer Package,Xbox Series X/S 开发人员包,null,null
 FileFilter_XboxOneSubmissionPackage,Xbox One Submission Package,Xbox One 提交包,null,null
 FileFilter_XboxSeriesSubmissionPackage,Xbox Series X/S Submission Package,Xbox Series X/S 提交包,null,null
-FileFilter_RemapsFile,Remaps File,重映射文件,null,null
 XboxDeploySubmissionPackageError_Title,Error,错误,null,null
 XboxDeploySubmissionPackageError_Message,Submission packages cannot be launched on an Xbox development kit,提交包不能在 Xbox 开发工具包上启动,null,null
 tvOS,tvOS,tvOS,,tvOS label for game options
@@ -9492,6 +9510,7 @@ RedefineKeys_ColourPickerSubtool,Colour Picker subtool,颜色选择子工具,,co
 RedefineKeys_BrushScalerSubtool,Brush Scaler subtool,笔刷缩放子工具,,brush scaler
 RedefineKeys_brush_from_selection,Make Brush from Selection,从所选内容创建画笔,,image editor make brush from selection
 RedefineKeys_ToggleOverwriteMode,Toggle Overwrite Mode,切换覆盖模式,,Toggle overwrite mode
+RedefineKeys_AcceptCodeCompletionItem,Accept Code Completion Item,接受代码补全项,,Accept Code Completion Item
 RedefineKeys_OpenPackageManagerUI,Open Package Manager,打开包管理器,,Open Package Manager hotkey
 GMPM_FileHelp,The contents of the 'package.json' file which contains the packages to fetch.,'package.json' 的内容，其中包含要获取的包。,,Label for GMPM Package File field
 GMPM_InstallDir,The root directory where the packages will be installed into.,程序包将安装到的根目录。,,Label for GMPM Package Install Directory field
@@ -10087,3 +10106,4 @@ Project_Slim,Slimmed,精简,,Create a Slimmed Project
 PackageMan_EnableAutomaticUpdates,Enable automatic updates,启用自动更新,null,null
 PackageMan_DisableAutomaticUpdates,Disable automatic updates,禁用自动更新,null,null
 PackageMan_PromptRestart,This package requires an IDE restart to take effect. Would you like to restart now?,此包需要 IDE 重启才能生效。您现在要重启吗？,null,null
+RedefineKeys_SoftConflictWarning,The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?,快捷键 {0} 已绑定到 {1}。这可能会导致在这些位置 {2} 无法正常工作。您确定要继续吗？,null,null
