@@ -514,6 +514,8 @@ Inspector_ObjectPanel_Disallowed,This object does not support bulk editing,此�
 Inspector_EventList_Error,An error occurred while getting this value,获取此值时发生错误,,Error getting event list value
 Inspector_EventList_CannotCoalesce,Events do not support bulk editing,事件不支持批量编辑,,Event list bulk editing error
 Inspector_EventList_AddElementTooltip,Add event,添加事件,,Tooltip to add a new event
+Inspector_ReadOnly,(Read only),(只读),,read only
+Inspector_PreviewCode,Preview Code,预览代码,,preview code
 Inspector_UndoError,An error occurred while attempting to undo a change.,尝试撤消更改时发生错误。,,Undo error message
 Inspector_RedoError,An error occurred while attempting to redo a change.,尝试重做更改时发生错误。,,Redo error message
 Inspector_CreateNewAssetType,New {0},新建 {0},,new (asset type name)
@@ -582,6 +584,7 @@ Inspector_Category_RoomVis,Room Visibility,房间可见性,,uilayer room visibil
 Inspector_OpenEditor,Open Editor,打开编辑器,,open editor
 Inspector_OpenInspector,Open Inspector,打开检查器,,open inspector
 Inspector_ObjNoEvents,This Object currently has no Events.\nAdd Events here or via the editor,此物体当前没有事件。\n在此处或通过编辑器添加事件,,no object events inspector label
+Inspector_ObjNoEvents_ReadOnly,This Object has no Events,这个物体没有事件。,,no object events (read-only object)
 Inspector_OpenEditors,Open Editors,打开编辑器,,open multiple editors
 Inspector_Category_Properties,Properties,属性,,inspector category
 Inspector_Category_GMRInstance_SpriteOverride,Sprite Override,精灵覆盖,,Sprite Override inspector category
@@ -1513,6 +1516,10 @@ ObjectEditor_EventReplaceTitle,Replace existing event?,替换现有事件？,,ev
 ObjectEditor_EventReplaceLabel,Replace,替换,,replace button label
 ObjectEditor_EventNewLabel,New Event,新事件,,new event button label
 InstanceEditor_Prop_OverrideTooltip,Override this variable,覆盖此变量,,Override variable tooltip
+ObjVar_VariableLabelArg,Variable Label: {0},变量标签：{0},,object variable label
+ObjVar_LabelName,Label Name,标签名称,,object variable label name
+ObjVar_Description,Description,描述,,description
+ObjectVar_DescDetail,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,可选的变量描述。\n描述和标签名称将出现在“label”图标的悬停提示中。,,objvar description detail
 OutputPanel_Output,Output,输出,,Output panel output tab name
 OutputPanel_SearchResults,Search Results,搜索结果,,Output panel search results tab name
 OutputPanel_SourceControl,Source Control,源码控制,,Output panel source control tab name
@@ -2810,6 +2817,7 @@ TextEditor_CloseMarkdownPreview,Close Markdown Preview,关闭 Markdown 预览,,C
 TextEditor_Search_RegexError,{0},{0},,{0}
 TextEditor_IrreverableConversion,You will not be able to convert the format back after this conversion,在此转换后，您将无法再将格式还原,,You will not be able to convert the format back after this conversion
 TextEditor_WarningBanner_UnknownScriptFormat,Unknown script format. This may cause issues when building. Please install a valid language package for this format,未知脚本格式。这可能导致构建时出现问题。请为此格式安装有效的语言包。,,Unknown script format. This may cause issues when building. Please install a valid language package for this format
+TextEditor_WarningBanner_ReadOnlyPrefabView,This text document is read only,此文本文件为只读。,,This text document is read only
 TextureGroups_ActiveGroup,Current Group:,当前组：,,Texture group current group
 TextureGroups_AddNew,Add New,新增,,Texture group add new button
 TextureGroups_AllowScaling,Allow Scaling,允许缩放,,Texture group allow scaling checkbox
@@ -2953,6 +2961,7 @@ User_Login_Title,GameMaker Legacy Sign In,GameMaker 旧版登录,,User Sign In d
 UserLogin_Email,Email/Username,电子邮箱/用户名,,User Login dialog - e-mail label
 UserLogin_Message,Sign in to GameMaker legacy account,登录到 GameMaker 旧版帐户,,Legacy sign in dialog message
 UserLogin_MessageSSO,Sign in to GameMaker with your Opera account,使用您的 Opera 帐户登录到 GameMaker,,SSO sign in dialog message
+UserLogin_MessageGMAUTH,Sign in to GameMaker with your Opera account or licence details,使用您的Opera账户或授权信息登录GameMaker。,,SSO sign in dialog message
 UserLogin_Password,Password,密码,,User Login dialog - password label
 UserLogin_RememberMe,Remember Me,记住我,,User Login dialog - Remember Me checkbox
 User_ProxySettings,Proxy settings,代理设置,,Proxy setting tool-tip
@@ -2989,6 +2998,7 @@ UserLogin_OperaAccount,Opera Account,Opera 账号,,opera account
 UserLogin_OperaLoginInfo,Sign in to GameMaker with your Opera account.,使用您的 Opera 帐户登录到 GameMaker。,,opera login info text
 UserLogin_LinkAccountsAt,Link your accounts at,将您的帐户链接到,,link accounts info label
 UserLogin_OperaSSO,Sign In/Register,登录/注册,,single sign in button label
+UserLogin_GMAuth,GMAuth Sign In,GMAuth 登录,,single sign in with gmauth button label
 UserLogin_LegacyMessage,Legacy account?,旧版帐户？,,Legacy account sign in label
 UserLogin_LegacyPrompt,Sign in here,在此处登录,,Legacy account sign in clickable label
 UserLogin_ForgottenPassword,Forgotten password?,忘记密码？,,login forgotten password label
@@ -4038,10 +4048,11 @@ SaveProjectAs_PermissionsGuideLink,Permissions Guide,权限指南,,link label to
 SaveProjectAs_DeleteExisting,Are you sure you want to delete all files in '{0}'?,你确定要删除 '{0}' 里的所有文件吗？,,Confirmation for deleting an existing project and related files
 MyProjects_SyncFolderWarning,"Your GameMaker project location is managed by an external cloud storage application, which could cause problems when saving and building projects.\n\nTo fix this, we strongly recommend changing your Preferences and moving your projects. For more info, please see our permissions guide.\n\nWould you like to change your path for new projects now?","您的 GameMaker 项目位置由外部云存储应用程序管理，这可能会在保存和构建项目时导致问题。\n\n为修复此问题，我们强烈建议更改您的首选项并移动您的项目。有关更多信息，请参阅我们的权限指南。\n\n您想现在改变新项目的路径吗？",,Warning message if user has MyProjects in sync folder on startup
 MyProjects_SyncFolderSaveWarning,"This project is saved in a location which is managed by an external cloud storage application. We strongly recommend you change your Preferences and you move your existing projects.\n\nIf you want to know more, please see our permissions guide.","该项目保存在由外部云存储应用程序管理的位置。我们强烈建议您更改首选项并移动现有项目。\n\n如果您想了解更多信息，请参阅我们的权限指南。",,Warning message if user has project stored in ssync folder on project load or save
-SplashScreen_PluginLoadFailed,Failed to load a required plug-in.  Please try restarting GameMaker.  If the problem persists please reinstall GameMaker.,无法加载所需的插件。请尝试重新启动 GameMaker。如果问题仍然存在，请重新安装 GameMaker。,,Error message when you fail to load a required plugin dll
-SplashScreen_PluginLoadFailedTitle,Failed to load a required plug-in,无法加载所需插件。,,Title for error message when you fail to load a required plugin dll
-SplashScreen_UserPluginLoadFailed,A failure occurred while loading user plugins. Consult your ui.log for more details,加载用户插件时发生错误。请查看您的 ui.log 以获取更多详细信息,,Failed loading user plugin
-SplashScreen_UserPluginLoadFailedTitle,Failed loading a user plugin,加载用户插件失败,,Failed loading a user plugin
+SplashScreen_PluginLoadFailedTitle,Error loading plugins,加载插件时出错,null,null
+SplashScreen_PluginVerySafeLoadFailed,Failed to load the minimum set of plugins required to open the bug reporter. See your ui.log for more details. If issues persist try re-installing GameMaker,未能加载打开 Bug 报告所需的最小插件集合。请参阅您的 ui.log 获取更多详细信息。如果问题仍然存在，请尝试重新安装 GameMaker。,null,null
+SplashScreen_PluginSafeLoadFailed,Failed to load the set of plugins included with the IDE. See your ui.log for more details. The IDE will now try relaunching to open the bug reporter,未能加载与 IDE 捆绑的插件集合。请参阅您的 ui.log 获取更多详细信息。IDE 将尝试重新启动以打开 Bug 报告器。,null,null
+SplashScreen_PluginLoadFailedRestart,Failed to load your specified plugin set. See your ui.log for more details. The IDE will now try relaunching to open a safe list of plugins,未能加载您指定的插件集。 详情请参阅 ui.log。IDE 将尝试重新启动以打开安全的插件列表。,null,null
+SplashScreen_PluginLoadFailedFallback,Failed to load your specified plugin set. See your ui.log for more details. The IDE has loaded a safe set of plugins,未能加载您指定的插件集。请参阅 ui.log 获取更多详细信息。IDE 已加载一个安全插件集。,null,null
 SplashScreen_LaunchProjectNotFound,Project '{0}' does not exist,项目 '{0}' 不存在,,Message dialog when the program was launched with a file command argument but the file was not found
 SplashScreen_LaunchProjectInvalid,'{0}' is not a valid GameMaker project,‘{0}’ 不是有效的 GameMaker 项目,,Message dialog when the program was launched with a file command argument of a non .yyp file
 SplashScreen_LaunchProjectFailed,Launch Project Failed,启动项目失败,,Message dialog title when the program was launched with a file command argument but it has failed
@@ -4098,6 +4109,9 @@ Project_ProjFileChanged_Title,Project Modified,项目已修改,,message box titl
 Project_Deleted_Title,Project Deleted,项目已删除,,message box title when a project has been deleted
 Project_Deleted_Message,The project file '{0}' was deleted. Your project will now be closed.,项目文件 '{0}' 已经删除。你的项目现在将被关闭。,,Error message telling the user the project has been deleted
 Project_Deleted_Success,The project '{0}' was deleted.,项目 '{0}' 被删除了。,,Success message telling the user the project has been deleted
+Prefab_Uninstalled_Title,Prefab Collection Uninstalled,预制件集已卸载,,message box title when a prefab collection has been uninstalled
+Prefab_Uninstalled_Success,'{0}' was uninstalled.,'{0}' 已卸载。,,Success message telling the user the prefab collection has been uninstalled
+Package_Is_Bundled_Error,'{0}' is bundled and cannot be uninstalled.,'{0}' 捆绑安装，无法卸载。,,Message telling the user that their package is bundled and cannot be uninstalled
 keystore_filename,Filename,文件名,,Keystore Filename
 keystore_password,Password,密码,,Keystore Password
 keystore_alias,Alias,别名,,Keystore Alais
@@ -4431,6 +4445,7 @@ platformdevice_type_simulator,Simulator,模拟器,,Simulator
 platformdevice_status_unknown,Unknown,未知,,Unknown
 platformdevice_status_shutdown,Shutdown,关机,,Shutdown
 platformdevice_status_not_connected,Not Connected,未连接,,Not Connected
+platformdevice_status_disconnected,Disconnected,断开连接,,Disconnected
 platformdevice_status_connected,Connected,已连接,,Connected
 platformdevice_launch_simulator,Launch Simulator,启动模拟器,,Launch Simulator
 platformdevice_connection_success,Connection to {0} Successful,连接 {0} 成功,,Connection Successful to hostname
@@ -4869,7 +4884,7 @@ GMLVisualToolbox_Menu_RemoveFav,Remove Favourite,删除最喜爱,,GML Visual Too
 GMLVisualToolbox_Menu_ClearRecentlyUsed,Clear Recently Used,清除最近使用,,GML Visual Toolbox clear recently used
 GMLVisualToolbox_Menu_ClearFavs,Clear Favourites,清除最喜爱,,GML Visual Toolbox clear favourites
 PrefabLibrary_Filter_UsedPrefabsOnly,Used Prefabs Only,仅使用预制件,,Used Prefabs Only filter name
-PrefabLibrary_Filter_OverriddenPrefabs,Overridden Prefabs Only,仅覆盖预制件,,Overridden Prefabs Only filter name
+PrefabLibrary_Filter_OverriddenPrefabs,Customised Prefabs Only,定制预制件仅限使用,,Customised Prefabs Only filter name
 PrefabLibrary_Filter_UsedPrefabCollections,Used Collections,使用收藏,,Used Prefabs Collections filter name
 SourceControlGit_FileLock,One or more files may be locked. Please check that none of the files are open in external programs. Do you want to try again?,一个或多个文件可能被锁定。请检查没有文件是通过外部程序打开的。你想要重试吗？,,Files potentially locked and need to try again
 SourceControlGit_Error,Source Control (Git) Error,源码控制 (Git) 错误,,Error with Source Control (Git)
@@ -6099,8 +6114,10 @@ Package_DragDrop_Message_IDE,Import asset package?,导入资源包？,,confirm m
 Package_DragDrop_Title,Asset Package Detected,检测到资源包,,dialog title
 Prefab_DragDrop_Message,Install Prefab Collection?,安装预制件集？,,confirm message
 Prefab_DragDrop_Title,Prefab Collection Detected,检测到预制件集,,dialog title
-Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0},此预制件集已安装。\n{0},,Message for trying to manually install an already installed prefab collection
+Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,此预制件集已安装。\n{0}\n是否要覆盖？,,Message for trying to manually install an already installed prefab collection and offering to overwrite it
 Prefab_Installed,This Prefab Collection has been successfully installed.\n{0},此预制件集已成功安装。\n{0},,Success message for manually installing a prefab collection
+Prefab_Referenced_Title,Prefab Collection Referenced,预制件集引用,,Title on referencing a Prefab Collection
+Prefab_Referenced,This Prefab Collection has been successfully referenced.\n{0},此预制件集已成功引用。\n{0},,Success message for referencing a prefab collection
 Prefab_Install_Title,Prefab Collection Installation,预制件集合安装,,Title on Installing a Prefab Collection
 Prefab_InstallError_Title,Prefab Collection Installation Error,预制件集安装错误,,Error title on Installing a Prefab Collection
 Dialog_CopyToClipboard,Copy to clipboard,复制到剪贴板,,Copy the dialog message to the clipboard
@@ -6832,6 +6849,8 @@ Proxy_Password,Password,密码,,proxy password label
 Proxy_Password_Tooltip,Proxy password,代理密码,,proxy password tooltip
 Proxy_Domain,Domain,域名,,proxy domain label
 Proxy_Domain_Tooltip,Proxy Domain. Usually left blank,代理域名通常留空,,proxy domain tooltip
+Proxy_Bypass,Bypass,旁路,,proxy bypass label
+Proxy_Bypass_Tooltip,Proxy Bypass List,代理绕过列表,,proxy bypass tooltip
 General Settings,General Settings,常规设置,,General Settings preference group heading
 Start Page,Start Page,起始页,,start screen preference group heading
 Drag and Drop,GML Visual,GML 可视化,,Drag and Drop preference group heading
@@ -6867,6 +6886,7 @@ Help,Help,帮助,,Help preference group subheading
 Input,Input,输入,,Input preference group subheading
 Output Windows,Output Windows,输出窗口,,Output Windows preference group subheading
 Paths,Paths,路径,,Paths preference group subheading
+Proxy Settings,Proxy Settings,代理设置,,Proxy Settings preference group subheading
 Animation Curves,Animation Curves,动画曲线,,Animation Curves preference group subheading
 Power Saving,Power Saving,电源管理,,Power Saving preference group subheading
 Recent Windows,Recent Windows,最近窗口,,Recent Windows preference group subheading
@@ -7221,6 +7241,8 @@ UserLogin_SteamError,Unable to sign in - failed to get a Steam session ticket,�
 UserLogin_ServerConnectionError,"Unable to sign in - server error, allowing offline","无法登录 - 服务器错误，允许离线使用",,server connection error
 UserLogin_SaveFailed,Failed to save licence file {0} - result {1}({2}),无法保存证书文件 {0} - 结果值 {1}({2}),,save failed error
 UserLogin_SaveFailedNoResult,Failed to save licence file {0} - no result,无法保存证书文件 {0} - 无结果,,save failed error
+UserLogin_GMAuthError,"Failed to sign in via the GameMaker authentication website. Please try again.",通过GameMaker身份验证网站登录失败。请重试。,,sign in fail for GMAuth
+UserLogin_GMAuthError_Title,Sign In Failed,登录失败！,,sign in fail for GMAuth title
 UserLogin_LicenceStatus,Status: {0},状态：{0},,licence status error
 UserLogin_RestartForCustomFeed,You have a new IDE update feed available. \nWould you like to restart and check for updates?,您有一个新的IDE更新源可用。\n是否要重新启动并检查更新？,,message when a user has a custom ide feed available
 SearchResult_Info,{0} at line {1}: \t{2},{0}位于第{1}行: \t{2},,search result information
@@ -8049,6 +8071,7 @@ AssetBrowser_ListView,List View,列表视图,,list view
 AssetBrowser_GridView,Grid View,网格视图,,grid view
 AssetBrowser_ShowTreeLocation,Show Tree Location,显示树位置,,show main tree location
 AssetBrowser_GameOptions,Game Options,游戏选项,,game options
+AssetBrowser_QAPrefabs,Prefabs,预制件,,prefabs quick access
 AssetBrowser_IncludedFiles,Included Files,内含文件,,included files
 AssetBrowser_TTSortFilter,Sort/Filter,排序/筛选,,sort filter button tooltip
 AssetBrowser_TTMenu,Menu,菜单,,menu button tooltip
@@ -8058,6 +8081,7 @@ AssetBrowser_SendToTop,Send To Top,发送到顶部,,arrange to top
 AssetBrowser_SendToBottom,Send To Bottom,发送到底部,,arrange to bottom
 AssetBrowser_UpOne,Up One,升一,,arrange up one
 AssetBrowser_DownOne,Down One,降一,,arrange down one
+AssetBrowser_Tooltip_CustomisationOf,Customisation of {0} in {1},在 {1} 中对 {0} 进行定制。,,tooltip for customised resource
 ListBoxEnum_eAssetListStyle_Grid,Grid,网格,null,null
 ListBoxEnum_eAssetListStyle_List,List,列表,null,null
 ListBoxEnum_eListStyle_Grid,Grid,网格,null,null
@@ -8299,7 +8323,7 @@ exception_default_story,Please enter a description of the problem here,请在这
 CrashReport_Title,Crash detected,检测到崩溃,,crash detected title
 CrashReport_Msg,Would you like to create a bug report to help diagnose this issue?,您想创建错误报告来帮助诊断此问题吗？,,crash report message
 CrashReport_Report,Report,报告,,do report
-CrashReport_DontReport,No thanks,不用了,,don't report
+CrashReport_DontReport,"No, thanks","不，谢谢。",,don't report
 Project_OldFormat_Title,Old Project Format,旧项目格式,,Old Project Format
 Project_OldFormat_Message,Project was created in an older IDE which may have format changes,项目是在较旧的 IDE 中创建的，该 IDE 的格式可能已更改,,Project was created in an older IDE which may have format changes
 ImportFromYY_Title,Importing Resources,正在导入资源,,Importing Resources Title
@@ -9494,6 +9518,11 @@ opera_env_switch_failed_message,Failed to switch to the custom OperaGX environme
 opera_env_sso_confirm,"You are using a custom environment for Opera GX settings. If you use Opera Single Sign-on, these settings will be overriden. Do you wish to proceed anyway?","您正在使用Opera GX设置的自定义环境。如果您使用Opera单点登录，这些设置将被覆盖。你想继续吗?",,Warning shown when a user tries to log-in via Opera SSO with a custom environment
 opera_env_current_env,Current environment: {0},当前环境:{0},,Label to indicate the current environment
 opera_env_prohibited_env,Your account does not have permissions to use the current Opera GX environment. Falling back on Prod. The IDE will be restared.,您的帐号没有权限使用当前的Opera GX环境。回到Prod。IDE将重新启动。,,This warning is shown when a user's account doesn't have permissions to use some environments (e.g. Prod) but this environment was saved in the preferences before
+opera_env_invalid_message,Unable to set the chosen environment -\n{0}\nThe default Production environment will be used instead.,无法设置所选环境 - \n{0}\n将使用默认的生产环境代替。,,gx env invalid message
+opera_env_missing_file,Environment file was not found.,未找到环境文件。,,config file missing
+opera_env_invalid_json,Failed to parse the environment file.,解析环境变量文件失败。,,config invalid json
+opera_env_invalid_sig,The environment file signature is invalid.,环境文件签名无效。,,config invalid sig
+opera_env_missing_env,The environment file is missing the required fields.,环境文件缺少必需的字段。,,config missing env
 RedefineKeys_Open Included Files,Open Included files,打开包含文件,,Open Included files
 RedefineKeys__AutoTileTool,Auto Tile tool,自动Tile工具,,Auto Tile tool
 RedefineKeys__TileEraserTool,Tile Eraser tool,Tile 橡皮擦工具,,Tile Eraser tool
@@ -9731,7 +9760,7 @@ Notification_PackageManager,Package Manager,包管理器,,notification category
 Notification_PackageUpdateAvailable,An update is available for {0},{0} 有更新可用,,notification message
 BugReport_WindowTitle,Report a bug,报告Bug,,bug report window title
 BugReport_WindowTitle_Crash,Report a crash bug,报告崩溃错误,,bug report (crash) window title
-BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://help.gamemaker.io/hc/en-us/articles/13150754375453"">How to submit a Bug Report</a>.","感谢您提交问题。在发送此报告之前，请参阅<a href=""https://help.gamemaker.io/hc/en-us/articles/13150754375453"">如何提交Bug报告</a>。",,bug report dialog
+BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.","感谢您提交问题。在发送此报告之前，请参阅<a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">如何提交Bug报告</a>。",,bug report dialog
 BugReport_KnownIssues,"Please check the <a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues</a> before submitting to make sure that it has not already been reported.","请在提交之前检查 <a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">已知问题</a> 以确保尚未报告该问题。",,bug report known issues
 BugReport_SecurityIssues,"If you believe you have found a security vulnerability, please report the issue <a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">here</a>","如果您认为您发现了一个安全漏洞，请在此处报告此问题<a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">这里</a>。",,bug report security issues
 BugReport_AuthGithub,"You can authorise your GitHub account to post issues on the <a href=""{0}"">Accounts page</a>","您可以授权您的 GitHub 帐户在<a href=""{0}"">帐户页面</a>上发布问题",,bug report github auth
@@ -9775,6 +9804,8 @@ BugRep_ReqProj_Message,"Would you like to include the current project in your bu
 BugRep_ReqProj_TT_Yes,Include current project and send the report,包括当前项目并发送报告,,proj required yes tooltip
 BugRep_ReqProj_TT_No,Send the report without including the project,发送不包括项目的报告,,proj required no tooltip
 BugRep_ReqProj_TT_Cancel,Return to the bug report form,返回错误报告表,,proj required cancel tooltip
+BugRep_IncludeCrashProject_Title,Include previous Project?,包含先前项目？,,crash project dialog title
+BugRep_IncludeCrashProject,"The project '{0}' was open when the issue occurred.\n\nWould you like to privately include this project with your report?\n\nIncluding the project will improve the chances of the issue being resolved.","项目 '{0}' 在问题发生时处于打开状态。\n\n您是否希望将此项目私密包含在您的报告中？\n\n包含该项目将提高问题得到解决的可能性。",,crash project dialog message
 BugRep_ReqPrefabs_Title,"Include all Prefabs?","包含所有预制件？",,Include all prefabs in the project
 BugRep_ReqPrefabs_Message,"Would you like to include the current project's prefabs in your bug report?\n\nA project is typically required to diagnose compiling or in-game issues.\n\nIf you do not also include the prefabs and they are not publicly accessible, we may request them later if we cannot reproduce the issue.","您是否希望在您的错误报告中包含当前项目的预制件？\n\n通常需要项目来诊断编译或游戏中的问题。\n\n如果您没有同时包含预制件且它们不可公开访问，我们可能无法重现该问题时会稍后要求提供。",,bug rep prefabs requested message
 BugRep_ReqPrefabs_TT_Yes,Include current prefabs and send the report,包含当前预制件并发送报告。,,proj required yes tooltip
@@ -9820,7 +9851,7 @@ BugReport_SignInLabel,You need to be signed in to report a bug.,您需要登录�
 BugReport_SignInSuggest,"Your bug report will be posted anonymously if you are not signed in to a GameMaker account and have not authorised us to post as your GitHub account. You can authorise us to post on your behalf in your account dashboard.","如果您没有登录到 GameMaker 帐户，也没有授权我们作为您的 GitHub 帐户发布错误报告，您的错误报告将被匿名发布。您可以授权我们代表您在您的帐户仪表板上发帖。",,suggest sign in message
 BugReport_SignInMsg1,"You are not signed-in, so this new bug report will be anonymous and you will not get feedback/progress updates about it.","您尚未登录，因此此新错误报告将是匿名的，并且您不会获得有关它的反馈/进度更新。",,bug report signin dialog
 BugReport_SignInMsg2,"We strongly recommend signing-in first and <a href=""{0}"">authorising GameMaker to post your reports using your GitHub account</a> if you have not already done so.","我们强烈建议您首先登录并授权 GameMaker <a href=""{0}"">使用您的GitHub帐户发布您的报告</a>(如果您尚未这样做)。",,bug report signin dialog
-BugReport_ArticleLink,"<a href=""https://help.yoyogames.com/hc/en-us/articles/13150754375453"">Submitting a Bug Report - What Does It Contain?</a>",<a href=""https://help.yoyogames.com/hc/en-us/articles/13150754375453"">提交错误报告-它包含什么？</a>",,bug report article link
+BugReport_ArticleLink,"<a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">Submitting a Bug Report - What Does It Contain?</a>",提交 Bug 报告 - 其中包含哪些内容？,,bug report article link
 BugReport_KnownIssuesLink,"<a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues List</a>","<a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">已知问题列表</a>",,bug report known issues link
 BugReport_SignInLegacy,Have a legacy account?,是否拥有旧版帐户？,,bug report legacy account label
 BugReport_Uploading, Uploading bug report files..., 正在上传错误报告文件...,,bug report progress message
@@ -9959,13 +9990,14 @@ PrefabLibrary_SimpleView,Simple view,简单视图,,simple view
 PrefabLibrary_TreeView,Tree view,树视图,,tree view
 PrefabLib_Folder,Folder,文件夹,,folder
 PrefabLib_EditCollection,Edit collection,编辑集合,,edit collection
-PrefabLib_ResetOverride,Reset Override,重设覆盖,,Reset Prefab Override
 PrefabLibrary_Authors,Authors,作者,,Author filter term
 PrefabLibrary_AllAuthors,All Authors,所有作者,,All Authors filter term
 PrefabLibrary_Filter_RecentPrefabs,Recent Prefabs,近期预制件,,Recent Prefabs filter term
 PrefabLib_AllResults,All Results,所有结果,,all results
 PrefabLib_EditCollectionMsg,Open the prefab project in a new IDE instance?,在新的IDE实例中打开预制件项目？,,edit collection confirm msg
 PrefabLib_ShowInPackageManager,Show in Package Manager,显示在包管理器中,,Show in Package Manager
+PrefabLib_UninstallPrefab,Uninstall Prefab Collection,卸载预制件集,,Uninstall selected Prefab Collection
+PrefabLib_ReinstallPrefab,Reinstall Prefab Collection,重新安装预制件集,,Reinstall selected Prefab Collection
 Prefab_Library_empty_description,Browse and Install Prefab Collections from the Package Manager,浏览并从包管理器安装预制件集,,Description for when no prefab collections are installed
 Prefab_Library_loading_description,Loading Prefab Collections...,加载预制件集…,,Message when loading Prefab Collections
 ProgressBar_Prefabs_Copying,Prefabs...,预制构件…,,Copying Prefabs progress
@@ -9994,6 +10026,12 @@ PrefabMetadataEditor_ChangeImage,Change image...,修改图片...,,Change image b
 PrefabMetadataEditor_FileMask,PNG file,PNG 文件,,File mask description for open file dialog
 PrefabLibraryMetadataEditor_DialogTitle,Prefab library metadata settings,预制库元数据设置,,Dialog title for Prefab library metadata settings
 PrefabLibrary_DuplicateIntoProject,Duplicate into Project,复制到项目,,Duplicate Asset into Current Project
+PrefabLibrary_GhostCustomiseItems,Customise,定制,,Ghost customise items.
+PrefabLibrary_GhostToFullResource,Convert to full resource,转换为完整资源,,Convert a ghost resource to a full resource (as though duplicated)
+PrefabLibrary_GhostToFullResourceMsg,Do you want to convert this to a full resource?,您想将其转换为完整的资源吗？,,Do you want to convert this to a full resource?
+PrefabLibrary_GhostToFullResourceTitle,Convert to full resource,转换为完整资源,,Convert to full resource (dialog title)
+PrefabLibrary_Folder_CustomisedPrefabItems,Prefabs,预制件,,Default Asset Browser folder name for customised prefab items
+PrefabLibrary_Folder_CustomisedPrefabItemsDependencies,Dependencies,依赖项,,Default Asset Browser folder name for prefab resources additionally brought in because of cycles
 prefablib_layouttype,Layout type,布局类型,,layout type pref
 prefablib_listviewtype,List view type,列表视图类型,,list view type pref
 PrefabPlugin,Prefab Library,预制库,,prefab library preference type name
@@ -10068,12 +10106,14 @@ Project Health,Project Health,项目健康,,Project Health prefs title
 CE2_RedefineKeys_Name,Code Editor 2,代码编辑器 2,,CE2 Redefine Keys name
 CE1_RedefineKeys_Name,Code Editor,代码编辑器,,CE1 Redefine Keys name
 Project_Delete,Do you want to delete the project at {0}?,你想要删除位于{0}的项目吗？,,Question to delete the project at the given path
+Prefab_Uninstall,Do you want to uninstall the Prefab Collection {0}?,您是否要卸载预制件集 {0}？,,Question to uninstall the given prefab collection
 ProjectMissingPrefabs,Project {0} is missing prefab(s).\nWould you like to try and automatically install them?,项目{0}缺少预制件。\n您是否希望尝试自动安装它们？,,Project missing prefabs install prompt
 ProjectWaitingOnInstall,Project {0} is installing required prefabs in the background. Please wait for the install to complete.,项目{0}正在后台安装所需的预制件。请等待安装完成。,,Project already doing updates error
 ProjectMissingPrefabs_AndMore,and {0} others.,以及 {0} 其他。,,and _ more message
 PrefabsNotificationCategory,Prefabs,预制件,,Prefabs
 BeginInstallingMissingPrefabs,Installing {0} missing prefab(s),安装缺失的预制件{0},,Installing missing prefabs
 ProgressBar_InstallingPrefabs,Installing prefabs...,安装预制件…,,Installing prefabs progress bar text
+Prefabs_CouldNotInstall,The following Prefabs could not be installed,以下预制件无法安装,,Error that the following prefabs could not be installed
 FinishedInstalledPrefabs,Finished installing missing prefabs,安装缺失的预制件完成,,Prefab finish install
 yyal_init_failed_title,"Audio library failed to initialise","音频库初始化失败",,YYAL Failed to init
 yyal_init_failed,"You can use GameMaker, but you will not have any audio previews.\n\nPlease open your ui.log (in the Help menu) and see if it says your computer is missing a required library.","你可以使用 GameMaker，但你将无法看到任何音频预览。\n\n请打开你的 ui.log（在帮助菜单中）并查看它是否显示你的计算机缺少了必需的库。",,YYAL Failed to init
@@ -10107,3 +10147,10 @@ PackageMan_EnableAutomaticUpdates,Enable automatic updates,启用自动更新,nu
 PackageMan_DisableAutomaticUpdates,Disable automatic updates,禁用自动更新,null,null
 PackageMan_PromptRestart,This package requires an IDE restart to take effect. Would you like to restart now?,此包需要 IDE 重启才能生效。您现在要重启吗？,null,null
 RedefineKeys_SoftConflictWarning,The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?,快捷键 {0} 已绑定到 {1}。这可能会导致在这些位置 {2} 无法正常工作。您确定要继续吗？,null,null
+PrefabInstalled,The {0} Prefab Collection has been installed,预制件集已安装。,,Message to tell the user a Prefab Collection has been installed
+PrefabRequired,{0} cannot be found by the Package Manager,无法通过包管理器找到 {0},,Message to tell the user that a Prefab Collection cannot be found
+Plugin_RestartPrompt,Plugin changes will take effect after restarting the IDE,插件更改将在重启 IDE 后生效。,null,null
+Plugin_SafeMode,Safe Mode Enabled,安全模式已启用,null,null
+Plugin_VerySafeMode,Very Safe Mode Enabled,非常安全模式已启用,null,null
+Plugin_SafeModeDisable,Disable,禁用,null,null
+Plugin_RestoreToDefaults,Restore to Defaults,恢复默认,null,null

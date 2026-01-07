@@ -514,6 +514,8 @@ Inspector_ObjectPanel_Disallowed,This object does not support bulk editing,This 
 Inspector_EventList_Error,An error occurred while getting this value,An error occurred while getting this value,,Error getting event list value
 Inspector_EventList_CannotCoalesce,Events do not support bulk editing,Events do not support bulk editing,,Event list bulk editing error
 Inspector_EventList_AddElementTooltip,Add event,Add event,,Tooltip to add a new event
+Inspector_ReadOnly,(Read only),(Read only),,read only
+Inspector_PreviewCode,Preview Code,Preview Code,,preview code
 Inspector_UndoError,An error occurred while attempting to undo a change.,An error occurred while attempting to undo a change.,,Undo error message
 Inspector_RedoError,An error occurred while attempting to redo a change.,An error occurred while attempting to redo a change.,,Redo error message
 Inspector_CreateNewAssetType,New {0},New {0},,new (asset type name)
@@ -582,6 +584,7 @@ Inspector_Category_RoomVis,Room Visibility,Room Visibility,,uilayer room visibil
 Inspector_OpenEditor,Open Editor,Open Editor,,open editor
 Inspector_OpenInspector,Open Inspector,Open Inspector,,open inspector
 Inspector_ObjNoEvents,This Object currently has no Events.\nAdd Events here or via the editor,This Object currently has no Events.\nAdd Events here or via the editor,,no object events inspector label
+Inspector_ObjNoEvents_ReadOnly,This Object has no Events,This Object has no Events,,no object events (read-only object)
 Inspector_OpenEditors,Open Editors,Open Editors,,open multiple editors
 Inspector_Category_Properties,Properties,Properties,,inspector category
 Inspector_Category_GMRInstance_SpriteOverride,Sprite Override,Sprite Override,,Sprite Override inspector category 
@@ -1513,6 +1516,10 @@ ObjectEditor_EventReplaceTitle,Replace existing event?,Replace existing event?,,
 ObjectEditor_EventReplaceLabel,Replace,Replace,,replace button label
 ObjectEditor_EventNewLabel,New Event,New Event,,new event button label
 InstanceEditor_Prop_OverrideTooltip,Override this variable,Override this variable,,Override variable tooltip
+ObjVar_VariableLabelArg,Variable Label: {0},Variable Label: {0},,object variable label
+ObjVar_LabelName,Label Name,Label Name,,object variable label name
+ObjVar_Description,Description,Description,,description
+ObjectVar_DescDetail,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,,objvar description detail
 OutputPanel_Output,Output,Output,,Output panel output tab name
 OutputPanel_SearchResults,Search Results,Search Results,,Output panel search results tab name
 OutputPanel_SourceControl,Source Control,Source Control,,Output panel source control tab name
@@ -2810,6 +2817,7 @@ TextEditor_CloseMarkdownPreview,Close Markdown Preview,Close Markdown Preview,,C
 TextEditor_Search_RegexError,{0},{0},,{0}
 TextEditor_IrreverableConversion,You will not be able to convert the format back after this conversion,You will not be able to convert the format back after this conversion,,You will not be able to convert the format back after this conversion
 TextEditor_WarningBanner_UnknownScriptFormat,Unknown script format. This may cause issues when building. Please install a valid language package for this format,Unknown script format. This may cause issues when building. Please install a valid language package for this format,,Unknown script format. This may cause issues when building. Please install a valid language package for this format
+TextEditor_WarningBanner_ReadOnlyPrefabView,This text document is read only,This text document is read only,,This text document is read only
 TextureGroups_ActiveGroup,Current Group:,Current Group:,,Texture group current group
 TextureGroups_AddNew,Add New,Add New,,Texture group add new button
 TextureGroups_AllowScaling,Allow Scaling,Allow Scaling,,Texture group allow scaling checkbox
@@ -2953,6 +2961,7 @@ User_Login_Title,GameMaker Legacy Sign In,GameMaker Legacy Sign In,,User Sign In
 UserLogin_Email,Email/Username,Email/Username,,User Login dialog - e-mail label
 UserLogin_Message,Sign in to GameMaker legacy account,Sign in to GameMaker legacy account,,Legacy sign in dialog message
 UserLogin_MessageSSO,Sign in to GameMaker with your Opera account,Sign in to GameMaker with your Opera account,,SSO sign in dialog message
+UserLogin_MessageGMAUTH,Sign in to GameMaker with your Opera account or licence details,Sign in to GameMaker with your Opera account or licence details,,SSO sign in dialog message
 UserLogin_Password,Password,Password,,User Login dialog - password label
 UserLogin_RememberMe,Remember Me,Remember Me,,User Login dialog - Remember Me checkbox
 User_ProxySettings,Proxy settings,Proxy settings,,Proxy setting tool-tip
@@ -2989,6 +2998,7 @@ UserLogin_OperaAccount,Opera Account,Opera Account,,opera account
 UserLogin_OperaLoginInfo,Sign in to GameMaker with your Opera account.,Sign in to GameMaker with your Opera account.,,opera login info text
 UserLogin_LinkAccountsAt,Link your accounts at,Link your accounts at,,link accounts info label
 UserLogin_OperaSSO,Sign In/Register,Sign In/Register,,single sign in button label
+UserLogin_GMAuth,GMAuth Sign In,GMAuth Sign In,,single sign in with gmauth button label
 UserLogin_LegacyMessage,Legacy account?,Legacy account?,,Legacy account sign in label
 UserLogin_LegacyPrompt,Sign in here,Sign in here,,Legacy account sign in clickable label
 UserLogin_ForgottenPassword,Forgotten password?,Forgotten password?,,login forgotten password label
@@ -4038,10 +4048,11 @@ SaveProjectAs_PermissionsGuideLink,Permissions Guide,Permissions Guide,,link lab
 SaveProjectAs_DeleteExisting,Are you sure you want to delete all files in '{0}'?,Are you sure you want to delete all files in '{0}'?,,Confirmation for deleting an existing project and related files
 MyProjects_SyncFolderWarning,"Your GameMaker project location is managed by an external cloud storage application, which could cause problems when saving and building projects.\n\nTo fix this, we strongly recommend changing your Preferences and moving your projects. For more info, please see our permissions guide.\n\nWould you like to change your path for new projects now?","Your GameMaker project location is managed by an external cloud storage application, which could cause problems when saving and building projects.\n\nTo fix this, we strongly recommend changing your Preferences and moving your projects. For more info, please see our permissions guide.\n\nWould you like to change your path for new projects now?",,Warning message if user has MyProjects in sync folder on startup
 MyProjects_SyncFolderSaveWarning,"This project is saved in a location which is managed by an external cloud storage application. We strongly recommend you change your Preferences and you move your existing projects.\n\nIf you want to know more, please see our permissions guide.","This project is saved in a location which is managed by an external cloud storage application. We strongly recommend you change your Preferences and you move your existing projects.\n\nIf you want to know more, please see our permissions guide.",,Warning message if user has project stored in ssync folder on project load or save
-SplashScreen_PluginLoadFailed,Failed to load a required plug-in.  Please try restarting GameMaker.  If the problem persists please reinstall GameMaker.,Failed to load a required plug-in.  Please try restarting GameMaker.  If the problem persists please reinstall GameMaker.,,Error message when you fail to load a required plugin dll
-SplashScreen_PluginLoadFailedTitle,Failed to load a required plug-in,Failed to load a required plug-in,,Title for error message when you fail to load a required plugin dll
-SplashScreen_UserPluginLoadFailed,A failure occurred while loading user plugins. Consult your ui.log for more details,A failure occurred while loading user plugins. Consult your ui.log for more details,,Failed loading user plugin
-SplashScreen_UserPluginLoadFailedTitle,Failed loading a user plugin,Failed loading a user plugin,,Failed loading a user plugin
+SplashScreen_PluginLoadFailedTitle,Error loading plugins,Error loading plugins,,
+SplashScreen_PluginVerySafeLoadFailed,Failed to load the minimum set of plugins required to open the bug reporter. See your ui.log for more details. If issues persist try re-installing GameMaker,Failed to load the minimum set of plugins required to open the bug reporter. See your ui.log for more details. If issues persist try re-installing GameMaker,,
+SplashScreen_PluginSafeLoadFailed,Failed to load the set of plugins included with the IDE. See your ui.log for more details. The IDE will now try relaunching to open the bug reporter,Failed to load the set of plugins included with the IDE. See your ui.log for more details. The IDE will now try relaunching to open the bug reporter,,
+SplashScreen_PluginLoadFailedRestart,Failed to load your specified plugin set. See your ui.log for more details. The IDE will now try relaunching to open a safe list of plugins,Failed to load your specified plugin set. See your ui.log for more details. The IDE will now try relaunching to open a safe list of plugins,,
+SplashScreen_PluginLoadFailedFallback,Failed to load your specified plugin set. See your ui.log for more details. The IDE has loaded a safe set of plugins,Failed to load your specified plugin set. See your ui.log for more details. The IDE has loaded a safe set of plugins,,
 SplashScreen_LaunchProjectNotFound,Project '{0}' does not exist,Project '{0}' does not exist,,Message dialog when the program was launched with a file command argument but the file was not found
 SplashScreen_LaunchProjectInvalid,'{0}' is not a valid GameMaker project,'{0}' is not a valid GameMaker project,,Message dialog when the program was launched with a file command argument of a non .yyp file
 SplashScreen_LaunchProjectFailed,Launch Project Failed,Launch Project Failed,,Message dialog title when the program was launched with a file command argument but it has failed
@@ -4098,6 +4109,9 @@ Project_ProjFileChanged_Title,Project Modified,Project Modified,,message box tit
 Project_Deleted_Title,Project Deleted,Project Deleted,,message box title when a project has been deleted
 Project_Deleted_Message,The project file '{0}' was deleted. Your project will now be closed.,The project file '{0}' was deleted. Your project will now be closed.,,Error message telling the user the project has been deleted
 Project_Deleted_Success,The project '{0}' was deleted.,The project '{0}' was deleted.,,Success message telling the user the project has been deleted
+Prefab_Uninstalled_Title,Prefab Collection Uninstalled,Prefab Collection Uninstalled,,message box title when a prefab collection has been uninstalled
+Prefab_Uninstalled_Success,'{0}' was uninstalled.,'{0}' was uninstalled.,,Success message telling the user the prefab collection has been uninstalled
+Package_Is_Bundled_Error,'{0}' is bundled and cannot be uninstalled.,'{0}' is bundled and cannot be uninstalled.,,Message telling the user that their package is bundled and cannot be uninstalled
 keystore_filename,Filename,Filename,,Keystore Filename
 keystore_password,Password,Password,,Keystore Password
 keystore_alias,Alias,Alias,,Keystore Alais
@@ -4431,6 +4445,7 @@ platformdevice_type_simulator,Simulator,Simulator,,Simulator
 platformdevice_status_unknown,Unknown,Unknown,,Unknown
 platformdevice_status_shutdown,Shutdown,Shutdown,,Shutdown
 platformdevice_status_not_connected,Not Connected,Not Connected,,Not Connected
+platformdevice_status_disconnected,Disconnected,Disconnected,,Disconnected
 platformdevice_status_connected,Connected,Connected,,Connected
 platformdevice_launch_simulator,Launch Simulator,Launch Simulator,,Launch Simulator
 platformdevice_connection_success,Connection to {0} Successful,Connection to {0} Successful,,Connection Successful to hostname
@@ -4869,7 +4884,7 @@ GMLVisualToolbox_Menu_RemoveFav,Remove Favourite,Remove Favourite,,GML Visual To
 GMLVisualToolbox_Menu_ClearRecentlyUsed,Clear Recently Used,Clear Recently Used,,GML Visual Toolbox clear recently used
 GMLVisualToolbox_Menu_ClearFavs,Clear Favourites,Clear Favourites,,GML Visual Toolbox clear favourites
 PrefabLibrary_Filter_UsedPrefabsOnly,Used Prefabs Only,Used Prefabs Only,,Used Prefabs Only filter name
-PrefabLibrary_Filter_OverriddenPrefabs,Overridden Prefabs Only,Overridden Prefabs Only,,Overridden Prefabs Only filter name
+PrefabLibrary_Filter_OverriddenPrefabs,Customised Prefabs Only,Customised Prefabs Only,,Customised Prefabs Only filter name
 PrefabLibrary_Filter_UsedPrefabCollections,Used Collections,Used Collections,,Used Prefabs Collections filter name
 SourceControlGit_FileLock,One or more files may be locked. Please check that none of the files are open in external programs. Do you want to try again?,One or more files may be locked. Please check that none of the files are open in external programs. Do you want to try again?,,Files potentially locked and need to try again
 SourceControlGit_Error,Source Control (Git) Error,Source Control (Git) Error,,Error with Source Control (Git)
@@ -6099,8 +6114,10 @@ Package_DragDrop_Message_IDE,Import asset package?,Import asset package?,,confir
 Package_DragDrop_Title,Asset Package Detected,Asset Package Detected,,dialog title
 Prefab_DragDrop_Message,Install Prefab Collection?,Install Prefab Collection?,,confirm message
 Prefab_DragDrop_Title,Prefab Collection Detected,Prefab Collection Detected,,dialog title
-Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0},This Prefab Collection is already installed.\n{0},,Message for trying to manually install an already installed prefab collection
+Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,,Message for trying to manually install an already installed prefab collection and offering to overwrite it
 Prefab_Installed,This Prefab Collection has been successfully installed.\n{0},This Prefab Collection has been successfully installed.\n{0},,Success message for manually installing a prefab collection
+Prefab_Referenced_Title,Prefab Collection Referenced,Prefab Collection Referenced,,Title on referencing a Prefab Collection
+Prefab_Referenced,This Prefab Collection has been successfully referenced.\n{0},This Prefab Collection has been successfully referenced.\n{0},,Success message for referencing a prefab collection
 Prefab_Install_Title,Prefab Collection Installation,Prefab Collection Installation,,Title on Installing a Prefab Collection
 Prefab_InstallError_Title,Prefab Collection Installation Error,Prefab Collection Installation Error,,Error title on Installing a Prefab Collection
 Dialog_CopyToClipboard,Copy to clipboard,Copy to clipboard,,Copy the dialog message to the clipboard
@@ -6832,6 +6849,8 @@ Proxy_Password,Password,Password,,proxy password label
 Proxy_Password_Tooltip,Proxy password,Proxy password,,proxy password tooltip
 Proxy_Domain,Domain,Domain,,proxy domain label
 Proxy_Domain_Tooltip,Proxy Domain. Usually left blank,Proxy Domain. Usually left blank,,proxy domain tooltip
+Proxy_Bypass,Bypass,Bypass,,proxy bypass label
+Proxy_Bypass_Tooltip,Proxy Bypass List,Proxy Bypass List,,proxy bypass tooltip
 General Settings,General Settings,General Settings,,General Settings preference group heading
 Start Page,Start Page,Start Page,,start screen preference group heading
 Drag and Drop,GML Visual,GML Visual,,Drag and Drop preference group heading
@@ -6867,6 +6886,7 @@ Help,Help,Help,,Help preference group subheading
 Input,Input,Input,,Input preference group subheading
 Output Windows,Output Windows,Output Windows,,Output Windows preference group subheading
 Paths,Paths,Paths,,Paths preference group subheading
+Proxy Settings,Proxy Settings,Proxy Settings,,Proxy Settings preference group subheading
 Animation Curves,Animation Curves,Animation Curves,,Animation Curves preference group subheading
 Power Saving,Power Saving,Power Saving,,Power Saving preference group subheading
 Recent Windows,Recent Windows,Recent Windows,,Recent Windows preference group subheading
@@ -7221,6 +7241,8 @@ UserLogin_SteamError,Unable to sign in - failed to get a Steam session ticket,Un
 UserLogin_ServerConnectionError,"Unable to sign in - server error, allowing offline","Unable to sign in - server error, allowing offline",,server connection error
 UserLogin_SaveFailed,Failed to save licence file {0} - result {1}({2}),Failed to save licence file {0} - result {1}({2}),,save failed error
 UserLogin_SaveFailedNoResult,Failed to save licence file {0} - no result,Failed to save licence file {0} - no result,,save failed error
+UserLogin_GMAuthError,"Failed to sign in via the GameMaker authentication website. Please try again.","Failed to sign in via the GameMaker authentication website. Please try again.",,sign in fail for GMAuth
+UserLogin_GMAuthError_Title,Sign In Failed,Sign In Failed,,sign in fail for GMAuth title
 UserLogin_LicenceStatus,Status: {0},Status: {0},,licence status error
 UserLogin_RestartForCustomFeed,You have a new IDE update feed available. \nWould you like to restart and check for updates?,You have a new IDE update feed available. \nWould you like to restart and check for updates?,,message when a user has a custom ide feed available
 SearchResult_Info,{0} at line {1}: \t{2},{0} at line {1}: \t{2},,search result information
@@ -8049,6 +8071,7 @@ AssetBrowser_ListView,List View,List View,,list view
 AssetBrowser_GridView,Grid View,Grid View,,grid view
 AssetBrowser_ShowTreeLocation,Show Tree Location,Show Tree Location,,show main tree location
 AssetBrowser_GameOptions,Game Options,Game Options,,game options
+AssetBrowser_QAPrefabs,Prefabs,Prefabs,,prefabs quick access
 AssetBrowser_IncludedFiles,Included Files,Included Files,,included files
 AssetBrowser_TTSortFilter,Sort/Filter,Sort/Filter,,sort filter button tooltip
 AssetBrowser_TTMenu,Menu,Menu,,menu button tooltip
@@ -8058,6 +8081,7 @@ AssetBrowser_SendToTop,Send To Top,Send To Top,,arrange to top
 AssetBrowser_SendToBottom,Send To Bottom,Send To Bottom,,arrange to bottom
 AssetBrowser_UpOne,Up One,Up One,,arrange up one
 AssetBrowser_DownOne,Down One,Down One,,arrange down one
+AssetBrowser_Tooltip_CustomisationOf,Customisation of {0} in {1},Customisation of {0} in {1},,tooltip for customised resource
 ListBoxEnum_eAssetListStyle_Grid,Grid,Grid,,
 ListBoxEnum_eAssetListStyle_List,List,List,,
 ListBoxEnum_eListStyle_Grid,Grid,Grid,,
@@ -8299,7 +8323,7 @@ exception_default_story,Please enter a description of the problem here,Please en
 CrashReport_Title,Crash detected,Crash detected,,crash detected title
 CrashReport_Msg,Would you like to create a bug report to help diagnose this issue?,Would you like to create a bug report to help diagnose this issue?,,crash report message
 CrashReport_Report,Report,Report,,do report
-CrashReport_DontReport,No thanks,No thanks,,don't report
+CrashReport_DontReport,"No, thanks","No, thanks",,don't report
 Project_OldFormat_Title,Old Project Format,Old Project Format,,Old Project Format
 Project_OldFormat_Message,Project was created in an older IDE which may have format changes,Project was created in an older IDE which may have format changes,,Project was created in an older IDE which may have format changes
 ImportFromYY_Title,Importing Resources,Importing Resources,,Importing Resources Title
@@ -9494,6 +9518,11 @@ opera_env_switch_failed_message,Failed to switch to the custom OperaGX environme
 opera_env_sso_confirm,"You are using a custom environment for Opera GX settings. If you use Opera Single Sign-on, these settings will be overriden. Do you wish to proceed anyway?","You are using a custom environment for Opera GX settings. If you use Opera Single Sign-on, these settings will be overriden. Do you wish to proceed anyway?",,Warning shown when a user tries to log-in via Opera SSO with a custom environment
 opera_env_current_env,Current environment: {0},Current environment: {0},,Label to indicate the current environment
 opera_env_prohibited_env,Your account does not have permissions to use the current Opera GX environment. Falling back on Prod. The IDE will be restared.,Your account does not have permissions to use the current Opera GX environment. Falling back on Prod. The IDE will be restared.,,This warning is shown when a user's account doesn't have permissions to use some environments (e.g. Prod) but this environment was saved in the preferences before
+opera_env_invalid_message,Unable to set the chosen environment -\n{0}\nThe default Production environment will be used instead.,Unable to set the chosen environment -\n{0}\nThe default Production environment will be used instead.,,gx env invalid message
+opera_env_missing_file,Environment file was not found.,Environment file was not found.,,config file missing
+opera_env_invalid_json,Failed to parse the environment file.,Failed to parse the environment file.,,config invalid json
+opera_env_invalid_sig,The environment file signature is invalid.,The environment file signature is invalid.,,config invalid sig
+opera_env_missing_env,The environment file is missing the required fields.,The environment file is missing the required fields.,,config missing env
 RedefineKeys_Open Included Files,Open Included files,Open Included files,,Open Included files
 RedefineKeys__AutoTileTool,Auto Tile tool,Auto Tile tool,,Auto Tile tool
 RedefineKeys__TileEraserTool,Tile Eraser tool,Tile Eraser tool,,Tile Eraser tool
@@ -9731,7 +9760,7 @@ Notification_PackageManager,Package Manager,Package Manager,,notification catego
 Notification_PackageUpdateAvailable,An update is available for {0},An update is available for {0},,notification message
 BugReport_WindowTitle,Report a bug,Report a bug,,bug report window title
 BugReport_WindowTitle_Crash,Report a crash bug,Report a crash bug,,bug report (crash) window title
-BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://help.gamemaker.io/hc/en-us/articles/13150754375453"">How to submit a Bug Report</a>.","Thanks for submitting your issues. Before you send this report, please do see <a href=""https://help.gamemaker.io/hc/en-us/articles/13150754375453"">How to submit a Bug Report</a>.",,bug report dialog
+BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.","Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.",,bug report dialog
 BugReport_KnownIssues,"Please check the <a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues</a> before submitting to make sure that it has not already been reported.","Please check the <a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues</a> before submitting to make sure that it has not already been reported.",,bug report known issues
 BugReport_SecurityIssues,"If you believe you have found a security vulnerability, please report the issue <a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">here</a>","If you believe you have found a security vulnerability, please report the issue <a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">here</a>",,bug report security issues
 BugReport_AuthGithub,"You can authorise your GitHub account to post issues on the <a href=""{0}"">Accounts page</a>","You can authorise your GitHub account to post issues on the <a href=""{0}"">Accounts page</a>",,bug report github auth 
@@ -9775,6 +9804,8 @@ BugRep_ReqProj_Message,"Would you like to include the current project in your bu
 BugRep_ReqProj_TT_Yes,Include current project and send the report,Include current project and send the report,,proj required yes tooltip
 BugRep_ReqProj_TT_No,Send the report without including the project,Send the report without including the project,,proj required no tooltip
 BugRep_ReqProj_TT_Cancel,Return to the bug report form,Return to the bug report form,,proj required cancel tooltip
+BugRep_IncludeCrashProject_Title,Include previous Project?,Include previous Project?,,crash project dialog title
+BugRep_IncludeCrashProject,"The project '{0}' was open when the issue occurred.\n\nWould you like to privately include this project with your report?\n\nIncluding the project will improve the chances of the issue being resolved.","The project '{0}' was open when the issue occurred.\n\nWould you like to privately include this project with your report?\n\nIncluding the project will improve the chances of the issue being resolved.",,crash project dialog message
 BugRep_ReqPrefabs_Title,"Include all Prefabs?","Include all Prefabs?",,Include all prefabs in the project
 BugRep_ReqPrefabs_Message,"Would you like to include the current project's prefabs in your bug report?\n\nA project is typically required to diagnose compiling or in-game issues.\n\nIf you do not also include the prefabs and they are not publicly accessible, we may request them later if we cannot reproduce the issue.","Would you like to include the current project's prefabs in your bug report?\n\nA project is typically required to diagnose compiling or in-game issues.\n\nIf you do not also include the prefabs and they are not publicly accessible, we may request them later if we cannot reproduce the issue.",,bug rep prefabs requested message
 BugRep_ReqPrefabs_TT_Yes,Include current prefabs and send the report,Include current prefabs and send the report,,proj required yes tooltip
@@ -9820,7 +9851,7 @@ BugReport_SignInLabel,You need to be signed in to report a bug.,You need to be s
 BugReport_SignInSuggest,"Your bug report will be posted anonymously if you are not signed in to a GameMaker account and have not authorised us to post as your GitHub account. You can authorise us to post on your behalf in your account dashboard.","Your bug report will be posted anonymously if you are not signed in to a GameMaker account and have not authorised us to post as your GitHub account. You can authorise us to post on your behalf in your account dashboard.",,suggest sign in message
 BugReport_SignInMsg1,"You are not signed-in, so this new bug report will be anonymous and you will not get feedback/progress updates about it.","You are not signed-in, so this new bug report will be anonymous and you will not get feedback/progress updates about it.",,bug report signin dialog
 BugReport_SignInMsg2,"We strongly recommend signing-in first and <a href=""{0}"">authorising GameMaker to post your reports using your GitHub account</a> if you have not already done so.","We strongly recommend signing-in first and <a href=""{0}"">authorising GameMaker to post your reports using your GitHub account</a> if you have not already done so.",,bug report signin dialog
-BugReport_ArticleLink,"<a href=""https://help.yoyogames.com/hc/en-us/articles/13150754375453"">Submitting a Bug Report - What Does It Contain?</a>","<a href=""https://help.yoyogames.com/hc/en-us/articles/13150754375453"">Submitting a Bug Report - What Does It Contain?</a>",,bug report article link
+BugReport_ArticleLink,"<a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">Submitting a Bug Report - What Does It Contain?</a>","<a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">Submitting a Bug Report - What Does It Contain?</a>",,bug report article link
 BugReport_KnownIssuesLink,"<a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues List</a>","<a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues List</a>",,bug report known issues link
 BugReport_SignInLegacy,Have a legacy account?,Have a legacy account?,,bug report legacy account label
 BugReport_Uploading, Uploading bug report files..., Uploading bug report files...,,bug report progress message
@@ -9959,13 +9990,14 @@ PrefabLibrary_SimpleView,Simple view,Simple view,,simple view
 PrefabLibrary_TreeView,Tree view,Tree view,,tree view
 PrefabLib_Folder,Folder,Folder,,folder
 PrefabLib_EditCollection,Edit collection,Edit collection,,edit collection
-PrefabLib_ResetOverride,Reset Override,Reset Override,,Reset Prefab Override
 PrefabLibrary_Authors,Authors,Authors,,Author filter term
 PrefabLibrary_AllAuthors,All Authors,All Authors,,All Authors filter term
 PrefabLibrary_Filter_RecentPrefabs,Recent Prefabs,Recent Prefabs,,Recent Prefabs filter term
 PrefabLib_AllResults,All Results,All Results,,all results
 PrefabLib_EditCollectionMsg,Open the prefab project in a new IDE instance?,Open the prefab project in a new IDE instance?,,edit collection confirm msg
 PrefabLib_ShowInPackageManager,Show in Package Manager,Show in Package Manager,,Show in Package Manager
+PrefabLib_UninstallPrefab,Uninstall Prefab Collection,Uninstall Prefab Collection,,Uninstall selected Prefab Collection
+PrefabLib_ReinstallPrefab,Reinstall Prefab Collection,Reinstall Prefab Collection,,Reinstall selected Prefab Collection
 Prefab_Library_empty_description,Browse and Install Prefab Collections from the Package Manager,Browse and Install Prefab Collections from the Package Manager,,Description for when no prefab collections are installed
 Prefab_Library_loading_description,Loading Prefab Collections...,Loading Prefab Collections...,,Message when loading Prefab Collections
 ProgressBar_Prefabs_Copying,Prefabs...,Prefabs...,,Copying Prefabs progress
@@ -9994,6 +10026,12 @@ PrefabMetadataEditor_ChangeImage,Change image...,Change image...,,Change image b
 PrefabMetadataEditor_FileMask,PNG file,PNG file,,File mask description for open file dialog
 PrefabLibraryMetadataEditor_DialogTitle,Prefab library metadata settings,Prefab library metadata settings,,Dialog title for Prefab library metadata settings
 PrefabLibrary_DuplicateIntoProject,Duplicate into Project,Duplicate into Project,,Duplicate Asset into Current Project
+PrefabLibrary_GhostCustomiseItems,Customise,Customise,,Ghost customise items.
+PrefabLibrary_GhostToFullResource,Convert to full resource,Convert to full resource,,Convert a ghost resource to a full resource (as though duplicated)
+PrefabLibrary_GhostToFullResourceMsg,Do you want to convert this to a full resource?,Do you want to convert this to a full resource?,,Do you want to convert this to a full resource?
+PrefabLibrary_GhostToFullResourceTitle,Convert to full resource,Convert to full resource,,Convert to full resource (dialog title)
+PrefabLibrary_Folder_CustomisedPrefabItems,Prefabs,Prefabs,,Default Asset Browser folder name for customised prefab items
+PrefabLibrary_Folder_CustomisedPrefabItemsDependencies,Dependencies,Dependencies,,Default Asset Browser folder name for prefab resources additionally brought in because of cycles
 prefablib_layouttype,Layout type,Layout type,,layout type pref
 prefablib_listviewtype,List view type,List view type,,list view type pref
 PrefabPlugin,Prefab Library,Prefab Library,,prefab library preference type name
@@ -10068,12 +10106,14 @@ Project Health,Project Health,Project Health,,Project Health prefs title
 CE2_RedefineKeys_Name,Code Editor 2,Code Editor 2,,CE2 Redefine Keys name
 CE1_RedefineKeys_Name,Code Editor,Code Editor,,CE1 Redefine Keys name
 Project_Delete,Do you want to delete the project at {0}?,Do you want to delete the project at {0}?,,Question to delete the project at the given path
+Prefab_Uninstall,Do you want to uninstall the Prefab Collection {0}?,Do you want to uninstall the Prefab Collection {0}?,,Question to uninstall the given prefab collection
 ProjectMissingPrefabs,Project {0} is missing prefab(s).\nWould you like to try and automatically install them?,Project {0} is missing prefab(s).\nWould you like to try and automatically install them?,,Project missing prefabs install prompt
 ProjectWaitingOnInstall,Project {0} is installing required prefabs in the background. Please wait for the install to complete.,Project {0} is installing required prefabs in the background. Please wait for the install to complete.,,Project already doing updates error
 ProjectMissingPrefabs_AndMore,and {0} others.,and {0} others.,,and _ more message
 PrefabsNotificationCategory,Prefabs,Prefabs,,Prefabs
 BeginInstallingMissingPrefabs,Installing {0} missing prefab(s),Installing {0} missing prefab(s),,Installing missing prefabs
 ProgressBar_InstallingPrefabs,Installing prefabs...,Installing prefabs...,,Installing prefabs progress bar text
+Prefabs_CouldNotInstall,The following Prefabs could not be installed,The following Prefabs could not be installed,,Error that the following prefabs could not be installed
 FinishedInstalledPrefabs,Finished installing missing prefabs,Finished installing missing prefabs,,Prefab finish install
 yyal_init_failed_title,"Audio library failed to initialise","Audio library failed to initialise",,YYAL Failed to init
 yyal_init_failed,"You can use GameMaker, but you will not have any audio previews.\n\nPlease open your ui.log (in the Help menu) and see if it says your computer is missing a required library.","You can use GameMaker, but you will not have any audio previews.\n\nPlease open your ui.log (in the Help menu) and see if it says your computer is missing a required library.",,YYAL Failed to init
@@ -10107,3 +10147,10 @@ PackageMan_EnableAutomaticUpdates,Enable automatic updates,Enable automatic upda
 PackageMan_DisableAutomaticUpdates,Disable automatic updates,Disable automatic updates,,
 PackageMan_PromptRestart,This package requires an IDE restart to take effect. Would you like to restart now?,This package requires an IDE restart to take effect. Would you like to restart now?,,
 RedefineKeys_SoftConflictWarning,The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?,The hotkeys {0} are already bound to {1}. This may cause {2} to not work correctly in these locations. Are you sure you want to continue?,,
+PrefabInstalled,The {0} Prefab Collection has been installed,The {0} Prefab Collection has been installed,,Message to tell the user a Prefab Collection has been installed
+PrefabRequired,{0} cannot be found by the Package Manager,{0} cannot be found by the Package Manager,,Message to tell the user that a Prefab Collection cannot be found
+Plugin_RestartPrompt,Plugin changes will take effect after restarting the IDE,Plugin changes will take effect after restarting the IDE,,
+Plugin_SafeMode,Safe Mode Enabled,Safe Mode Enabled,,
+Plugin_VerySafeMode,Very Safe Mode Enabled,Very Safe Mode Enabled,,
+Plugin_SafeModeDisable,Disable,Disable,,
+Plugin_RestoreToDefaults,Restore to Defaults,Restore to Defaults,,
