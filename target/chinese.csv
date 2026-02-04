@@ -481,6 +481,7 @@ Inspector_SelectExistingTag,Select existing tag,选择现有标签,,inspector ta
 Inspector_TagsWindowTitleArg,Tags: {0},标签：{0},,tags window title
 Inspector_TagsWindowMulti,Tags: Multiple Selection,标签：多个选择,,tags window title
 Inspector_PaddingShowPreview,Preview All Sides,预览所有侧边,,padding gadget preview inspector label
+inspector_pref_objvarDisplayName,Show Object variable display name in place of variable name,显示对象变量的显示名称代替变量名,,object variable show display name
 inspector_pref_scrollonexpand,Scroll category into view on expand,展开时将类别滚动到视图中,,inspector scroll on expand pref
 inspector_pref_previewexpand,Preview starts expanded,预览开始展开（？）,,inspector preview expand default pref
 inspector_pref_stickyheader,Header section pinned to top,固定在顶部的页眉部分,,inspector sticky header pref
@@ -893,6 +894,7 @@ IDEMenu_File,File,文件,,The File menu item name
 IDEMenu_Views,${IDEMenuViews},${IDEMenuViews},,Main menu entry for views
 IDEMenu_Tools,Tools,工具,,Main menu entry for tools
 IDEMenu_Help,Help,帮助,,Main menu entry for HELP
+IDEMenu_Plugins,Plugins,插件,,Main menu entry for Plugins
 IDEMenu_Help_SupportForum,Support Forums,论坛,,Help menu item for support forums
 IDEMenu_Help_YYG,GameMaker.io,GameMaker.io,,Help menu item for main yoyogames website
 IDEMenu_Help_GMC,GameMaker Community,GameMaker 社区,,Help menu item for gmc forums
@@ -1517,7 +1519,7 @@ ObjectEditor_EventReplaceLabel,Replace,替换,,replace button label
 ObjectEditor_EventNewLabel,New Event,新事件,,new event button label
 InstanceEditor_Prop_OverrideTooltip,Override this variable,覆盖此变量,,Override variable tooltip
 ObjVar_VariableLabelArg,Variable Label: {0},变量标签：{0},,object variable label
-ObjVar_LabelName,Label Name,标签名称,,object variable label name
+ObjVar_DisplayName,Display Name,显示名称,,object variable display name
 ObjVar_Description,Description,描述,,description
 ObjectVar_DescDetail,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,可选的变量描述。\n描述和标签名称将出现在“label”图标的悬停提示中。,,objvar description detail
 OutputPanel_Output,Output,输出,,Output panel output tab name
@@ -6114,12 +6116,14 @@ Package_DragDrop_Message_IDE,Import asset package?,导入资源包？,,confirm m
 Package_DragDrop_Title,Asset Package Detected,检测到资源包,,dialog title
 Prefab_DragDrop_Message,Install Prefab Collection?,安装预制件集？,,confirm message
 Prefab_DragDrop_Title,Prefab Collection Detected,检测到预制件集,,dialog title
+Prefab_Reinstall,Reinstall this Prefab Collection?,重新安装此预制件集？,,Message to reinstall this prefab collection
 Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,此预制件集已安装。\n{0}\n是否要覆盖？,,Message for trying to manually install an already installed prefab collection and offering to overwrite it
 Prefab_Installed,This Prefab Collection has been successfully installed.\n{0},此预制件集已成功安装。\n{0},,Success message for manually installing a prefab collection
 Prefab_Referenced_Title,Prefab Collection Referenced,预制件集引用,,Title on referencing a Prefab Collection
 Prefab_Referenced,This Prefab Collection has been successfully referenced.\n{0},此预制件集已成功引用。\n{0},,Success message for referencing a prefab collection
 Prefab_Install_Title,Prefab Collection Installation,预制件集合安装,,Title on Installing a Prefab Collection
 Prefab_InstallError_Title,Prefab Collection Installation Error,预制件集安装错误,,Error title on Installing a Prefab Collection
+Prefab_Reinstalled_PackageNotFound,Cannot reinstall this Prefab Collection as the original package was not found.\n{0},无法重新安装此预制件集，因为未找到原始包。\n{0},,Message for failing to reinstall a prefab collection as we cannot find the original package
 Dialog_CopyToClipboard,Copy to clipboard,复制到剪贴板,,Copy the dialog message to the clipboard
 Marketplace_MyLibrary_Reviews,{0} reviews,{0} 条评论,,Review count label
 Marketplace_MyLibrary_MadeWith,Created with {0},使用 {0} 创建,,Created with asset label
@@ -6341,7 +6345,7 @@ Debugger_Profiler_Running,Profiling...,分析中...,,debugger profiling
 Debugger_Profiler_Averages,Average Values,平均值,,Debugger show average values
 Debugger_Profiler_Averages_Tooltip,Tick this to display all values as averages.\nUntick it to display accumulated values.,勾选此项以将所有值显示为平均值。\n取消勾选以显示累计值。,,Debugger averages tooltip
 Debugger_DataGrid_CallCount,Call Count,调用次数,,Debugger call count
-Debugger_DataGrid_Time,Time (Ms),时间 (毫秒),,Debugger time count
+Debugger_DataGrid_Time,Time (ms),时间 (毫秒),,Debugger time count
 Debugger_DataGrid_Step,Step %,步 %,,Debugger step % column
 Debugger_Graph_Help,This graph shows frames per second and memory usage over time.\nHold Control and scroll to expand and contract the graph.,此图显示每秒帧数和随时间的内存使用情况。\n按住Control并滚动以展开和收缩图形。,,Debugger graph help icon
 Debugger_Graph_Help_Mac,This graph shows frames per second and memory usage over time.\nHold ⌘ and scroll to expand and contract the graph.,此图显示每秒帧数和随时间变化的内存使用情况。\n按住⌘并滚动以展开和收缩图形。,,Debugger graph help icon
@@ -7152,6 +7156,7 @@ SyntaxError_Only16NamedArgs,only 16 named arguments supported in a function decl
 SyntaxError_AssignmentToBuiltIn,Assignment to builtin variable/function/constant,对内置变量/函数/常量的赋值,,syntax error
 SyntaxError_SameArgument,argument name {0} already used in function declaration,参数名称 {0} 已在函数声明中使用,,syntax error
 CompileError_Info,{0} at line {1} : {2},{0}位于第{1}行 : {2},,"syntax error displayed to user (0 - source, 1 - line num, 2 - error description)"
+CompileError_InfoVariable,{0} at variable {1} : {2},在变量{1}上的{0}：{2},,"syntax error displayed to user (0 - source, 1 - line num, 2 - error description)"
 CompileError_ObjVar_WrongType,Not expecting {0} {1} assigned in {2}'s variable '{3}' (expected {4}),不期望在{2}的变量"{3}"（期望{4}）中分配{0} {1},,Object variable wrong type error
 CompileError_ObjVar_WrongTypeRoom,Not expecting {0} {1} assigned in room {2} in instance {3}'s variable '{4}' (expected {5}),不期望在实例{3}的变量"{4}"（预期{5}）的房间{2}中分配{0} {1},,Object variable wrong type error in room instances
 CompileError_ObjVar,Undefined variable '{0}' referenced in {1}'s variable '{2}',在{1}的变量"{2}"中引用了未定义变量"{0}",,Object variable undefined reference error
@@ -7160,6 +7165,7 @@ CompileError_Script,Script: {0},脚本：{0},,script error
 CompileError_Object,Object: {0},物体： {0},,object event error
 CompileError_RoomCode,Creation Code in Room: {0},初始化代码在房间：{0},,room creation code error
 CompileError_RoomInstance,Instance Code in Room: {0},房间中的实例代码：{0},,instance creation code error
+CompileError_RoomInstanceVariables,Instance Variable Definition in Room: {0},实例 变量 定义 在 房间：{0},,instance variable defintion error
 CompileError_Vertex,Vertex Shader: {0},顶点着色器：{0},,vertex shader error
 CompileError_Fragment,Fragment Shader: {0},片元着色器：{0},,fragment shader error
 CompileError_Timeline,Timeline: {0},时间轴：{0},,timeline error
@@ -7287,6 +7293,16 @@ FileFilter_XboxOneDevPackage,Xbox One Developer Package,Xbox One 开发人员包
 FileFilter_XboxSeriesDevPackage,Xbox Series X/S Developer Package,Xbox Series X/S 开发人员包,null,null
 FileFilter_XboxOneSubmissionPackage,Xbox One Submission Package,Xbox One 提交包,null,null
 FileFilter_XboxSeriesSubmissionPackage,Xbox Series X/S Submission Package,Xbox Series X/S 提交包,null,null
+FileFilter_UserPrefs,User Preferences file,用户偏好文件,,user prefs file
+ImportPrefs_FileSelectTitle,Select local_settings preferences file,选择本地设置(local_settings)文件,,import prefs file select title
+ImportPrefs_FolderSelectTitle,Select GameMaker user directory,选择 GameMaker 用户目录,,import prefs folder select title
+ImportPrefs_Title,Import User Preferences,导入用户偏好设置,,prefs import dialog title
+ImportPrefs_Message,Are you sure you want to import user preferences from:\n{0}?\n\nThis will replace your current preferences with the imported version.,您确定要从以下位置导入用户偏好设置吗：\n{0}？\n\n这将用导入的版本替换您当前的偏好设置。,,prefs import dialog content
+Button_ImportPrefs,Import Preferences,导入首选项,,import preferences
+Button_Revert,Revert,恢复,,revert button
+Button_Accept,Accept,接受,,accept button
+ImportPrefs_Success,"Preferences imported successfully!\nYou can accept the current settings, or revert to the original settings if desired.","首选项已成功导入！\n您可以接受当前设置，或在需要时恢复到原始设置。",,prefs import success msg
+ImportPrefs_Fail,Preferences failed to import. Please check you have selected a valid local settings file.,首选项导入失败。请检查您是否已选择有效的本地设置文件。,,prefs import fail unlikely
 XboxDeploySubmissionPackageError_Title,Error,错误,null,null
 XboxDeploySubmissionPackageError_Message,Submission packages cannot be launched on an Xbox development kit,提交包不能在 Xbox 开发工具包上启动,null,null
 tvOS,tvOS,tvOS,,tvOS label for game options
@@ -8082,6 +8098,14 @@ AssetBrowser_SendToBottom,Send To Bottom,发送到底部,,arrange to bottom
 AssetBrowser_UpOne,Up One,升一,,arrange up one
 AssetBrowser_DownOne,Down One,降一,,arrange down one
 AssetBrowser_Tooltip_CustomisationOf,Customisation of {0} in {1},在 {1} 中对 {0} 进行定制。,,tooltip for customised resource
+AssetBrowser_CustOrDup_DialogTitle,Confirm add to project,确认添加到项目,,Dialog title
+AssetBrowser_CustOrDup_YouAreAboutToAdd,You are about to add the prefab to your project.\nWould you like to:,您即将把预制件添加到项目中。\n您想要：,,Explanation you are about to add + options
+AssetBrowser_CustOrDup_Customise,Customise,定制,,Customise checkbox
+AssetBrowser_CustOrDup_Duplicate,Duplicate,复制,,Duplicate checkbox
+AssetBrowser_CustOrDup_Customise_Description,Customised Prefabs still receive updates from its collection. Modifiable.,自定义预制件仍然会从其集合接收更新。可被修改。,,Customise description
+AssetBrowser_CustOrDup_Duplicate_Description,Asset is unlinked from its collection and no longer receives updates. Fully modifiable.,资产已与其集合解除关联，不再接收更新。完全可修改。,,Duplicate description
+AssetBrowser_CustOrDup_CannotDoDialogTitle,Selection too complex,选择过于复杂,,Message box title for when the selection is a too complex of customisables + duplicatables.
+AssetBrowser_CustOrDup_CannotDo,Please simplify the selection.\nIf Customise is chosen they cannot all be customised.\nIf Duplicate is chosen they cannot all be duplicated.,请简化选择项。\n如果选择“自定义”，则无法对所有内容进行自定义。\n如果选择“复制”，则无法对所有内容进行复制。,,Mixed selection too complex
 ListBoxEnum_eAssetListStyle_Grid,Grid,网格,null,null
 ListBoxEnum_eAssetListStyle_List,List,列表,null,null
 ListBoxEnum_eListStyle_Grid,Grid,网格,null,null
@@ -9634,6 +9658,7 @@ AIAssistant_Inaccurate,Inaccurate,不准确,,flag response option
 AIAssistant_Unhelpful,Unhelpful,没有帮助,,flag response option
 AIAssistant_Offensive,Offensive,冒犯,,flag response option
 AIAssistant_FlagInfoText,Note: Query will be included in message if sent,注意: 如果发送，查询结果将包含在邮件中,,flag response info text
+AIAsst_Menu_Open,Open AI Assistant,打开 AI 助手,,menu entry to open ai assistant
 AIAsst_ChatHistory,Chat History,聊天记录,,chat history panel title
 AIAsst_Home,Home,主页（Home）,,ai assistant home
 AIAsst_ChatSearchDefault,Search Chats...,搜索聊天...,,chat search default label
@@ -9739,6 +9764,7 @@ PackageMan_DeleteSetConfirmTitle,Delete Package Set?,删除包集？,,package se
 PackageMan_InstallExceptionArg,Package Manager install failed with Exception:\n{0},包管理器安装失败，出现异常: \n{0},,failed with exception <message>
 PackageMan_UninstallExceptionArg,Package Manager uninstall failed:\n{0},包管理器卸载失败: \n{0},,failed with error <message>
 PackageMan_PkgNameUpdate,{0} Update,{0} 更新,,<package name> Update
+PackageMan_MultiUpdateTitle,Update Packages,更新软件包,,multi update window title
 PackageMan_UpdateSuccessful,Update successful,更新成功,,update successful
 PackageMan_TryAgain,Try again,重试,,try again
 PackageMan_SetNameRequired,Package Set name is required,需要包集名称,,pkgman add pkg validation message
@@ -9755,9 +9781,11 @@ packageman_packageInstallDir,Packages Install Directory,包安装目录,,pref in
 packageman_defaultPackageSource,Default Package Source,默认包源,,default package source to open
 packageman_defaultRemote,Default Source URL,默认源 URL,,pref default source URL
 packageman_defaultRemoteSearchPath,Remote search endpoint,远程搜索端点,,pref default remote search path
+packageman_registryConfigUrl,Registry config URL,注册表配置 URL,,pref registry config url
 PackageMan,Package Manager,包管理器,,package manager pref node name
 Notification_PackageManager,Package Manager,包管理器,,notification category
 Notification_PackageUpdateAvailable,An update is available for {0},{0} 有更新可用,,notification message
+Notification_MultiPackageUpdateAvailable,Multiple updates are available!,多项更新可用！,,pkgman notification message
 BugReport_WindowTitle,Report a bug,报告Bug,,bug report window title
 BugReport_WindowTitle_Crash,Report a crash bug,报告崩溃错误,,bug report (crash) window title
 BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.","感谢您提交问题。在发送此报告之前，请参阅<a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">如何提交Bug报告</a>。",,bug report dialog
@@ -9804,7 +9832,7 @@ BugRep_ReqProj_Message,"Would you like to include the current project in your bu
 BugRep_ReqProj_TT_Yes,Include current project and send the report,包括当前项目并发送报告,,proj required yes tooltip
 BugRep_ReqProj_TT_No,Send the report without including the project,发送不包括项目的报告,,proj required no tooltip
 BugRep_ReqProj_TT_Cancel,Return to the bug report form,返回错误报告表,,proj required cancel tooltip
-BugRep_IncludeCrashProject_Title,Include previous Project?,包含先前项目？,,crash project dialog title
+BugRep_IncludeCrashProject_Title,Include previous project?,包含先前项目？,,crash project dialog title
 BugRep_IncludeCrashProject,"The project '{0}' was open when the issue occurred.\n\nWould you like to privately include this project with your report?\n\nIncluding the project will improve the chances of the issue being resolved.","项目 '{0}' 在问题发生时处于打开状态。\n\n您是否希望将此项目私密包含在您的报告中？\n\n包含该项目将提高问题得到解决的可能性。",,crash project dialog message
 BugRep_ReqPrefabs_Title,"Include all Prefabs?","包含所有预制件？",,Include all prefabs in the project
 BugRep_ReqPrefabs_Message,"Would you like to include the current project's prefabs in your bug report?\n\nA project is typically required to diagnose compiling or in-game issues.\n\nIf you do not also include the prefabs and they are not publicly accessible, we may request them later if we cannot reproduce the issue.","您是否希望在您的错误报告中包含当前项目的预制件？\n\n通常需要项目来诊断编译或游戏中的问题。\n\n如果您没有同时包含预制件且它们不可公开访问，我们可能无法重现该问题时会稍后要求提供。",,bug rep prefabs requested message
@@ -10154,3 +10182,4 @@ Plugin_SafeMode,Safe Mode Enabled,安全模式已启用,null,null
 Plugin_VerySafeMode,Very Safe Mode Enabled,非常安全模式已启用,null,null
 Plugin_SafeModeDisable,Disable,禁用,null,null
 Plugin_RestoreToDefaults,Restore to Defaults,恢复默认,null,null
+LayoutLoadErrorMessage,"Error loading layout file:\n\n{0}.\n\nTry restarting GameMaker. If the problem persists, please re-install GameMaker.","布局文件加载错误：\n\n{0}。\n\n尝试重新启动 GameMaker。如果问题仍然存在，请重新安装 GameMaker。",,layout file load error

@@ -481,6 +481,7 @@ Inspector_SelectExistingTag,Select existing tag,Select existing tag,,inspector t
 Inspector_TagsWindowTitleArg,Tags: {0},Tags: {0},,tags window title
 Inspector_TagsWindowMulti,Tags: Multiple Selection,Tags: Multiple Selection,,tags window title
 Inspector_PaddingShowPreview,Preview All Sides,Preview All Sides,,padding gadget preview inspector label
+inspector_pref_objvarDisplayName,Show Object variable display name in place of variable name,Show Object variable display name in place of variable name,,object variable show display name
 inspector_pref_scrollonexpand,Scroll category into view on expand,Scroll category into view on expand,,inspector scroll on expand pref
 inspector_pref_previewexpand,Preview starts expanded,Preview starts expanded,,inspector preview expand default pref
 inspector_pref_stickyheader,Header section pinned to top,Header section pinned to top,,inspector sticky header pref
@@ -893,6 +894,7 @@ IDEMenu_File,File,File,,The File menu item name
 IDEMenu_Views,${IDEMenuViews},${IDEMenuViews},,Main menu entry for views
 IDEMenu_Tools,Tools,Tools,,Main menu entry for tools
 IDEMenu_Help,Help,Help,,Main menu entry for HELP
+IDEMenu_Plugins,Plugins,Plugins,,Main menu entry for Plugins
 IDEMenu_Help_SupportForum,Support Forums,Support Forums,,Help menu item for support forums
 IDEMenu_Help_YYG,GameMaker.io,GameMaker.io,,Help menu item for main yoyogames website
 IDEMenu_Help_GMC,GameMaker Community,GameMaker Community,,Help menu item for gmc forums
@@ -1517,7 +1519,7 @@ ObjectEditor_EventReplaceLabel,Replace,Replace,,replace button label
 ObjectEditor_EventNewLabel,New Event,New Event,,new event button label
 InstanceEditor_Prop_OverrideTooltip,Override this variable,Override this variable,,Override variable tooltip
 ObjVar_VariableLabelArg,Variable Label: {0},Variable Label: {0},,object variable label
-ObjVar_LabelName,Label Name,Label Name,,object variable label name
+ObjVar_DisplayName,Display Name,Display Name,,object variable display name
 ObjVar_Description,Description,Description,,description
 ObjectVar_DescDetail,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,,objvar description detail
 OutputPanel_Output,Output,Output,,Output panel output tab name
@@ -6114,12 +6116,14 @@ Package_DragDrop_Message_IDE,Import asset package?,Import asset package?,,confir
 Package_DragDrop_Title,Asset Package Detected,Asset Package Detected,,dialog title
 Prefab_DragDrop_Message,Install Prefab Collection?,Install Prefab Collection?,,confirm message
 Prefab_DragDrop_Title,Prefab Collection Detected,Prefab Collection Detected,,dialog title
+Prefab_Reinstall,Reinstall this Prefab Collection?,Reinstall this Prefab Collection?,,Message to reinstall this prefab collection
 Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,,Message for trying to manually install an already installed prefab collection and offering to overwrite it
 Prefab_Installed,This Prefab Collection has been successfully installed.\n{0},This Prefab Collection has been successfully installed.\n{0},,Success message for manually installing a prefab collection
 Prefab_Referenced_Title,Prefab Collection Referenced,Prefab Collection Referenced,,Title on referencing a Prefab Collection
 Prefab_Referenced,This Prefab Collection has been successfully referenced.\n{0},This Prefab Collection has been successfully referenced.\n{0},,Success message for referencing a prefab collection
 Prefab_Install_Title,Prefab Collection Installation,Prefab Collection Installation,,Title on Installing a Prefab Collection
 Prefab_InstallError_Title,Prefab Collection Installation Error,Prefab Collection Installation Error,,Error title on Installing a Prefab Collection
+Prefab_Reinstalled_PackageNotFound,Cannot reinstall this Prefab Collection as the original package was not found.\n{0},Cannot reinstall this Prefab Collection as the original package was not found.\n{0},,Message for failing to reinstall a prefab collection as we cannot find the original package
 Dialog_CopyToClipboard,Copy to clipboard,Copy to clipboard,,Copy the dialog message to the clipboard
 Marketplace_MyLibrary_Reviews,{0} reviews,{0} reviews,,Review count label
 Marketplace_MyLibrary_MadeWith,Created with {0},Created with {0},,Created with asset label
@@ -6341,7 +6345,7 @@ Debugger_Profiler_Running,Profiling...,Profiling...,,debugger profiling
 Debugger_Profiler_Averages,Average Values,Average Values,,Debugger show average values
 Debugger_Profiler_Averages_Tooltip,Tick this to display all values as averages.\nUntick it to display accumulated values.,Tick this to display all values as averages.\nUntick it to display accumulated values.,,Debugger averages tooltip
 Debugger_DataGrid_CallCount,Call Count,Call Count,,Debugger call count
-Debugger_DataGrid_Time,Time (Ms),Time (Ms),,Debugger time count
+Debugger_DataGrid_Time,Time (ms),Time (ms),,Debugger time count
 Debugger_DataGrid_Step,Step %,Step %,,Debugger step % column
 Debugger_Graph_Help,This graph shows frames per second and memory usage over time.\nHold Control and scroll to expand and contract the graph.,This graph shows frames per second and memory usage over time.\nHold Control and scroll to expand and contract the graph.,,Debugger graph help icon
 Debugger_Graph_Help_Mac,This graph shows frames per second and memory usage over time.\nHold ⌘ and scroll to expand and contract the graph.,This graph shows frames per second and memory usage over time.\nHold ⌘ and scroll to expand and contract the graph.,,Debugger graph help icon
@@ -7152,6 +7156,7 @@ SyntaxError_Only16NamedArgs,only 16 named arguments supported in a function decl
 SyntaxError_AssignmentToBuiltIn,Assignment to builtin variable/function/constant,Assignment to builtin variable/function/constant,,syntax error
 SyntaxError_SameArgument,argument name {0} already used in function declaration,argument name {0} already used in function declaration,,syntax error
 CompileError_Info,{0} at line {1} : {2},{0} at line {1} : {2},,"syntax error displayed to user (0 - source, 1 - line num, 2 - error description)"
+CompileError_InfoVariable,{0} at variable {1} : {2},{0} at variable {1} : {2},,"syntax error displayed to user (0 - source, 1 - line num, 2 - error description)"
 CompileError_ObjVar_WrongType,Not expecting {0} {1} assigned in {2}'s variable '{3}' (expected {4}),Not expecting {0} {1} assigned in {2}'s variable '{3}' (expected {4}),,Object variable wrong type error
 CompileError_ObjVar_WrongTypeRoom,Not expecting {0} {1} assigned in room {2} in instance {3}'s variable '{4}' (expected {5}),Not expecting {0} {1} assigned in room {2} in instance {3}'s variable '{4}' (expected {5}),,Object variable wrong type error in room instances
 CompileError_ObjVar,Undefined variable '{0}' referenced in {1}'s variable '{2}',Undefined variable '{0}' referenced in {1}'s variable '{2}',,Object variable undefined reference error
@@ -7160,6 +7165,7 @@ CompileError_Script,Script: {0},Script: {0},,script error
 CompileError_Object,Object: {0},Object: {0},,object event error
 CompileError_RoomCode,Creation Code in Room: {0},Creation Code in Room: {0},,room creation code error
 CompileError_RoomInstance,Instance Code in Room: {0},Instance Code in Room: {0},,instance creation code error
+CompileError_RoomInstanceVariables,Instance Variable Definition in Room: {0},Instance Variable Definition in Room: {0},,instance variable defintion error
 CompileError_Vertex,Vertex Shader: {0},Vertex Shader: {0},,vertex shader error
 CompileError_Fragment,Fragment Shader: {0},Fragment Shader: {0},,fragment shader error
 CompileError_Timeline,Timeline: {0},Timeline: {0},,timeline error
@@ -7287,6 +7293,16 @@ FileFilter_XboxOneDevPackage,Xbox One Developer Package,Xbox One Developer Packa
 FileFilter_XboxSeriesDevPackage,Xbox Series X/S Developer Package,Xbox Series X/S Developer Package,,
 FileFilter_XboxOneSubmissionPackage,Xbox One Submission Package,Xbox One Submission Package,,
 FileFilter_XboxSeriesSubmissionPackage,Xbox Series X/S Submission Package,Xbox Series X/S Submission Package,,
+FileFilter_UserPrefs,User Preferences file,User Preferences file,,user prefs file
+ImportPrefs_FileSelectTitle,Select local_settings preferences file,Select local_settings preferences file,,import prefs file select title
+ImportPrefs_FolderSelectTitle,Select GameMaker user directory,Select GameMaker user directory,,import prefs folder select title
+ImportPrefs_Title,Import User Preferences,Import User Preferences,,prefs import dialog title
+ImportPrefs_Message,Are you sure you want to import user preferences from:\n{0}?\n\nThis will replace your current preferences with the imported version.,Are you sure you want to import user preferences from:\n{0}?\n\nThis will replace your current preferences with the imported version.,,prefs import dialog content
+Button_ImportPrefs,Import Preferences,Import Preferences,,import preferences
+Button_Revert,Revert,Revert,,revert button
+Button_Accept,Accept,Accept,,accept button
+ImportPrefs_Success,"Preferences imported successfully!\nYou can accept the current settings, or revert to the original settings if desired.","Preferences imported successfully!\nYou can accept the current settings, or revert to the original settings if desired.",,prefs import success msg
+ImportPrefs_Fail,Preferences failed to import. Please check you have selected a valid local settings file.,Preferences failed to import. Please check you have selected a valid local settings file.,,prefs import fail unlikely
 XboxDeploySubmissionPackageError_Title,Error,Error,,
 XboxDeploySubmissionPackageError_Message,Submission packages cannot be launched on an Xbox development kit,Submission packages cannot be launched on an Xbox development kit,,
 tvOS,tvOS,tvOS,,tvOS label for game options
@@ -8082,6 +8098,14 @@ AssetBrowser_SendToBottom,Send To Bottom,Send To Bottom,,arrange to bottom
 AssetBrowser_UpOne,Up One,Up One,,arrange up one
 AssetBrowser_DownOne,Down One,Down One,,arrange down one
 AssetBrowser_Tooltip_CustomisationOf,Customisation of {0} in {1},Customisation of {0} in {1},,tooltip for customised resource
+AssetBrowser_CustOrDup_DialogTitle,Confirm add to project,Confirm add to project,,Dialog title
+AssetBrowser_CustOrDup_YouAreAboutToAdd,You are about to add the prefab to your project.\nWould you like to:,You are about to add the prefab to your project.\nWould you like to:,,Explanation you are about to add + options
+AssetBrowser_CustOrDup_Customise,Customise,Customise,,Customise checkbox
+AssetBrowser_CustOrDup_Duplicate,Duplicate,Duplicate,,Duplicate checkbox
+AssetBrowser_CustOrDup_Customise_Description,Customised Prefabs still receive updates from its collection. Modifiable.,Customised Prefabs still receive updates from its collection. Modifiable.,,Customise description
+AssetBrowser_CustOrDup_Duplicate_Description,Asset is unlinked from its collection and no longer receives updates. Fully modifiable.,Asset is unlinked from its collection and no longer receives updates. Fully modifiable.,,Duplicate description
+AssetBrowser_CustOrDup_CannotDoDialogTitle,Selection too complex,Selection too complex,,Message box title for when the selection is a too complex of customisables + duplicatables.
+AssetBrowser_CustOrDup_CannotDo,Please simplify the selection.\nIf Customise is chosen they cannot all be customised.\nIf Duplicate is chosen they cannot all be duplicated.,Please simplify the selection.\nIf Customise is chosen they cannot all be customised.\nIf Duplicate is chosen they cannot all be duplicated.,,Mixed selection too complex
 ListBoxEnum_eAssetListStyle_Grid,Grid,Grid,,
 ListBoxEnum_eAssetListStyle_List,List,List,,
 ListBoxEnum_eListStyle_Grid,Grid,Grid,,
@@ -9634,6 +9658,7 @@ AIAssistant_Inaccurate,Inaccurate,Inaccurate,,flag response option
 AIAssistant_Unhelpful,Unhelpful,Unhelpful,,flag response option
 AIAssistant_Offensive,Offensive,Offensive,,flag response option
 AIAssistant_FlagInfoText,Note: Query will be included in message if sent,Note: Query will be included in message if sent,,flag response info text
+AIAsst_Menu_Open,Open AI Assistant,Open AI Assistant,,menu entry to open ai assistant
 AIAsst_ChatHistory,Chat History,Chat History,,chat history panel title
 AIAsst_Home,Home,Home,,ai assistant home
 AIAsst_ChatSearchDefault,Search Chats...,Search Chats...,,chat search default label
@@ -9739,6 +9764,7 @@ PackageMan_DeleteSetConfirmTitle,Delete Package Set?,Delete Package Set?,,packag
 PackageMan_InstallExceptionArg,Package Manager install failed with Exception:\n{0},Package Manager install failed with Exception:\n{0},,failed with exception <message>
 PackageMan_UninstallExceptionArg,Package Manager uninstall failed:\n{0},Package Manager uninstall failed:\n{0},,failed with error <message>
 PackageMan_PkgNameUpdate,{0} Update,{0} Update,,<package name> Update
+PackageMan_MultiUpdateTitle,Update Packages,Update Packages,,multi update window title
 PackageMan_UpdateSuccessful,Update successful,Update successful,,update successful
 PackageMan_TryAgain,Try again,Try again,,try again
 PackageMan_SetNameRequired,Package Set name is required,Package Set name is required,,pkgman add pkg validation message
@@ -9755,9 +9781,11 @@ packageman_packageInstallDir,Packages Install Directory,Packages Install Directo
 packageman_defaultPackageSource,Default Package Source,Default Package Source,,default package source to open
 packageman_defaultRemote,Default Source URL,Default Source URL,,pref default source URL
 packageman_defaultRemoteSearchPath,Remote search endpoint,Remote search endpoint,,pref default remote search path
+packageman_registryConfigUrl,Registry config URL,Registry config URL,,pref registry config url
 PackageMan,Package Manager,Package Manager,,package manager pref node name
 Notification_PackageManager,Package Manager,Package Manager,,notification category
 Notification_PackageUpdateAvailable,An update is available for {0},An update is available for {0},,notification message
+Notification_MultiPackageUpdateAvailable,Multiple updates are available!,Multiple updates are available!,,pkgman notification message
 BugReport_WindowTitle,Report a bug,Report a bug,,bug report window title
 BugReport_WindowTitle_Crash,Report a crash bug,Report a crash bug,,bug report (crash) window title
 BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.","Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.",,bug report dialog
@@ -9804,7 +9832,7 @@ BugRep_ReqProj_Message,"Would you like to include the current project in your bu
 BugRep_ReqProj_TT_Yes,Include current project and send the report,Include current project and send the report,,proj required yes tooltip
 BugRep_ReqProj_TT_No,Send the report without including the project,Send the report without including the project,,proj required no tooltip
 BugRep_ReqProj_TT_Cancel,Return to the bug report form,Return to the bug report form,,proj required cancel tooltip
-BugRep_IncludeCrashProject_Title,Include previous Project?,Include previous Project?,,crash project dialog title
+BugRep_IncludeCrashProject_Title,Include previous project?,Include previous project?,,crash project dialog title
 BugRep_IncludeCrashProject,"The project '{0}' was open when the issue occurred.\n\nWould you like to privately include this project with your report?\n\nIncluding the project will improve the chances of the issue being resolved.","The project '{0}' was open when the issue occurred.\n\nWould you like to privately include this project with your report?\n\nIncluding the project will improve the chances of the issue being resolved.",,crash project dialog message
 BugRep_ReqPrefabs_Title,"Include all Prefabs?","Include all Prefabs?",,Include all prefabs in the project
 BugRep_ReqPrefabs_Message,"Would you like to include the current project's prefabs in your bug report?\n\nA project is typically required to diagnose compiling or in-game issues.\n\nIf you do not also include the prefabs and they are not publicly accessible, we may request them later if we cannot reproduce the issue.","Would you like to include the current project's prefabs in your bug report?\n\nA project is typically required to diagnose compiling or in-game issues.\n\nIf you do not also include the prefabs and they are not publicly accessible, we may request them later if we cannot reproduce the issue.",,bug rep prefabs requested message
@@ -10154,3 +10182,4 @@ Plugin_SafeMode,Safe Mode Enabled,Safe Mode Enabled,,
 Plugin_VerySafeMode,Very Safe Mode Enabled,Very Safe Mode Enabled,,
 Plugin_SafeModeDisable,Disable,Disable,,
 Plugin_RestoreToDefaults,Restore to Defaults,Restore to Defaults,,
+LayoutLoadErrorMessage,"Error loading layout file:\n\n{0}.\n\nTry restarting GameMaker. If the problem persists, please re-install GameMaker.","Error loading layout file:\n\n{0}.\n\nTry restarting GameMaker. If the problem persists, please re-install GameMaker.",,layout file load error
