@@ -2534,6 +2534,8 @@ SpriteEditor_SpineLabel,Spine Sprite,Spine Sprite,,spine type sprite
 SpriteEditor_SpineLabelTT,Spine Sprite - some editor settings disabled,Spine Sprite - some editor settings disabled,,spine sprite label tooltip
 SpriteEditor_SWFLabel,SWF Sprite,SWF Sprite,,SWF type sprite
 SpriteEditor_SWFLabelTT,SWF Sprite - some editor settings disabled,SWF Sprite - some editor settings disabled,,SWF sprite label tooltip
+SpriteEditor_SVGLabel,SVG Sprite,SVG Sprite,,vector/svg type sprite
+SpriteEditor_SVGLabelTT,SVG Sprite - some editor settings disabled,SVG Sprite - some editor settings disabled,,SVG sprite label tooltip
 SpriteEditor_ToggleGizmoSolid,Solid,Solid,,Toggle to enable solid rendering
 SpriteEditor_ToggleGizmoWireframe,Wireframe,Wireframe,,Toggle to enable wireframe rendering
 SpriteEditor_ToggleGizmoSolidAndWireframe,Solid and wireframe,Solid and wireframe,,Toggle to enable both solid and wireframe rendering
@@ -3595,6 +3597,7 @@ ggs_save_location,Save Location,Save Location,,Save Location
 ggs_software_vertex_processing,Force Software Vertex Processing,Force Software Vertex Processing,,Force Software Vertex Processing
 ggs_borderless,Borderless window,Borderless window,,Borderless Window
 ggs_d3dswapeffectdiscard,Use legacy DXGI_SWAP_EFFECT_DISCARD,Use legacy DXGI_SWAP_EFFECT_DISCARD,,Use legacy DXGI_SWAP_EFFECT_DISCARD (legacy compatibility feature)
+ggs_use_raw_mouse_input,Use raw mouse input,Use raw mouse input,,Use raw mouse input
 ggs_textures_on_demand,Create Textures on Demand,Create Textures on Demand,,Create Textures on Demand
 ggs_sleep_margin,Sleep margin (ms),Sleep margin (ms),,Sleep Margin in ms
 ggs_sleep_margin_windows,Sleep margin (ms) - default 10ms,Sleep margin (ms) - default 10ms,,Sleep Margin in ms with default of 10ms
@@ -3804,6 +3807,7 @@ roomeditor_textItemDefaultText,Default Text for new Text Item,Default Text for n
 roomeditor_volume,Volume,Volume,,Volume in Room Editor
 roomeditor_mastervolume,Master Volume Setting,Master Volume Setting,,room editor master volume
 roomeditor_instancepanel_orientation,Default Element List orientation,Default Element List orientation,,room editor default instances panel orientation preference
+roomeditor_anylayerselect_reset,"Select from any layer" is switched off when Tile or Path layer auto-selected,"Select from any layer" is switched off when Tile or Path layer auto-selected,,select from any layer pref
 roomeditor_uipanel_show,Keep Element List open,Keep Element List open,,room ed keep ui panel visible
 roomeditor_ui_instance_flexnode,Auto-create flex panel parent for new instances,Auto-create flex panel parent for new instances,,ui layers auto-create instance parent flexpanel
 roomeditor_ui_autosize,Set auto-created flex panels to auto size,Set auto-created flex panels to auto size,,ui layers auto-panel auto size default
@@ -4578,6 +4582,7 @@ SpriteEditor_UnsupportedSVGElementsOneInstance,1 instance,1 instance,,Sprite edi
 SpriteEditor_UnsupportedSVGElementsManyInstances,{0} instances,{0} instances,,Sprite editor message in output window informing the user that several instances of an unsupported SVG element has been detected
 SpriteEditorPref_ImportImages,Automatic response to file import,Automatic response to file import,,Automatic choice for importing files into the sprite editor
 SpriteEditorPref_FailedToLoadImages,Automatic response to image load failure,Automatic response to image load failure,,Default response for images that failed to load
+SVGSpriteFileTypeImportWarning,Only .svg image files can be imported as frames to an SVG sprite.,Only .svg image files can be imported as frames to an SVG sprite.,,svg frame import filetype warning
 SVGElementCategory_Unknown,Unknown,Unknown,,Unknown SVG element category (used when reporting errors to the user)
 SVGElementCategory_Animation,Animation,Animation,,Animation SVG element category (used when reporting errors to the user)
 SVGElementCategory_Filters,Filters,Filters,,Filters SVG element category (used when reporting errors to the user)
@@ -6832,6 +6837,13 @@ BringAllToFront_Menu_Title,Bring All To Front,Bring All To Front,,Bring all wind
 Project_Error,Project Error,Project Error,,Error in Project
 Project_Error_No_Project_Loaded,No project is loaded.,No project is loaded.,,No project loaded error message
 Project_Error_No_Rooms,No rooms found - you need at least one room to run.,No rooms found - you need at least one room to run.,,No rooms error message
+Project_Load_Unresolved_Resource_Links,Unresolved resource links,Unresolved resource links,,Dialog title
+Project_Load_Ignore_Nulls_Option,Unlink the following missing resources,Unlink the following missing resources,,Checkbox to load and leave missing resources as nulls
+Project_Load_Unlink_Resources_General_Message,Some resources cannot be found in their projects.,Some resources cannot be found in their projects.,,Dialog heading1
+Project_Load_Unlink_Resources_NullingOnly_Message,Some resources cannot be found in their projects. Do you disconnect missing resources?,Some resources cannot be found in their projects. Do you disconnect missing resources?,,Dialog heading1
+Project_Load_Unlink_Breakage_List,The following resources could not be found:,The following resources could not be found:,,Dialog message
+Project_Load_Unlink_Breakage_Prefab,Prefab '{0}' cannot be found in '{1}' path '{2}',Prefab '{0}' cannot be found in '{1}' path '{2}',,Item detail message
+Project_Load_Unlink_Breakage_Game,Game resource '{0}' cannot be found at path '{1}',Game resource '{0}' cannot be found at path '{1}',,Item detail message
 RecentWindows_ActiveWindowsOnly,Display only currently open windows,Display only currently open windows,,Only show active windows preference
 RecentWindows_ShuffleItemsOnClick,Move focused window to top,Move focused window to top,,Shuffle the newly focused window to the top of the recent windows list
 RecentWindows_MaxNumberOfItems,Maximum windows to display,Maximum windows to display,,Maximum number of windows to show
@@ -6881,6 +6893,7 @@ Background,Background,Background,,Background preference group subheading
 Compiling,Compiling,Compiling,,Compiling preference group subheading
 Confirm Dialogs,Confirm Dialogs,Confirm Dialogs,,Confirm Dialogs preference group subheading
 Debug,Debug,Debug,,Debug preference group subheading
+DebugRunner,Debug Runner,Debug Runner,,Debug preference group subheading
 Font Editor,Font Editor,Font Editor,,Font editor preference group heading
 Theme Editor,Theme Editor,Theme Editor,,Theme editor preference group heading
 Compatibility,Compatibility,Compatibility,,Compatibility preference group subheading
@@ -7247,7 +7260,7 @@ UserLogin_SteamError,Unable to sign in - failed to get a Steam session ticket,Un
 UserLogin_ServerConnectionError,"Unable to sign in - server error, allowing offline","Unable to sign in - server error, allowing offline",,server connection error
 UserLogin_SaveFailed,Failed to save licence file {0} - result {1}({2}),Failed to save licence file {0} - result {1}({2}),,save failed error
 UserLogin_SaveFailedNoResult,Failed to save licence file {0} - no result,Failed to save licence file {0} - no result,,save failed error
-UserLogin_GMAuthError,"Failed to sign in via the GameMaker authentication website. Please try again.","Failed to sign in via the GameMaker authentication website. Please try again.",,sign in fail for GMAuth
+UserLogin_GMAuthError,"Failed to sign in via the GameMaker authentication website.\n{0}","Failed to sign in via the GameMaker authentication website.\n{0}",,sign in fail for GMAuth
 UserLogin_GMAuthError_Title,Sign In Failed,Sign In Failed,,sign in fail for GMAuth title
 UserLogin_LicenceStatus,Status: {0},Status: {0},,licence status error
 UserLogin_RestartForCustomFeed,You have a new IDE update feed available. \nWould you like to restart and check for updates?,You have a new IDE update feed available. \nWould you like to restart and check for updates?,,message when a user has a custom ide feed available
@@ -8302,11 +8315,13 @@ switch_tool_error,Switch Tools Error,Switch Tools Error,,Switch Tools Error titl
 switch_auth_editor_not_exist,The Switch Authoring Editor cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch Authoring Editor cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch Authoring Editor not found. Please check Nintendo SDK install
 switch_auth_tool_not_exist,The Switch Authoring Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch Authoring Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch Patch Tool cannot be found. Please check Nintendo SDK install
 switch_runontarget_tool_not_exist,The Switch RunOnTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch RunOnTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch RunOnTarget Tool cannot be found. Please check Nintendo SDK install
+switch_controltarget_tool_doesnt_exist,The Switch ControlTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch ControlTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch ControlTarget Tool cannot be found. Please check Nintendo SDK install
 switch2_tools_invalid_platform,The Switch 2 tools are only available on Windows.,The Switch 2 tools are only available on Windows.,,Switch 2 tools not available on this platform
 switch2_tool_error,Switch 2 Tools Error,Switch 2 Tools Error,,Switch 2 Tools Error title
 switch2_auth_editor_not_exist,The Switch 2 Authoring Editor cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch 2 Authoring Editor cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch 2 Authoring Editor not found. Please check Nintendo SDK install
 switch2_auth_tool_not_exist,The Switch 2 Authoring Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch 2 Authoring Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch 2 Patch Tool cannot be found. Please check Nintendo SDK install
 switch2_runontarget_tool_not_exist,The Switch 2 RunOnTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch 2 RunOnTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch 2 RunOnTarget Tool cannot be found. Please check Nintendo SDK install
+switch2_controltarget_tool_doesnt_exist,The Switch 2 ControlTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,The Switch 2 ControlTarget Tool cannot be found. Please ensure the Nintendo SDK is properly installed and try again.,,Switch 2 ControlTarget Tool cannot be found. Please check Nintendo SDK install
 Beta Channel,Beta Channel,Beta Channel,,Beta Channel preferences tag
 beta_1,Here you can opt in or out of the GameMaker Beta.,Here you can opt in or out of the GameMaker Beta.,,beta_1 caption
 beta_2,This will grant you access to upcoming versions of GameMaker before they are released to production.,This will grant you access to upcoming versions of GameMaker before they are released to production.,,beta_2 caption
@@ -8322,13 +8337,15 @@ beta_check_opt-out,Opt out of GameMaker Beta,Opt out of GameMaker Beta,,beta_che
 beta_channel_warning,Apply the Beta channel opt-in and restart GMS2 now?,Apply the Beta channel opt-in and restart GMS2 now?,,beta channel warning
 beta_channel_downgrade,"After clicking OK, you should manually install a stable IDE to complete the opt-out process. See the release notes for an installer download link.","After clicking OK, you should manually install a stable IDE to complete the opt-out process. See the release notes for an installer download link.",,beta channel downgrade info
 beta_channel_splash,Please note that these are early release builds. This means that they may have bugs that could corrupt your projects. We strongly recommend that you back up your project using source control and use a separate copy of it when using a beta build.,Please note that these are early release builds. This means that they may have bugs that could corrupt your projects. We strongly recommend that you back up your project using source control and use a separate copy of it when using a beta build.,,beta channel splash 
+lts_upgrade_title,LTS Upgrade Available,LTS Upgrade Available,,LTS Upgrade Available title
+lts_upgrade_text,This release is no longer supported but a new LTS upgrade is available from <a href=""https://releases.gamemaker.io"">https://releases.gamemaker.io</a>\n\nPlease upgrade at your earliest opportunity.,This release is no longer supported but a new LTS upgrade is available from <a href=""https://releases.gamemaker.io"">https://releases.gamemaker.io</a>\n\nPlease upgrade at your earliest opportunity.,,LTS Upgrade text
 Convert_ConfirmMessage,This project is of an older format and will need to be converted. Proceed?,This project is of an older format and will need to be converted. Proceed?,,sequences project conversion confirmation dialogue message
 Convert_Success_Title,Conversion Success,Conversion Success,,Project Conversion success title
 Convert_Success_Message,The Project has successfully converted,The Project has successfully converted,,Project Conversion success message
 Convert_Failed_Title,Conversion Failed,Conversion Failed,,Project Conversion failed title
 Convert_Failed_Message,The Project conversion has failed,The Project conversion has failed,,Project Conversion failed message
 Convert_SameFolderMessage,You cannot save the converted project to the same folder as the original. Please select a new location.,You cannot save the converted project to the same folder as the original. Please select a new location.,,convert same folder dont do it message
-exception_faq_button_caption,"To see what data this report contains, <a href=""https://help.yoyogames.com/hc/en-us/articles/360028120992"">click here</a>","To see what data this report contains, <a href=""https://help.yoyogames.com/hc/en-us/articles/360028120992"">click here</a>",,exception faq button caption
+exception_faq_button_caption,"To see what data this report contains, <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE#what-actually-gets-sent-in-a-bug-report"">click here</a>","To see what data this report contains, <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE#what-actually-gets-sent-in-a-bug-report"">click here</a>",,exception faq button caption
 exception_fatal_error_header_caption,A fatal exception has occurred in GameMaker and the program needs to close.\n\nWe are sorry for the inconvenience.,A fatal exception has occurred in GameMaker and the program needs to close.\n\nWe are sorry for the inconvenience.,,exception fatal error header caption
 exception_fatal_error_header_caption_new,A fatal exception occurred on a previous run of GameMaker and the program needed to close.\n\nWe are sorry for the inconvenience.,A fatal exception occurred on a previous run of GameMaker and the program needed to close.\n\nWe are sorry for the inconvenience.,,new exception fatal error header caption
 exception_problem_header_caption,Please tell us about this problem.,Please tell us about this problem.,,exception problem header caption
@@ -8423,7 +8440,7 @@ Category_SoundInfo,Sound Information,Sound Information,,inspector category label
 Category_InstanceInfo,Instance Information,Instance Information,,inspector category label
 Category_SequenceInfo,Sequence Information,Sequence Information,,inspector category label
 ElementName_AudioBusSlot,{1},{1},,inspector array element name format
-GMScript_DefaultComment,// Script assets have changed for v2.3.0 see\n// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information,// Script assets have changed for v2.3.0 see\n// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information,,default script comment
+GMScript_DefaultComment,// Script assets have changed for v2.3.0 see\n// https://gamemaker.io/en/help/articles/changes-to-how-script-assets-are-created-as-of-version-2-3-0 for more information,// Script assets have changed for v2.3.0 see\n// https://gamemaker.io/en/help/articles/changes-to-how-script-assets-are-created-as-of-version-2-3-0 for more information,,default script comment
 GMScript_DnDBoilerPlate,"/// @DnDAction : YoYo Games.Common.Function\n/// @DnDVersion : 1\n/// @DnDHash : ${hash}\n/// @DnDComment : ${comment}\n/// @DnDArgument : ""funcName"" ""${funcName}""\nfunction ${funcName}(){\n\n}","/// @DnDAction : YoYo Games.Common.Function\n/// @DnDVersion : 1\n/// @DnDHash : ${hash}\n/// @DnDComment : ${comment}\n/// @DnDArgument : ""funcName"" ""${funcName}""\nfunction ${funcName}(){\n\n}",,GML Boiler plate for a new script
 GMScript_DnDFuncDecl,"/// @DnDAction : YoYo Games.Common.Function\n/// @DnDVersion : 1\n/// @DnDHash : ${hash}\n/// @DnDArgument : ""funcName"" ""${funcName}""\nfunction ${funcName}(){\n\n}","/// @DnDAction : YoYo Games.Common.Function\n/// @DnDVersion : 1\n/// @DnDHash : ${hash}\n/// @DnDArgument : ""funcName"" ""${funcName}""\nfunction ${funcName}(){\n\n}",,GML function declaration template
 AssetBrowser_CreateLotsOfResourcesWarning,Do you want to create {0} Assets?,Do you want to create {0} Assets?,,label to warn user they are about to create a lot of resources
@@ -9853,6 +9870,8 @@ BugReport_RTMismatchMsg3,"If this IDE and runtime are also not the current relea
 BugReport_ChangeRuntime,Change Runtime,Change Runtime,,change runtime button
 BugReport_ReportAnyway,Report Anyway,Report Anyway,,report anyway
 BugReport_SendReportAnyway,"An error prevented creation of the zip attachment. Send report anyway?","An error prevented creation of the zip attachment. Send report anyway?",,if project-slimming or zip creation failed
+BugReport_BotPostWarnMsg,"Bug report will be sent anonymously -\nif you have authorized GitHub to post issues, you will need to re-Sign In to post from your GitHub account.","Bug report will be sent anonymously -\nif you have authorized GitHub to post issues, you will need to re-Sign In to post from your GitHub account.",,bugrep anon post warning msg
+BugReport_ReSignIn,"Re-Sign In","Re-Sign In",,sign in again
 ListBoxEnum_eBugReportVis_Public,Public,Public,,public
 ListBoxEnum_eBugReportVis_Private,Private,Private,,public
 ListBoxEnum_eBugRepYesNo_Yes,Attach privately,Attach privately,,yes
@@ -10026,12 +10045,13 @@ PrefabLib_EditCollectionMsg,Open the prefab project in a new IDE instance?,Open 
 PrefabLib_ShowInPackageManager,Show in Package Manager,Show in Package Manager,,Show in Package Manager
 PrefabLib_UninstallPrefab,Uninstall Prefab Collection,Uninstall Prefab Collection,,Uninstall selected Prefab Collection
 PrefabLib_ReinstallPrefab,Reinstall Prefab Collection,Reinstall Prefab Collection,,Reinstall selected Prefab Collection
+PrefabLib_ReinstallPrefab_Fail,Failed to re-install prefab collections {0},Failed to re-install prefab collections {0},,Reinstall selected Prefab Collection fail message
 Prefab_Library_empty_description,Browse and Install Prefab Collections from the Package Manager,Browse and Install Prefab Collections from the Package Manager,,Description for when no prefab collections are installed
 Prefab_Library_loading_description,Loading Prefab Collections...,Loading Prefab Collections...,,Message when loading Prefab Collections
 ProgressBar_Prefabs_Copying,Prefabs...,Prefabs...,,Copying Prefabs progress
 Prefabs_OpenPrefabLibrary,Prefab Library,Prefab Library,,Prefab Library
 Prefabs_CreatePackage,Create Prefab Package,Create Prefab Package,,Create Prefab Package
-Prefabs_IncludeYYZ,Include Prefabs in YYZ?,Include Prefabs in YYZ?,,Include all prefabs in the YYZ export
+Prefabs_IncludeYYZ,Include Prefab Collections with YYZ?,Include Prefab Collections with YYZ?,,Include all prefabs in the YYZ export
 PrefabMetadataEditor_DialogTitle,Prefab metadata settings,Prefab metadata settings,,Dialog title for Prefab metadata settings
 PrefabMetadataEditor_BadImageFile,File selected is invalid image,File selected is invalid image,,File selected is invalid
 PrefabMetadataEditor_DisplayName,Display name,Display name,,Prefab metadata editor DisplayName
@@ -10041,6 +10061,7 @@ PrefabMetadataEditor_Version,Version,Version,,Prefab metadata editor Version
 PrefabMetadataEditor_Author,Author,Author,,Prefab metadata editor Author
 PrefabMetadataEditor_Signature,Signature,Signature,,Prefab metadata editor Signature
 PrefabMetadataEditor_Verify,Verify,Verify,,Prefab metadata editor Verify
+PrefabMetadataEditor_AddDependency,Add Dependency,Add Dependency,,Asset Picker label to add dependency
 PrefabMetadataEditor_Icon,Icon,Icon,,Prefab metadata editor change the icon file (overwrite from another source)
 PrefabMetadataEditor_SetLibraryInformation,Set Library Information,Set Library Information,,Prefab library editor - Set Library Information
 PrefabMetadataEditor_SetPrefabInformation,Set Prefab Information,Set Prefab Information,,Prefab library editor - Set information on individual prefab
@@ -10146,6 +10167,8 @@ FinishedInstalledPrefabs,Finished installing missing prefabs,Finished installing
 yyal_init_failed_title,"Audio library failed to initialise","Audio library failed to initialise",,YYAL Failed to init
 yyal_init_failed,"You can use GameMaker, but you will not have any audio previews.\n\nPlease open your ui.log (in the Help menu) and see if it says your computer is missing a required library.","You can use GameMaker, but you will not have any audio previews.\n\nPlease open your ui.log (in the Help menu) and see if it says your computer is missing a required library.",,YYAL Failed to init
 PrefabExtractionError,Error extracting prefab - see your ui.log for more details,Error extracting prefab - see your ui.log for more details,,Prefab extraction error
+PrefabExtractErrorTitle,Error extracting prefabs,Error extracting prefabs,,prefab extraction error dialog title
+PrefabExtractErrorMsg,"One or more Prefabs failed to extract.\nFor file access errors, please review our <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Permissions-Guide"">Permissions wiki page</a> and follow the steps there which should resolve this.","One or more Prefabs failed to extract.\nFor file access errors, please review our <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Permissions-Guide"">Permissions wiki page</a> and follow the steps there which should resolve this.",,prefab extract error msg
 SpecError_Title,Language Spec Error,Language Spec Error,,language spec error dialog title
 SpecError_Message,Error in GMLSpec file:\n{0}\n\nLanguageSpec: SyncLanguageSpecWithRuntime: {1}\n{2},Error in GMLSpec file:\n{0}\n\nLanguageSpec: SyncLanguageSpecWithRuntime: {1}\n{2},,language spec error dialog message
 PackageInstall_NoInternet,Package Manager requires an internet connection to install packages. Please check your internet connection and try again.,Package Manager requires an internet connection to install packages. Please check your internet connection and try again.,,
@@ -10183,3 +10206,5 @@ Plugin_VerySafeMode,Very Safe Mode Enabled,Very Safe Mode Enabled,,
 Plugin_SafeModeDisable,Disable,Disable,,
 Plugin_RestoreToDefaults,Restore to Defaults,Restore to Defaults,,
 LayoutLoadErrorMessage,"Error loading layout file:\n\n{0}.\n\nTry restarting GameMaker. If the problem persists, please re-install GameMaker.","Error loading layout file:\n\n{0}.\n\nTry restarting GameMaker. If the problem persists, please re-install GameMaker.",,layout file load error
+GMRTNotInstalled,Please install GMRT from the Package Manager to use this Runtime,Please install GMRT from the Package Manager to use this Runtime,,Message to show if we cannot find GMRT installed
+GMRTExeFileMissing,Could not find GMRT {0} executable:\n{1},Could not find GMRT {0} executable:\n{1},,GMRT missing exe file warning

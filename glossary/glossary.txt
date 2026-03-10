@@ -113,3 +113,4 @@ vector	向量
 Prefab Collection	预制件集
 Origin	原点
 Bug	Bug
+prefab	预制件
