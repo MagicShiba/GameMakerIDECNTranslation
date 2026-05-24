@@ -1,5 +1,5 @@
-_Language,English,Simplified Chinese,,Language name - in English
-_LanguageNative,English,中文简体,,Language name in the native language
+_Language,English,English,,Language name - in English
+_LanguageNative,English,简体中文(翻译),,Language name in the native language
 _LanguageCode,en,zh,,standard windows os language code this pack represents (can be primary code only ie. en or primary-secondary ie. en-GB)
 GMStdSeqSetHead_Story_1,Set head position (in frames) of sequence instance ${sequenceelmid} to ${var},将序列实例${sequenceelmid}的头部位置(以帧为单位)设置为${var},,GML Visual story text
 GMStdSeqGetHead_Story_1,Get head position (in frames) of sequence instance ${sequenceelmid} into ${var},将序列实例${sequenceelmid}的头部位置(以帧为单位)获取到${var},,GML Visual story text

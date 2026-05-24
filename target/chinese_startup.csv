@@ -57,7 +57,7 @@ Views_Menu_SyntaxErrors,Syntax Errors,语法错误,,Open Syntax Errors Window
 Views_Menu_Inspector,Inspector,检查器,,Views menu entry for inspector
 Views_Menu_Recent_Windows,Recent Windows,最近窗口,,Recent activated windows menu option
 Views_Menu_Macros,IDE Environment Variables,IDE环境变量,,View Macros window
-Prefabs_OpenPrefabLibrary,Prefab Library,预制库,,Prefab Library
+Prefabs_OpenPrefabLibrary,Prefab Library,预制件库,,Prefab Library
 IDEMenu_Texturepage,Texture Groups,纹理组,,Texture group manager
 IDEMenu_Audiogroups,Audio Groups,音频组,,Audio group manager
 IDEMenu_SoundMixer,Sound Mixer,混音器,,Open Sound Mixer
@@ -120,7 +120,7 @@ Splash_CheckingRSS,Checking RSS...,检查RSS...,,Checking RSS...
 Dialog_Confirm,Confirm,确认,,"Dialog ""confirm"" heading"
 Dialog_DontShowAgain,Don't show this message again,此消息不再显示。,,Message next to checkbox to allow the user to choose not to see this popup in future
 runtime_modules_window,Runtime Modules,运行时模块,,A title for a window with runtime modules
-Runtime_Installing_Version,Installing runtime {0},正在安装运行库 {0},,user facing splash screen message for installing runtime
+Runtime_Installing_Version,Installing runtime {0},正在安装运行时 {0},,user facing splash screen message for installing runtime
 runtime_select_modules,Select Modules:,选择模块,,A label proposing to select modules
 runtime_modules_required_only,Required only,仅必需,,A button name
 ImageEditor_SelectAll,Select All,全选,,Image editor select all menu option
@@ -163,13 +163,13 @@ PluginWarning_SymbolsFailedToLoadWarning,Symbols failed to load for assembly {0}
 PluginWarning_UnknownPluginTypeError,Unknown plugin type for GMPlugin {0},GMPlugin {0} 未知插件类型,,UnknownPluginTypeError
 PluginWarning_InvalidPluginDataError,GMPlugin {0} plugin data was invalid,GMPlugin {0} 插件数据无效,,InvalidPluginDataError
 UserLogin_RetrySSO,Retry Opera Login,重新尝试登录 Opera,,User Login - Error Retry SSO login
-UserLogin_NoRuntime,Unable to access the Runtime Feed and no local Runtime installed. Please check your internet connection and start GameMaker again.,无法访问运行库源（Runtime Feed）并且未安装本地运行库。请检查您的互联网连接，然后重新启动GameMaker。,,user login no runtime message
+UserLogin_NoRuntime,Unable to access the Runtime Feed and no local Runtime installed. Please check your internet connection and start GameMaker again.,无法访问运行时源（Runtime Feed）并且未安装本地运行时。请检查您的互联网连接，然后重新启动GameMaker。,,user login no runtime message
 UserLogin_InstallRuntimeTitle,Install Runtime {0},安装运行时 {0},,install runtime title
 UserLogin_RuntimeSpaceWarningMessage,Destination drive {0} has only {1} GB free space available.\nAt least 2 GB of free space is recommended - please ensure there is enough free space available before proceeding.,目标驱动器 {0} 仅有 {1} GB可用空间。\ n建议至少 2 GB 的可用空间-请确保在继续操作之前有足够的可用空间。,,runtime free space warning message
 UserLogin_Continue,Continue,继续,,continue label
 UserLogin_MaxDevice,Maximum sign ins exceeded \nYou can manage your account sessions at {0},已超过最大登录次数\n您可以在{0}管理您的帐户会话,,User Login Error response 29
 User_OK,OK,确定,,User Login - two step authentication ok button
-runtime_selection,Runtime Selection,运行库选择,,Runtime Selection Window title
+runtime_selection,Runtime Selection,运行时选择,,Runtime Selection Window title
 runtime_onstartup_change,Do you want to change your current runtime to the latest installed version: {0}?,是否想将当前运行时更改为已安装的最新版本：{0}？,,Change current runtime to the version matching the IDE
 UserLogin_OfflineError,Unable to take user offline,无法让用户离线,,offline error
 opera_env_sso_confirm,"You are using a custom environment for Opera GX settings. If you use Opera Single Sign-on, these settings will be overriden. Do you wish to proceed anyway?","您正在使用Opera GX设置的自定义环境。如果您使用Opera单点登录，这些设置将被覆盖。你想继续吗?",,Warning shown when a user tries to log-in via Opera SSO with a custom environment
@@ -178,8 +178,8 @@ IDETooltip_Notifications,Notifications,通知,,IDE toolbar notifications tooltip
 runtime_dns_ResolvingFailed,DNS resolving has failed,DNS 解析已失败,,A title of the warning which is shown when after the IDE failed to resolve an address against an alternative DNS
 runtime_dns_ResolvingFailedMessage,Could not resolve {0} with an alternative DNS. A system DNS has been used,无法使用备用 DNS 解析 {0}。已使用系统 DNS,,Could not use an alternative DNS
 ThemeError_MissingComma,"Error in theme at '{0}', check all entries are separated with commas","错误在主题'{0}'，请检查所有条目是否以逗号分隔。",,error in skin theme message
-RuntimeDownload_FailedTitle,Runtime install incomplete,运行库安装不完整,,Runtime download failed title
-RuntimeDownload_Failed,The selected runtime could not fully install,选定的运行库无法完全安装,,Runtime download failed message
+RuntimeDownload_FailedTitle,Runtime install incomplete,运行时安装不完整,,Runtime download failed title
+RuntimeDownload_Failed,The selected runtime could not fully install,选定的运行时无法完全安装,,Runtime download failed message
 ConvertedRemapsSavePrompt,Your remaps file has been converted to a new format. Would you like to save it? This format is not compatible with older versions of GameMaker.,您的重映文件已转换为新格式。你想保存吗？此格式与旧版本的GameMaker不兼容。,,Conversion remap prompt
 StyleError_LoadError,Error in style file {0}\n Reason: {1},错误在样式文件{0}\n 原因:{1},,error when loading style
 SplashScreen_PluginLoadFailedTitle,Error loading plugins,加载插件时出错,null,null

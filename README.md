@@ -1,9 +1,9 @@
 # GameMaker IDE Chinese Translation.
 
-Currently only Simplified Chinese and English.
-
-参与翻译需要 [omegat-gms2-ide-csv-filter](https://github.com/GamemakerChina/omegat-gms2-ide-csv-filter) 插件.
-
+现在已经可以在**官方包管理器**中下载!  
+如果少量文本变更，我可能懒得提交更新。
+![alt text](other/pmug.png)
+参与翻译需要 [omegat-gms2-ide-csv-filter](https://github.com/GamemakerChina/omegat-gms2-ide-csv-filter) 插件.  
 函数翻译请查看[GM函数提示中文翻译](https://github.com/MagicShiba/GameMaker-GmlSpec-CN-Translation)
 
 ## Usage

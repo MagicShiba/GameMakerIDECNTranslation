@@ -2,7 +2,7 @@ Name,English,Translation,Restrictions,Comment
 __Priority,0,0,,Order of language importance. Allows other packs to supplement or replace sections
 _Argument0,{0},{0},,single unlocalised argument
 _Error,Error: {0},错误：{0},,General error prefix
-_Language,English,Simplified Chinese,,Language name - in English
+_Language,English,English,,Language name - in English
 _LanguageNative,English,简体中文(翻译),,Language name in the native language
 _LanguageCode,en,zh,,standard windows os language code this pack represents (can be primary code only ie. en or primary-secondary ie. en-GB)
 _GameMaker2016,GameMaker,GameMaker,,IDE title
@@ -483,7 +483,7 @@ Inspector_TagsWindowMulti,Tags: Multiple Selection,标签：多个选择,,tags w
 Inspector_PaddingShowPreview,Preview All Sides,预览所有侧边,,padding gadget preview inspector label
 inspector_pref_objvarDisplayName,Show Object variable display name in place of variable name,显示对象变量的显示名称代替变量名,,object variable show display name
 inspector_pref_scrollonexpand,Scroll category into view on expand,展开时将类别滚动到视图中,,inspector scroll on expand pref
-inspector_pref_previewexpand,Preview starts expanded,预览开始展开（？）,,inspector preview expand default pref
+inspector_pref_previewexpand,Preview starts expanded,预览以展开状态开始,,inspector preview expand default pref
 inspector_pref_stickyheader,Header section pinned to top,固定在顶部的页眉部分,,inspector sticky header pref
 ListBoxEnum_eMultiSortMode_AssetType,Asset type,资源类型,,multisort mode enum
 ListBoxEnum_eMultiSortMode_SelectionOrder,Selection order,选择顺序,,multisort mode enum
@@ -903,7 +903,7 @@ IDEMenu_Help_SDKS,Required SDKs,必需的SDK,,Help menu item for the required sd
 IDEMenu_Help_KnowledgeBase,Knowledge Base,知识库,,Help menu item for knowledge base
 IDEMenu_Help_ReportBug,Contact Us,联系我们,,Help menu item for report a bug page
 IDEMenu_Help_ReleaseNotes,Release Notes,版本说明,,Help menu item for release notes
-IDEMenu_Help_RuntimeReleaseNotes,Current Runtime Release Notes,当前运行库版本说明,,Help menu item for current runtime release notes
+IDEMenu_Help_RuntimeReleaseNotes,Current Runtime Release Notes,当前运行时版本说明,,Help menu item for current runtime release notes
 IDEMenu_Help_StartPage,Start Page,起始页,,Help menu item for reopening the start page
 IDEMenu_Help_WelcomePage,Welcome Page,欢迎页,,Help menu item for reopening the welcome page
 IDEMenu_Help_Help,Open Manual,打开帮助文档,,Help menu item for actual help
@@ -1522,6 +1522,8 @@ ObjVar_VariableLabelArg,Variable Label: {0},变量标签：{0},,object variable 
 ObjVar_DisplayName,Display Name,显示名称,,object variable display name
 ObjVar_Description,Description,描述,,description
 ObjectVar_DescDetail,Optional variable description.\nThe description and label name will appear on hover over the 'label' icon.,可选的变量描述。\n描述和标签名称将出现在“label”图标的悬停提示中。,,objvar description detail
+ObjVar_ChildConflictMessage,The variable '{0}' was renamed because it is already defined in the following child object(s):,变量“{0}”已被重命名，因为它已在以下子物体中被定义。,,child varname conflict message
+ObjVar_NameConflictTitle,Variable name conflict,变量名冲突,,variable name conflict title
 OutputPanel_Output,Output,输出,,Output panel output tab name
 OutputPanel_SearchResults,Search Results,搜索结果,,Output panel search results tab name
 OutputPanel_SourceControl,Source Control,源码控制,,Output panel source control tab name
@@ -1576,7 +1578,7 @@ DebugInfo_DumpMemory,Memory Usage,内存占用量,,Dump memory button label
 DebugInfo_CrashButton,DIE DIE DIE (Crash),DIE DIE DIE (崩溃),,Crash button label
 DebugInfo_SkinChangeButton, Update Skin, 更新皮肤,,Debug Skin Change button label
 OutputPanel_Title,Output,输出,,Output panel window title
-PropertyButton_NoResourceArg,No {0},第 {0} 号,,no resource (type name) selected caption for resource button
+PropertyButton_NoResourceArg,No {0},没有 {0},,no resource (type name) selected caption for resource button
 PropertyButton_NoResource,No Resource,没有资源,,no resource selected caption for resource button
 PropertyButton_NoGMObject,No Object,没有物体,,no object selected caption for the view object button
 PropertyButton_NoGMSprite,No Sprite,没有精灵,,Button caption for when no sprite is selected
@@ -1714,8 +1716,8 @@ UIFolder_Delete,Delete UI Folder,删除 UI 文件夹,,delete ui folder menu entr
 RoomEditor_DeleteUIFolderWarning,"Are you sure you want to delete the User Interface? This will remove it from all Rooms and is not undoable.","您确定要删除用户界面吗？这将从所有房间中移除它，并且无法恢复。",,room ui folder delete confirm
 RoomEditor_ConfirmCreateUIFolder,Create UI Folder and add UI Layer(s)?,创建 UI 文件夹并添加 UI 层？,,drag ui layer create confirm dialog
 UILayer_RuntimeDraw,Game View,游戏视图,,uilayer runtime draw
-ListBoxEnum_eUIDisplay_Display,Display,显示,,ui layers runtime display enum
-ListBoxEnum_eUIDisplay_Viewports,Viewports,视口,,ui layers runtime display enum
+ListBoxEnum_eUIDisplay_Display,Display,Display(游戏整个界面),,ui layers runtime display enum
+ListBoxEnum_eUIDisplay_Viewports,Viewports,Viewports(游戏每个视口),,ui layers runtime display enum
 Inspector_Category_FlexProperties,Flex Properties,Flex属性,,flex properties category
 Inspector_FlexPropertiesCategoryTT,These properties will only affect children which are also flex panels,这些属性只会影响也是 flex 布局的子元素。,,flex properties category tooltip
 Inspector_Category_Layout,Layout,布局,,layout category
@@ -1726,7 +1728,7 @@ Flex_AlignContent_TT,"Align content defines the distribution of lines along the 
 Flex_AlignItems,Align Items,对齐项目,,flex property name
 Flex_AlignSelf,Align Self,对齐自身,,flex property name
 Flex_KeepAspectRatio,Keep Aspect Ratio,保持长宽比例,,flex property name
-Flex_Display,Display,显示,,flex property name
+Flex_Display,Display,Display(游戏整个界面),,flex property name
 Flex_Flex,Flex,Flex,,flex property name
 Flex_FlexGrowShrink,Grow/Shrink,增大/缩小,,flex grow/shrink
 Inspector_Field_Grow,Grow,增长,,flex field name
@@ -1859,9 +1861,9 @@ Help_eYGJustify_YGJustifySpaceBetween,Distribute children evenly across the main
 Help_eYGJustify_YGJustifySpaceAround,"Distribute children evenly with remaining container space, with half that size between first and last child","将子元素均匀分布在剩余容器空间中，在第一个和最后一个子元素之间留出一半大小的间距。",,flex help tooltip
 Help_eYGJustify_YGJustifySpaceEvenly,"Distribute children evenly with remaining container space, including start and end edges","将子元素均匀分布在剩余容器空间中，包括起始和结束边缘",,flex help tooltip
 ListBoxEnum_eYGAlign_YGAlignAuto,Auto,自动,,flex align value
-ListBoxEnum_eYGAlign_YGAlignFlexStart,Flex Start,Flex 开始,,flex align value
+ListBoxEnum_eYGAlign_YGAlignFlexStart,Flex Start,Flex 起点,,flex align value
 ListBoxEnum_eYGAlign_YGAlignCenter,Centre,中心,,flex align value
-ListBoxEnum_eYGAlign_YGAlignFlexEnd,Flex End,Flex 结束,,flex align value
+ListBoxEnum_eYGAlign_YGAlignFlexEnd,Flex End,Flex 末尾,,flex align value
 ListBoxEnum_eYGAlign_YGAlignStretch,Stretch,拉伸,,flex align value
 ListBoxEnum_eYGAlign_YGAlignBaseline,Baseline,基线,,flex align value
 ListBoxEnum_eYGAlign_YGAlignSpaceBetween,Space Between,两端对齐,,flex align value
@@ -1883,9 +1885,9 @@ ListBoxEnum_eYGWrap_YGWrapWrapReverse,Wrap Reverse,反向换行,,flex wrap type
 ListBoxEnum_eYGPositionType_YGPositionTypeStatic,Static,静态,,position type
 ListBoxEnum_eYGPositionType_YGPositionTypeRelative,Relative,相对,,position type
 ListBoxEnum_eYGPositionType_YGPositionTypeAbsolute,Absolute,绝对,,position type
-ListBoxEnum_eYGJustify_YGJustifyFlexStart,Flex Start,Flex 开始,,flex justify type
+ListBoxEnum_eYGJustify_YGJustifyFlexStart,Flex Start,Flex 起点,,flex justify type
 ListBoxEnum_eYGJustify_YGJustifyCenter,Centre,中心,,flex justify type
-ListBoxEnum_eYGJustify_YGJustifyFlexEnd,Flex End,Flex 结束,,flex justify type
+ListBoxEnum_eYGJustify_YGJustifyFlexEnd,Flex End,Flex 末尾,,flex justify type
 ListBoxEnum_eYGJustify_YGJustifySpaceBetween,Space Between,两端对齐,,flex justify type
 ListBoxEnum_eYGJustify_YGJustifySpaceAround,Space Around,两端留半间距,,flex justify type
 ListBoxEnum_eYGJustify_YGJustifySpaceEvenly,Space Evenly,完全均匀分布,,flex justify type
@@ -2031,7 +2033,7 @@ ROOM_EFFECTS_Distort 2 Amount,Distort 2 Amount,扭曲 2 数量,,distort 2 amount
 ROOM_EFFECTS_Distort Texture,Distort Texture,扭曲纹理,,distort texture param
 ROOM_EFFECTS_Chroma Spread,Chroma Spread,色度扩散,,chroma spread param
 ROOM_EFFECTS_Camera Offset Scale,Camera Offset Scale,相机偏移比例,,camera offset scale param
-ROOM_EFFECTS_filter_posterise,Posterise,Posterise,,posterise filter name
+ROOM_EFFECTS_filter_posterise,Posterise,色调分离,,posterise filter name
 ROOM_EFFECTS_Colour Levels,Colour Levels,色阶,,colour levels param
 ROOM_EFFECTS_filter_tintfilter,Colour Tint,色调,,colour tint filter name
 ROOM_EFFECTS_Tint colour,Tint Colour,色调颜色,,tint colour parameter name
@@ -2044,7 +2046,7 @@ ROOM_EFFECTS_filter_large_blur,Large Blur,大模糊,,large blur filter name
 ROOM_EFFECTS_DESC_filter_large_blur,This filter has a large performance impact on some platforms.\nConsider using Gaussian Blur effect instead if you notice performance drops after applying this filter.,此滤镜对某些平台的性能影响很大。\n如果您注意到应用此滤镜后性能下降，请考虑使用高斯模糊效果。,,large blur filter desc
 ROOM_EFFECTS_Radius,Radius,半径,,radius filter param
 ROOM_EFFECTS_filter_pixelate,Pixelate,像素化,,pixelate filter name
-ROOM_EFFECTS_Cell Size,Cell Size,单元格大小,,cell size filter param
+ROOM_EFFECTS_Cell Size,Cell Size,像素网格大小,,cell size filter param
 ROOM_EFFECTS_filter_screenshake,Screen Shake,屏幕抖动,,screen shake filter name
 ROOM_EFFECTS_Magnitude,Magnitude,大小,,magnitude filter param
 ROOM_EFFECTS_Shake Speed,Shake Speed,摇晃速度,,shake speed filter param
@@ -2080,7 +2082,7 @@ ROOM_EFFECTS_Wave Scale,Wave Scale,波尺,,wave scale param name
 ROOM_EFFECTS_Wave Amplitude,Wave Amplitude,波幅,,wave amplitude param name
 ROOM_EFFECTS_filter_whitenoise,White Noise,白噪声,,white noise filter name
 ROOM_EFFECTS_Animation,Animation,动画,,animation param name
-ROOM_EFFECTS_effect_windblown_particles,Windblown Particles (in-game only),被风吹来的微粒(仅限于游戏中),,Windblown particles effect name
+ROOM_EFFECTS_effect_windblown_particles,Windblown Particles (in-game only),风吹粒子（仅限游戏内）,,Windblown particles effect name
 ROOM_EFFECTS_Sprite,Sprite,精灵,,sprite param name
 ROOM_EFFECTS_Number of particles,Number of particles,粒子数,,number of particles param name
 ROOM_EFFECTS_Spawn time,Spawn Time,生成时间,,spawn time param name
@@ -2097,14 +2099,14 @@ ROOM_EFFECTS_Particle initial velocity y,Initial velocity y,初始速度 Y,,part
 ROOM_EFFECTS_Particle initial rotation,Initial rotation,初始旋转,,particle initial rotation param name
 ROOM_EFFECTS_Particle rotation speed,Rotation speed,旋转速度,,particle rotation speed param name
 ROOM_EFFECTS_Particle align with velocity,Align with velocity,与速度对齐,,align with velocity param name
-ROOM_EFFECTS_Particle lifetime,Lifetime,始终,,particle lifetime param name
+ROOM_EFFECTS_Particle lifetime,Lifetime,生命周期,,particle lifetime param name
 ROOM_EFFECTS_Particle update skip,Update skip,更新跳过,,particle update skip param name
 ROOM_EFFECTS_Particle spawn border margin,Spawn border margin,生成边框边距,,particle spawn border margin param name
 ROOM_EFFECTS_Particle source blend,Source blend,源混合,,particle source blend param name
 ROOM_EFFECTS_Particle dest blend,Dest blend,目标混合,,particle destination blend param name
 ROOM_EFFECTS_Draw trails only,Draw trails only,仅绘制轨迹,,draw trails only param name
 ROOM_EFFECTS_Trail spawn chance,Spawn chance,生成机会,,trail spawn chance param name
-ROOM_EFFECTS_Trail lifetime,Lifetime,始终,,trail lifetime param name
+ROOM_EFFECTS_Trail lifetime,Lifetime,生命周期,,trail lifetime param name
 ROOM_EFFECTS_Trail thickness,Thickness,厚度,,trail thickness param name
 ROOM_EFFECTS_Trail colour 1,Colour 1,颜色 1,,colour 1 param name
 ROOM_EFFECTS_Trail colour 2,Colour 2,颜色 2,,colour 2 param name
@@ -2150,7 +2152,7 @@ ROOM_EFFECTS_Focus Radius,Focus Radius,焦点半径,,focus radius filter param
 ROOM_EFFECTS_filter_contrast,Contrast,对比度,,contrast filter name
 ROOM_EFFECTS_Contrast,Contrast,对比度,,contrast filter param
 ROOM_EFFECTS_Brightness,Brightness,亮度,,brightness filter param
-ROOM_EFFECTS_filter_fractal_noise,Fractal Noise,分维噪声,,Fractal Noise filter name
+ROOM_EFFECTS_filter_fractal_noise,Fractal Noise,分形噪声,,Fractal Noise filter name
 ROOM_EFFECTS_Persistence,Persistence,保持,,persistence filter param
 ROOM_EFFECTS_filter_gradient,Gradient,梯度,,gradient filter name
 ROOM_EFFECTS_Start Colour,Start Colour,开始颜色,,start colour filter param
@@ -2169,8 +2171,8 @@ ROOM_EFFECTS_Shading,Shading,阴影,,shading filter param
 ROOM_EFFECTS_Face Lighting,Face Lighting,正面照明,,face lighting filter param
 ROOM_EFFECTS_Block Tiles,Block Tiles,块瓷砖,,block tiles filter param
 ROOM_EFFECTS_Blocks Texture,Blocks Texture,块的纹理,,blocks texture filter param
-ROOM_EFFECTS_filter_hue,Hue,色调,,hue filter name
-ROOM_EFFECTS_Hue Shift,Hue Shift,Hue 偏移,,hue shift filter param
+ROOM_EFFECTS_filter_hue,Hue,色相,,hue filter name
+ROOM_EFFECTS_Hue Shift,Hue Shift,色相偏移,,hue shift filter param
 ROOM_EFFECTS_Saturation,Saturation,饱和度,,saturation filter param
 ROOM_EFFECTS_filter_old_film,Old Film,老电影,,old film filter name
 ROOM_EFFECTS_Flicker Intensity,Flicker Intensity,闪烁强度,,flicker intensity filter param
@@ -2209,7 +2211,7 @@ ROOM_EFFECTS_Quality,Quality,质量,,quality effect param
 ROOM_EFFECTS_Gamma,Gamma,伽马,,gamma effect param
 ROOM_EFFECTS_Alpha,Alpha, Alpha 值,,alpha effect param
 ROOM_EFFECTS_effect_recursive_blur,Recursive Blur (in-game only),递归模糊(仅限于游戏中),,recursive blur effect name
-ROOM_EFFECTS_effect_gaussian_blur,Gaussian Blur (in-game only),高斯模糊（仅限游戏内）,,gaussian blur effect name
+ROOM_EFFECTS_effect_gaussian_blur,Gaussian Blur (in-game only),高斯模糊(仅限游戏内),,gaussian blur effect name
 ROOM_EFFECTS_filter_clouds,Clouds,云,,clouds filter name
 ROOM_EFFECTS_Velocity,Velocity,速度,,velocity filter param
 ROOM_EFFECTS_Turbulence,Turbulence,湍流,,turbulence filter param
@@ -2227,13 +2229,13 @@ ROOM_EFFECTS_filter_mask,Mask,遮罩,,mask filter name
 ROOM_EFFECTS_Alpha Start,Alpha Start,Alpha开始,,alpha start filter param
 ROOM_EFFECTS_Alpha End,Alpha End,Alpha结束,,alpha end filter param
 ROOM_EFFECTS_Mask Texture,Mask Texture,遮罩纹理,,mask texture filter param
-ROOM_EFFECTS_filter_hard_drop_shadow,Hard Drop Shadow,硬掉落阴影,,hard drop shadow filter name
+ROOM_EFFECTS_filter_hard_drop_shadow,Hard Drop Shadow,硬阴影,,hard drop shadow filter name
 ROOM_EFFECTS_X Displacement,X Displacement,X 位移,,x displacement filter param
 ROOM_EFFECTS_Y Displacement,Y Displacement,Y 位移,,y displacement filter param
 ROOM_EFFECTS_Opacity,Opacity,不透明度,,opacity filter param
 ROOM_EFFECTS_Colour,Colour,颜色,,colour filter param
 ROOM_EFFECT_GROUP_Particles,Particle,粒子,,room effect group name
-ROOM_EFFECT_GROUP_Trail,Trail,小径,,room effect group name
+ROOM_EFFECT_GROUP_Trail,Trail,轨迹,,room effect group name
 ROOM_EFFECT_GROUP_Blower,Blower,鼓风机,,room effect group name
 ROOM_EFFECT_GROUP_Physics,Physics,物理,,room effect group name
 ROOM_EFFECT_FIELD_Min,Min,最小,,room effect field name
@@ -2270,9 +2272,9 @@ ListBoxEnum_eGMBlendMode_bm_dest_color,bm_dest_color,bm_dest_color,,gm blendmode
 ListBoxEnum_eGMBlendMode_bm_inv_dest_color,bm_inv_dest_color,bm_inv_dest_color,,gm blendmode enum
 ListBoxEnum_eGMBlendMode_bm_src_alpha_sat,bm_src_alpha_sat,bm_src_alpha_sat,,gm blendmode enum
 Run_Menu_Clean,Clean,清理,,"Run menu ""Clean"""
-Run_Menu_CleanCode,Clean Code,清除代码,,"Run menu ""Clean Code"""
-Run_Menu_CleanGraphics,Clean Graphics,清除图形,,"Run menu ""Clean Graphics"""
-Run_Menu_CleanAudio,Clean Audio,清除音频,,"Run menu ""Clean Audio"""
+Run_Menu_CleanCode,Clean Code,清理代码,,"Run menu ""Clean Code"""
+Run_Menu_CleanGraphics,Clean Graphics,清理图形,,"Run menu ""Clean Graphics"""
+Run_Menu_CleanAudio,Clean Audio,清理音频,,"Run menu ""Clean Audio"""
 Run_Menu_CreateExecutable,Create Executable,创建可执行文件,,The Create Executable menu item
 Run_Menu_DeployExecutable,Create Executable and Launch,创建可执行文件并启动,,The Deploy Executable menu item
 Run_Menu_ReRun,Re-Run,重新运行,,"Run menu ""Re-Run"""
@@ -2484,6 +2486,7 @@ SpriteEditor_LabelSize,Size:,尺寸：,,Sprite editor label size
 SpriteEditor_W,W: {0},W: {0},,Width label
 SpriteEditor_H,H: {0},H: {0},,Height label
 SpriteEditor_SWFPrecisionLabel,Precision:,精度：,,Precision slider label
+SpriteEditor_FrameLength,Frame Length:,帧长度：,,frame length label
 Sprite_Resize_Title,Resize Properties: {0},调整尺寸属性：{0},,Resize properties title
 Sprite_Resize_CurrentSize,Current,当前,,Current size of sprite label
 Sprite_Resize_Preview,Preview,预览,,Preview label
@@ -2993,7 +2996,7 @@ UserLogin_Error99,Errors creating session,创建会话错误,,User Login Error r
 UserLogin_Error88,Please complete your profile to continue.,请填写您的个​​人资料以继续。,,User Login Error response 88 (profile incomplete)
 UserLogin_EditProfile,Update Profile,更新个人资料,,user login edit profile button
 UserLogin_ProfileIncomplete,Profile Incomplete,个人资料不完整,,user login incomplete profile title
-UserLogin_NoRuntime,Unable to access the Runtime Feed and no local Runtime installed. Please check your internet connection and start GameMaker again.,无法访问运行库源（Runtime Feed）并且未安装本地运行库。请检查您的互联网连接，然后重新启动GameMaker。,,user login no runtime message
+UserLogin_NoRuntime,Unable to access the Runtime Feed and no local Runtime installed. Please check your internet connection and start GameMaker again.,无法访问运行时源（Runtime Feed）并且未安装本地运行时。请检查您的互联网连接，然后重新启动GameMaker。,,user login no runtime message
 UserLogin_InstallRuntimeTitle,Install Runtime {0},安装运行时 {0},,install runtime title
 UserLogin_RuntimeSpaceWarningMessage,Destination drive {0} has only {1} GB free space available.\nAt least 2 GB of free space is recommended - please ensure there is enough free space available before proceeding.,目标驱动器 {0} 仅有 {1} GB可用空间。\ n建议至少 2 GB 的可用空间-请确保在继续操作之前有足够的可用空间。,,runtime free space warning message
 UserLogin_Continue,Continue,继续,,continue label
@@ -3388,7 +3391,7 @@ ggs_build_armv7,Build for Armv7,为 Armv7 构建,,Build for Armv7
 ggs_build_mips,Build for Mips,为 Mips 构建,,Build for Mips
 ggs_build_mips64,Build for Mips64,为 Mips64 构建,,Build for Mips64
 ggs_build_x86_64,Build for x86_64,为 x86_64 构建,,Build for x86_64
-ggs_build_arm64,Build for Arm64,为 Arm64 构建,,Build for Arm64
+ggs_build_arm64,Build for Armv8 / Arm64,为 Arm64 构建,,Build for Arm64
 ggs_landscape_orientation,Allow landscape orientation,允许横向,,Allow Landscape Orientation
 ggs_portrait_orientation,Allow portrait orientation,允许纵向,,Allow Portrait Orientation
 ggs_flipped_landscape_orientation,Allow flipped landscape orientation,允许翻转横向方向,,Allow Flipped Landscape Orientation
@@ -3811,13 +3814,13 @@ roomeditor_anylayerselect_reset,"Select from any layer" is switched off when Til
 roomeditor_uipanel_show,Keep Element List open,保持元素列表打开,,room ed keep ui panel visible
 roomeditor_ui_instance_flexnode,Auto-create flex panel parent for new instances,为新实例自动创建Flex布局父组件,,ui layers auto-create instance parent flexpanel
 roomeditor_ui_autosize,Set auto-created flex panels to auto size,将自动创建的Flex布局设置为自适应尺寸,,ui layers auto-panel auto size default
-roomeditor_ui_autostretch,Set stretch and maintain aspect for new instances in auto-created flex panels,在自动创建的flex面板中设置新实例的拉伸和保持比例,,auto stretch
+roomeditor_ui_autostretch,Set stretch and maintain aspect for new instances in auto-created flex panels,在自动创建的Flex面板中设置新实例的拉伸和保持比例,,auto stretch
 roomeditor_ui_gridsnap,Snap UI to grid,将 UI 对齐到网格,,ui snap to grid pref
 roomeditor_ui_areaselectnodes,Include flex panels with area selections,包含带区域选择的Flex布局,,ui layers shift-select selects nodes as well as items
 roomeditor_ui_keepViewspaceVisible,Keep Viewports heading visible,保持视口标题可见,,pref label ui layers
 roomeditor_ui_convert_pixpc,Convert value when changing between pixel / percentage,值在像素/百分比之间转换时的处理方式,,pref label ui layers
 roomeditor_ui_anchor_adjust_offset,Changing Anchor adjusts position offset to keep same absolute position,改变锚点调整位置偏移以保持相同的绝对位置,,anchor offset adjust
-roomeditor_ui_deep_select,Canvas selection selects deepest element by default,画布选择默认会选中最深层的元素,,ui layers deep select pref
+roomeditor_ui_deep_select,Canvas selection selects deepest element by default,画布选择默认选取最深层元素,,ui layers deep select pref
 roomeditor_ui_show_nodes,Show node outlines,显示节点大纲,,ui layers draw node outlines
 roomeditor_ui_default_anchor,Default asset anchor,默认资源锚点,,default anchor for uilayer items
 roomeditor_ui_confirm_createUILayer,Create new UI Layer when dragging items onto Room canvas,创建新的 UI 层，当将项目拖放到房间画布上时。,,create ui layer confirm pref
@@ -3865,7 +3868,7 @@ codeeditor_intellisenseleft,Post cursor intellisense colour,光标后面智能�
 codeeditor_whitespacestyle,White space text style,空白文本样式,,White space style in Code Editor
 codeeditor_keeptabs,Keep tabs,保持tab键缩进对齐,,Keep Tabs in Code Editor
 codeeditor_tabsize,Tab size,单次Tab大小,,Tab Size in Code Editor
-codeeditor_showrainbowbrackets,Show Rainbow Brackets,展示彩虹方括号,,Show Rainbow Brackets
+codeeditor_showrainbowbrackets,Show Rainbow Brackets,显示彩虹括号,,Show Rainbow Brackets
 codeeditor_showwhitespace,Show whitespace,显示空白区域,,Show Whitespace in Code Editor
 codeeditor_showlinenumbers,Show line numbers,显示行号,,Show Line Numbers in Code Editor
 codeeditor_showtablines,Show tab lines,显示缩进对齐纵线,,Show Tab Lines in Code Editor
@@ -3874,7 +3877,7 @@ codeeditor_maxlinecount,Document line limit (<=0 no limit),文档行限制 (<=0 
 codeeditor_matchindent,Match indent on new lines,在另起行保持缩进,,Match indent in code editor
 codeeditor_braceindent,Auto indent after brace,在大括号后自动缩进,,code editor curly brace indent pref
 codeeditor_codecompletion,Enable code completion,启用代码自动补全,,Enable Code Completion in Code editor
-codeeditor_colourcoding,Enable colour coding,启用彩色代码（语法高亮）,,Enable Colour Coding in Code Editor
+codeeditor_colourcoding,Enable colour coding,启用彩色代码(语法高亮),,Enable Colour Coding in Code Editor
 codeeditor_enablebrackets,Auto add function brackets,自动添加函数括号,,Enable adding brackets to functions in Code editor
 codeeditor_contextmenu,Enable Context Menu,启用右键菜单,,Enable Context Menu in Code Editor
 codeeditor_columnselect,Allow column selection,允许列向选择,,Allow column selection in Code Editor
@@ -3889,7 +3892,7 @@ codeeditor_highlightsymbolpairmatches,Highlight symbol pairs,高亮显示成对�
 codeeditor_show_ligatures,Show ligatures,显示连字,,code editor fonts show ligatures if available
 codeeditor_use_antialiasing,Use Anti-Aliasing,使用抗锯齿,,code editor fonts Use Anti-Aliasing if available
 codeeditor_obsolete_style,Obsolete functions etc,弃用函数等,,code editor text style for obsolete symbols
-codeeditor_struct_member_style,Struct members (built in),结构成员（内置）,,code editor text style for struct members
+codeeditor_struct_member_style,Struct members (built in),结构成员(内置),,code editor text style for struct members
 codeeditor_braces,Braces,花括号,,code editor text style for braces
 codeeditor_folded_region,Folded region,拆叠区域,,text style for folded #region
 codeeditor_folded_region_tag,Folded region name,折叠区域名称,,text style for folded region tag
@@ -3909,8 +3912,8 @@ codeeditor_detecttabtype,Detect Tab Type,检测缩进类型,,Detect Tab Type
 codeeditor_indentmode,Auto Indent Mode,自动缩进模式,,Auto Indent Mode
 codeeditor_indentclipboardcontents,Auto Indent clipboard contents,自动缩进剪贴板内容,,Auto Indent clipboard contents
 codeeditor_autoinsertbraces,Auto insert braces,自动插入大括号,,Auto insert braces
-codeeditor_autofilljsdoc,Autofill jsdoc header comments,自动填充 JSDoc 标题注释,,Autofill jsdoc header comments
-codeeditor_extendmultilinecomments,Auto extend multiline comments on new line,自动扩展新行上的多行注释,,Auto extend multiline comments on new line
+codeeditor_autofilljsdoc,Autofill jsdoc header comments,自动填充 JSDoc 头部注释,,Autofill jsdoc header comments
+codeeditor_extendmultilinecomments,Auto extend multiline comments on new line,自动扩展多行注释到新行,,Auto extend multiline comments on new line
 codeeditor_overscroll,Allow Overscroll,允许过度滚动,,Allow Overscroll
 codeeditor_openassetininspector,Open Asset in Inspector when Editor is opened.,打开编辑器时，在检查器中打开资源。,,Open Asset in Inspector when Editor is opened.
 codeeditor_defaultdeletedocumentbehavior,Default Delete Document Choice,默认删除文档选项,,Default Delete Document Choice
@@ -3937,7 +3940,7 @@ sourcecontrolgit_nodifftool,Diff Tool path is invalid,差异工具路径无效,,
 sourcecontrolgit_automatically_start,Automatically enable source control,自动启用源码控制,,Automatically enable Source Control
 ProgressBar_checking_device,Checking Device...,正在检查设备...,,Checking Device Connection Progress Bar Label
 ProgressBar_detecting_devices,Detecting Devices...,正在检测设备......,,Detecting Devices Progress Bar label
-ProgressBar_runtime_delete,Deleting Runtime...,正在删除运行库...,,Deleting Runtime Progress Bar Label
+ProgressBar_runtime_delete,Deleting Runtime...,正在删除运行时...,,Deleting Runtime Progress Bar Label
 ProgressBar_sourcecontrolgit_push,Pushing...,正在推送...,,Push progress label
 ProgressBar_sourcecontrolgit_pull,Pulling...,正在拉取...,,Pull progress label
 ProgressBar_sourcecontrolgit_checkout,Checking Out...,正在签出...,,Checkout progress label
@@ -4474,7 +4477,7 @@ GadgetToolbox_TableListBox,TableListBox,列表框,,The table gadgets list box na
 GadgetToolbox_ProgressBar,Progress Bar,进度条,,The progress bar name
 GMLVisualMaker_Menu_RegenerateLayouts,Regenerate Layouts,重新生成布局,,Regenerate all layouts in the loaded library
 GMLVisualMaker_Menu_RegenerateLayout,Regenerate Current,重新生成当前布局,,Regenerate current layout in the loaded library
-runtimes_available,Runtimes Available:,可用运行库：,,Runtimes Available
+runtimes_available,Runtimes Available:,可用运行时：,,Runtimes Available
 runtime_version,Version No.,版本号,,Runtime Version
 runtime_is_installed,Is Installed,已安装,,Runtime Is Installed
 runtime_install_failed,Install Failed,安装失败,,Runtime failed to install
@@ -4488,30 +4491,30 @@ runtime_current_date,Date:,日期：,,Current Runtime Date
 runtime_current_location,Location:,位置：,,Current Runtime Location
 runtime_status,Status,状态,,Runtime Status Label
 runtime_switchto,Switch To,切换,,Switch To Label
-runtime_running,Running,运行,,Current Running Runtime Label
+runtime_running,Running,使用中,,Current Running Runtime Label
 runtime_install,Install,安装,,Install Runtime
 runtime_delete,Delete,删除,,Delete Runtime
-runtime_selection,Runtime Selection,运行库选择,,Runtime Selection Window title
-runtime_selection_change,Do you want to change your current runtime to version {0}?\nThis will require a restart of the IDE.,你想要更换当前运行库版本为 {0} 吗？\n这将需要重启IDE。,,Change current runtime to the selected version {0}
+runtime_selection,Runtime Selection,运行时选择,,Runtime Selection Window title
+runtime_selection_change,Do you want to change your current runtime to version {0}?\nThis will require a restart of the IDE.,你想要更换当前运行时版本为 {0} 吗？\n这将需要重启IDE。,,Change current runtime to the selected version {0}
 runtime_onstartup_change,Do you want to change your current runtime to the latest installed version: {0}?,是否想将当前运行时更改为已安装的最新版本：{0}？,,Change current runtime to the version matching the IDE
 runtime_selection_install,Are you sure you want to install version {0}?,确定安装版本 {0}？,,Install runtime version {0}
 runtime_installing,Installing...,安装中...,,Runtime is installing
-Runtime_Download_Title,Runtime Downloading...,运行库正在下载...,,Runtime downloading title
-Runtime_Download_In_Progress,A Runtime download is already in progress.,运行库下载已经在进行中。,,A runtime download is already in progress
-runtime_delete_old,Automatically delete old runtimes,自动删除旧版本运行库,,Automatically delete old runtimes
+Runtime_Download_Title,Runtime Downloading...,运行时正在下载...,,Runtime downloading title
+Runtime_Download_In_Progress,A Runtime download is already in progress.,运行时下载已经在进行中。,,A runtime download is already in progress
+runtime_delete_old,Automatically delete old runtimes,自动删除旧版本运行时,,Automatically delete old runtimes
 IDE_OpenProject_NotExists,The project '{0}' does not exist and cannot be opened.,项目 '{0}' 不存在，无法打开。,,Tried to open a project that doesn't exist
-runtime_message_title,Runtime Selection,运行库选择,,Runtime Selection Message Title
+runtime_message_title,Runtime Selection,运行时选择,,Runtime Selection Message Title
 runtime_message_name_warning,Names must be unique and not empty,名称必须唯一且不为空,,Warning when name is not unique or empty
 runtime_message_url_warning,URL must be unique and not empty,网址必须唯一且不为空,,Warning when URL is not unique or empty
 runtime_message_url_empty,Cannot save changes to {0} because it has an empty URL,无法保存更改至 {0} 因为它的网址（URL）为空,,Warning when a url has an empty URL on Apply
-runtime_message_update_successful,Successfully updated Runtime Feeds,成功更新运行库下载源,,Successfully updated Runtime Feeds message
+runtime_message_update_successful,Successfully updated Runtime Feeds,成功更新运行时下载源,,Successfully updated Runtime Feeds message
 runtime_dns_UseAlternativeDns,Use Alternative DNS,使用备用 DNS,,A name of the flag in Preferences window
 runtime_dns_AlternativeDnsIp,Alternative DNS IP,备用 DNS IP,,A name of the property in Preferences window
 runtime_dns_DnsTestHasFailed,DNS test has failed,DNS 测试失败,,A title of the warning which is shown after failing the DNS test
 runtime_dns_DnsTestHasFailedMessage,DNS resolving test has failed with the current settings. Alternative DNS has been disabled,当前设置的 DNS 解析测试失败。备用 DNS 已被禁用,,A warning which is shown after failing the DNS test
 runtime_dns_ResolvingFailed,DNS resolving has failed,DNS 解析已失败,,A title of the warning which is shown when after the IDE failed to resolve an address against an alternative DNS
 runtime_dns_ResolvingFailedMessage,Could not resolve {0} with an alternative DNS. A system DNS has been used,无法使用备用 DNS 解析 {0}。已使用系统 DNS,,Could not use an alternative DNS
-runtime_empty_dns_warning,No DNS IP specified - the runtime feeds will be resolved against a system DNS,未指定 DNS IP - 将根据系统 DNS 解析运行库 Feed,,"A tip which is shown in the Preferences window when a user leaves the field ""Alternative DNS IP"" empty"
+runtime_empty_dns_warning,No DNS IP specified - the runtime feeds will be resolved against a system DNS,未指定 DNS IP - 将根据系统 DNS 解析运行时 Feed,,"A tip which is shown in the Preferences window when a user leaves the field ""Alternative DNS IP"" empty"
 runtime_modules_window,Runtime Modules,运行时模块,,A title for a window with runtime modules
 runtime_select_modules,Select Modules:,选择模块,,A label proposing to select modules
 runtime_modules_required_only,Required only,仅必需,,A button name
@@ -4542,7 +4545,7 @@ ColourPicker_Red,Red,红,,Red Colour Picker Channel
 ColourPicker_Blue,Blue,蓝,,Blue Colour Picker Channel
 ColourPicker_Green,Green,绿,,Green Colour Picker Channel
 ColourPicker_Alpha,Alpha, Alpha 值,,Alpha Colour Picker Channel
-ColourPicker_Hue,Hue,色调,,Hue Colour Picker Channel
+ColourPicker_Hue,Hue,色相,,Hue Colour Picker Channel
 ColourPicker_Sat,Sat,饱和度,,Saturation Colour Picker Channel
 ColourPicker_Val,Val,亮度,,Value Colour Picker Channel
 ColourPicker_NewColour,New Colour,新的颜色,,New Colour Picker label
@@ -5928,7 +5931,7 @@ WelcomePage_Learn,Learn,学习,,welcome page external link text
 WelcomePage_Marketplace,Marketplace,市场,,welcome page external link text
 WelcomePage_Support,Support,支持,,welcome page external link text
 WelcomePage_Community,Community,社区,,welcome page external link text
-Runtime_Installing_Version,Installing runtime {0},正在安装运行库 {0},,user facing splash screen message for installing runtime
+Runtime_Installing_Version,Installing runtime {0},正在安装运行时 {0},,user facing splash screen message for installing runtime
 StartPage_Web_MyAccount,My Account,我的帐户,,Start page localised web content
 StartPage_Web_NewProject,New,新建,,Start page localised web content
 StartPage_Web_OpenProject,Open,打开,,Start page localised web content
@@ -6123,6 +6126,8 @@ Prefab_DragDrop_Message,Install Prefab Collection?,安装预制件集？,,confir
 Prefab_DragDrop_Title,Prefab Collection Detected,检测到预制件集,,dialog title
 Prefab_Reinstall,Reinstall this Prefab Collection?,重新安装此预制件集？,,Message to reinstall this prefab collection
 Prefab_AlreadyInstalled,This Prefab Collection is already installed.\n{0}\nDo you wish to overwrite this?,此预制件集已安装。\n{0}\n是否要覆盖？,,Message for trying to manually install an already installed prefab collection and offering to overwrite it
+Prefab_PrefabJsonLoadFail,Failed to load the prefab collection's prefab.json file,加载预制件集的 prefab.json 文件失败,,prefab.json load failure
+Prefab_PrefabJsonParseFail,Failed to parse the prefab collection's prefab.json file,解析预制件集的 prefab.json 文件失败,,prefab.json parse failure
 Prefab_Installed,This Prefab Collection has been successfully installed.\n{0},此预制件集已成功安装。\n{0},,Success message for manually installing a prefab collection
 Prefab_Referenced_Title,Prefab Collection Referenced,预制件集引用,,Title on referencing a Prefab Collection
 Prefab_Referenced,This Prefab Collection has been successfully referenced.\n{0},此预制件集已成功引用。\n{0},,Success message for referencing a prefab collection
@@ -6264,7 +6269,7 @@ Debugger_Window_SelectedInstanceView_Arg,Selected Instance {0},选中的实例 {
 Debugger_Window_Callstack,Call Stack,调用堆栈,,Debugger call stack window title
 Debugger_Window_Surfaces,Surfaces & Textures,表面 & 材质,,Debugger surfaces window title
 Debugger_Window_Graph,Graph,图表,,Debugger graph window title
-Debugger_Window_Profile,Profile,解析,,Debugger profile window title
+Debugger_Window_Profile,Profile,配置(建议选第二个),,Debugger profile window title
 Debugger_Window_Buffers,Buffers,缓冲区,,Debugger buffers window title
 Debugger_Window_RenderState,Render States,渲染状态,,Debugger render states window title
 Debugger_TimelineMoment,Moment {0},时刻 {0},,Debugger timeline moment label
@@ -6386,7 +6391,7 @@ Debugger_CodeError,Code Error,代码错误,,debugger code error dialog title
 Debugger_FetchingTextures,Fetching images...,正在取得图像……,,debugger texture image fetch label
 Debugger_RefreshTextures_Tooltip,Load texture/surface images from the target,从目标载入表面/纹理图像,,debugger texture refresh button tooltip
 Debugger_VersionError_Title,Debugger Version Error,调试器版本错误,,debugger version error title
-Debugger_VersionError,IDE version and current runtime version are not compatible for debugging.,IDE版本和当前运行库版本与调试不兼容。,,debugger version error message
+Debugger_VersionError,IDE version and current runtime version are not compatible for debugging.,IDE版本和当前运行时版本与调试不兼容。,,debugger version error message
 Debugger_ConnectAbort,Abort Connection,中止连接,,connection abort button label
 Debugger_ConnectContinue,Keep trying,保持尝试,,connection continue button label
 Debugger_ConnectTimeoutMsg,The Debugger has not received a response from the target - it may be a network or firewall issue.,调试器尚未收到来自目标的响应-可能是网络或防火墙问题。,,debugger connect timeout msg
@@ -6476,7 +6481,7 @@ ggs_use_google_apkexpansion_extension,"In order to use this functionality, you w
 ggs_use_google_licensing_extension,"In order to use this functionality, you will need to have the Google Play Licensing Expansion Extension installed.\nWould you like to download it now from the Marketplace?","为使用这个功能，你将需要安装 Google Play Licensing 扩展。\n现在你想从市场上下载它吗？",,Google Play APK Expansion extension not installed and need to download it
 ListBoxEnum_eImageGenerationType_Stretch,Stretch,拉伸,,image generation type stretch option
 aboutbox_ide_version,IDE Version:,IDE 版本：,,IDE Version in About Box
-aboutbox_runtime_version,Current Runtime:,当前运行库：,,Current Runtime in About Box
+aboutbox_runtime_version,Current Runtime:,当前运行时：,,Current Runtime in About Box
 aboutbox_time_in_ide,Time in IDE,IDE运行时间,,Overall Time spent in IDE
 aboutbox_onlinestatus,Online Status:,在线状态：,,Online Status in About Box
 aboutbox_onlinestatus_isonline,Online,在线,,Is Online status
@@ -6567,10 +6572,11 @@ desktop_pinchtozoom,Enable pinch to zoom,启用缩放功能,,Preference descript
 desktop_pinchtozoomscale,Pinch to zoom sensitivity (%),按压缩放灵敏度(%),,Preference description for pinch to zoom sensitivity
 desktop_wrapcursor,Wrap cursor around screen when panning,平移时在屏幕上环绕光标,,pref desktop wrap cursor
 dpi_setting_change,DPI override changes requires a restart of the IDE. Do you want to restart now?,DPI 改写的变动需要重新启动 IDE。是否要马上重启？,,Restart IDE after a DPI change
-vsync_change,VSync changes requires a restart of the IDE. Do you want to restart now?,垂直同步(VSync)的更改需要重启IDE。您现在要重启吗？,,Restart IDE after a VSync change
+vsync_change,VSync and Bitblt changes requires a restart of the IDE. Do you want to restart now?,VSync 和 Bitblt 的更改需要重启 IDE。是否立即重启？,,Restart IDE after a VSync change
 install_IDE_update,Restart requested to install IDE update.,已请求重启以安装IDE更新。,,Restart IDE to install update
 dpi_override,Enable DPI override,启用DPI改写,,DPI Override
 enable_vsync,Enable VSync,启用垂直同步,,Toggle VSync on and off
+enable_bitblt,Force D3D11 Bitblt,强制使用 D3D11 Bitblt,,Force D3D11 Bitblt
 dpi_limits_suggested,Suggested maximum DPI for this display is {0}%,建议此显示器的最大 DPI 为 {0}％,,Suggested DPI limits tooltip
 Notification_NeedHelp,Need Help?,需要帮助？,,Need help notification category
 Notification_Dpi_Warning,The DPI override setting is above the suggested limit for this display at {0}%. Click here to disable DPI override.,DPI 覆盖设置高于此显示器的建议限制，达到 {0}%。请点击此处禁用 DPI 覆盖。,,DPI above suggested limit notification message
@@ -6599,7 +6605,7 @@ PNG2Tileset_LayerName,Layer Name,层名称,,Text for layer name label
 PNG2Tileset_ColourLabel,Remove Colour,移除颜色,,Colour to remove on import
 PNG2Tileset_ImageTooLarge,The selected image is too large to display,所选图像太大，无法显示,,Error message to display if the map is > max texture size
 platformdevice_detect_browsers,Detect Browsers,检测浏览器,,Button to auto-detect installed web browsers
-RoomEditor_GenerateTileMapFromImage,Convert Image to Tilemap,将图像转换为Tile 贴图地图（Tilemap）,,menu entry for taking an image and building a tileset/tilemap from it
+RoomEditor_GenerateTileMapFromImage,Convert Image to Tilemap,将图像转换为Tilemap,,menu entry for taking an image and building a tileset/tilemap from it
 ResourceTree_SetRoomParent,Are you sure you want to set '{0}' as the room inheritance parent of '{1}'?,你确定想要设置 '{0}' 作为 '{1}'的房间继承关系的父项？,,message displayed when attempting to drag a room onto another in the resource tree
 ResourceTree_RemoveRoomParent,Are you sure you want to remove the room inheritance parent from '{0}'?,是否确实要从 ‘{0}’ 中删除房间继承父级？,,message displayed when attempting to drag a room off a parent
 resourcetree_automaticsetparentroom,Automatic response to setting a room parent via node drag,通过节点拖动自动响应设置房间父级,,the automatic response to dragging rooms to become child rooms in the resource tree
@@ -6676,6 +6682,10 @@ Preferences_iOS_default_team_id,Default team identifier,默认团队标识符,,P
 Preferences_android_sdk_location,Android SDK location,Android SDK 位置,,Preferences/Platform Settings/Android
 Preferences_android_ndk_location,Android NDK location,Android NDK 位置,,Preferences/Platform Settings/Android
 Preferences_android_jdk_location,Java JDK location,Java JDK 位置,,Preferences/Platform Settings/Android
+Preferences_android_gradle_location, Gradle location, Gradle 位置,,Gradle location
+Preferences_macos_sdk_location, MacOSX SDK locaation, MacOSX SDK 位置,,MacOSX SDK locaation
+Preferences_ios_sdk_location, iOS SDK locaation, iOS SDK 位置,,iOS SDK locaation
+Preferences_tvos_sdk_location, tvOS SDK locaation, tvOS SDK 位置,,tvOS SDK locaation
 Preferences_windows_vs_path,Visual Studio location,Visual Studio 位置,,Preferences/Platform Settings/Windows
 Preferences_macos_default_team_id,Default team identifier,默认团队标识符,,Preferences/Platform Settings/macOS
 Preference_macos_package_default_type,Automatic packaging choice,自动打包选择,,Preferences/Platform Settings/macOS
@@ -6887,7 +6897,7 @@ Languages,Languages,语言,,Languages preference group heading
 Certificate,Certificate,证书,,Certificate preference group heading
 Platform Settings,Platform Settings,平台设置,,Platform Settings preference group heading
 Plugins,Plugins,插件,,Plugins preference group heading
-Runtime Feeds,Runtime Feeds,运行库管理,,Runtime Feeds preference group heading
+Runtime Feeds,Runtime Feeds,运行时管理,,Runtime Feeds preference group heading
 Asset Explorer,Asset Explorer,资源浏览器,,Asset Explorer preference group subheading
 Background,Background,背景,,Background preference group subheading
 Compiling,Compiling,编译,,Compiling preference group subheading
@@ -7189,8 +7199,8 @@ CompileError_KeyReleased,{0} Key Released: {1},{0} 键释放事件：{1},,event 
 CompileError_Event,{0} Event: {1},{0} 事件： {1},,event error
 CompileError_RoomInstanceName,{0} instance {1}: ,{0} 实例 {1}： ,,room instance error
 SyntaxError_RoomCode,{0} Creation Code,{0} 初始化代码,,room creation code syntax error
-Notification_UpdatedRuntime,An updated runtime is available in {0}!,{0}中有可用的运行库更新！,,notification when a new runtime is available
-Notification_Runtimes,Runtimes,运行库,,notification title
+Notification_UpdatedRuntime,An updated runtime is available in {0}!,{0}中有可用的运行时更新！,,notification when a new runtime is available
+Notification_Runtimes,Runtimes,运行时,,notification title
 Notification_Surveys,Surveys,调查,,notification title
 Notification_Tutorials,Tutorials,教程,,notification title
 Notification_Demos,Demos,演示项目,,notification title
@@ -7307,6 +7317,7 @@ FileFilter_XboxSeriesDevPackage,Xbox Series X/S Developer Package,Xbox Series X/
 FileFilter_XboxOneSubmissionPackage,Xbox One Submission Package,Xbox One 提交包,null,null
 FileFilter_XboxSeriesSubmissionPackage,Xbox Series X/S Submission Package,Xbox Series X/S 提交包,null,null
 FileFilter_UserPrefs,User Preferences file,用户偏好文件,,user prefs file
+FileFilter_TextFile,Text file,文本文件,,text file filter
 ImportPrefs_FileSelectTitle,Select local_settings preferences file,选择本地设置(local_settings)文件,,import prefs file select title
 ImportPrefs_FolderSelectTitle,Select GameMaker user directory,选择 GameMaker 用户目录,,import prefs folder select title
 ImportPrefs_Title,Import User Preferences,导入用户偏好设置,,prefs import dialog title
@@ -7342,8 +7353,8 @@ RoomEditor_InheritLayersToolTip,Inherit Layers,继承层,,tooltip for inherit la
 RoomEditor_InheritLayerSettings,Inherit Layer Settings,继承图层设置,,inherit layer settings tooltup
 Error_InvalidProjectName,The project name '{0}' contains the following unsupported characters: '{1}'.\nPlease try a different name.,项目名称'{0}'包含如下不支持的字符：'{1}'。\n请尝试其他命名。.,,Error that the user has chosen a project name that won't work on Windows
 Addon_AmazonFireFailedPlatformCheckMessage,This addon requires the Amazon Fire or Mobile licences.\nDo you want to go to your account to check your availability of these?,此附加组件需要 Amazon Fire 或 移动版本(Mobile) 许可证。\n您是否要转到您的帐户检查这些的可用性？,,Message to display when the Amazon Fire addon fails the platform check
-RuntimeTarget_Error,Error with Runtime,运行库错误,,Error about the current active Runtime
-RuntimeTarget_LowerThanBaseline,The current runtime ({0}) is lower than the baseline required ({1}).\nPlease update your runtime to {1} or higher.,当前运行库 ({0})版本低于所要求的基准版本({1})。\n请将您的运行库更新为{1}或更高版本。,,Message to tell user to update their runtime
+RuntimeTarget_Error,Error with Runtime,运行时错误,,Error about the current active Runtime
+RuntimeTarget_LowerThanBaseline,The current runtime ({0}) is lower than the baseline required ({1}).\nPlease update your runtime to {1} or higher.,当前运行时 ({0})版本低于所要求的基准版本({1})。\n请将您的运行时更新为{1}或更高版本。,,Message to tell user to update their runtime
 Notification_TrialLicense,Trial Licence,试用许可证,,Trial licence notification title
 Notification_License,Licence,许可证,,Licence notification title
 Notification_Renewals,Licence Renewal,许可证续订,,the notification category for licence renewals
@@ -7448,7 +7459,7 @@ DESC_SEC_SHORTCUTS,Setup Start Menu shortcuts for All Users.,为所有用户安�
 DESC_SEC_DESKTOP_SHORTCUT,Setup Desktop shortcut for All Users.,为所有用户安装桌面快捷方式。,,Installer Text
 DESC_SEC_FILE_ASSOCIATIONS,Setup file associations for Project Files (.yyp) and Compressed Project Files (.yyz).,为项目文件（.yyp）和压缩项目文件（.yyz）设置文件关联。,,Installer Text
 DESC_SEC_DOTNET,Install Microsoft Dot NET 3.5sp1 and 4.5 Frameworks.,安装 Microsoft Dot NET 3.5sp1 和 4.5 Frameworks。,,Installer Text
-DESC_SEC_VCREDIST,Install Microsoft Visual Studio 2012 and 2015 C++ x64 runtimes.,安装 Microsoft Visual Studio 2012 和 2015 C++ x64 运行库。,,Installer Text
+DESC_SEC_VCREDIST,Install Microsoft Visual Studio 2012 and 2015 C++ x64 runtimes.,安装 Microsoft Visual Studio 2012 和 2015 C++ x64 运行时。,,Installer Text
 DESC_SEC_NGEN,Optimise the executable and add to the Global Assembly Cache.,优化可执行文件并添加到全局程序集缓存（Global Assembly Cache）。,,Installer Text
 DESC_DESKTOPSHORTCUT,Desktop Shortcuts,桌面快捷方式,,Installer Tick box install menu
 DESC_OPTIMISEEXE,Optimise Executable,优化可执行文件,,Installer Tick box install menu
@@ -8221,8 +8232,8 @@ Manual_Download,Download,下载,,manual download button text
 Manual_UseOnline,Use online manual,使用在线手册,,manual use online text
 LocaliseManual_UpdateAvailableMsg,An update is available for the current manual language ({0}). Would you like to download it now?,当前语言的手册 ({0}) 有更新可用。您想现在下载吗？,,manual update available message
 LocaliseManual_UpdateAvailableTitle,Manual update available,提供手动更新,,manual update available title
-RuntimeDownload_FailedTitle,Runtime install incomplete,运行库安装不完整,,Runtime download failed title
-RuntimeDownload_Failed,The selected runtime could not fully install,选定的运行库无法完全安装,,Runtime download failed message
+RuntimeDownload_FailedTitle,Runtime install incomplete,运行时安装不完整,,Runtime download failed title
+RuntimeDownload_Failed,The selected runtime could not fully install,选定的运行时无法完全安装,,Runtime download failed message
 sourcecontrolgit_noauthfound,No User/Pass authentication details found for {0},未找到{0}的 用户/密码 身份验证详细信息,,No User/Pass authentication details found for the given url
 sourcecontrolgit_nosshfound,No SSH Keypair authentication details found for {0},未找到{0}的 SSH 密钥对 身份验证详细信息,,No SSH authentication details found for the given url
 sourcecontrolgit_projecthasrepository,Project already has repository!,项目已经有了存储库！,,This project already has a repository
@@ -8295,9 +8306,9 @@ Error_ResourceFound,Found lost Resource: {0},发现丢失的资源：{0},,Found 
 android_build_settings_invalid,The SDK Build Settings are invalid,SDK 构建设置无效,,Android/Amazon Fire SDK Build Settings are invalid
 android_build_includedfiles_has_assets_root,There are Included Files in a root assets folder.\nThis is a special folder on Android so please rename the assets folder in Included Files.,在 Included Files 根目录中有 assets 文件夹 。\n这是 Android 上的一个特殊文件夹，因此请在 Included Files 中重命名 assets 文件夹。,,message to warn the user that the assets folder has problems on Android and that they have Included Files trying to use it.
 android_build_dynamic_texturegroup_has_assets_root,There are Texture Groups using a dynamic paths starting in the assets folder.\nThis is a special folder on Android so please choose a different path.,在 assets 文件夹中有使用动态路径的纹理组。\n这是 Android 上的一个特殊文件夹，因此请选择其他路径。,,message to warn the user that the assets folder has problems on Android and that they have Texture Groups with dynamic paths trying to use it.
-clean_runtimes_now,Clean Runtimes Now,立即清理运行库,,Clean out older runtimes now
-clean_all_runtimes,Do you want to delete older runtimes from all feeds?,是否要从所有Feed中删除较旧的运行库？,,Clean out all runtimes from runtime folder
-runtime_clean_title,Runtime Deletion,运行库删除,,Runtime Deletion title
+clean_runtimes_now,Clean Runtimes Now,立即清理运行时,,Clean out older runtimes now
+clean_all_runtimes,Do you want to delete older runtimes from all feeds?,是否要从所有Feed中删除较旧的运行时？,,Clean out all runtimes from runtime folder
+runtime_clean_title,Runtime Deletion,运行时删除,,Runtime Deletion title
 tvos_show_file_warning,Automatic response to tvOS persistent storage limitation warning,自动响应tvOS持久存储限制警告,,Show tvOS file system warning preference setting
 tvos_file_warning,tvOS persistent storage space is currently limited to 500k via NSUserDefaults. Please consider using cloud storage for this target.,tvOS持久存储空间目前通过NSUserDefaults限制为500k。请考虑为此目标使用云存储。,,Warning message for the tvos file system limitations
 ggs_requires_nex,Enable support for NEX libraries,启用对NEX库的支持,,Enable support for NEX libraries
@@ -8420,7 +8431,7 @@ Track_TextEffect_GlowColour,Glow Colour,发光颜色,,text track sdf glow colour
 CanvasText_EnableOutline,Enable Outline,启用轮廓,,text track sdf enable outline
 Track_TextEffect_OutlineDistance,Outline Distance,轮廓距离,,text track sdf outline distance
 Track_TextEffect_OutlineColour,Outline Colour,轮廓颜色,,text track sdf outline colour
-CanvasText_EnableDropShadow,Enable Drop Shadow,启用掉落阴影,,text track sdf enable drop shadow
+CanvasText_EnableDropShadow,Enable Drop Shadow,启用硬阴影,,text track sdf enable drop shadow
 Track_TextEffect_ShadowSoftness,Shadow Softness,阴影柔和度,,text track sdf shadow softness
 Track_TextEffect_ShadowOffset,Shadow Offset,阴影偏移,,text track sdf shadow offset
 Track_TextEffect_ShadowColour,Shadow Colour,阴影颜色,,text track sdf shadow colour
@@ -8536,7 +8547,7 @@ Feather_JsDocStyle,Prefer multiline jsdoc comment style when creating from Quick
 Feather_StrictTypes,Enable Strict Type mode.,启用严格类型模式。,,Enable Strict Type mode.
 Feather_NameBlocklist,Identifier Blocklist,标识符阻止列表,,Identifier Blocklist
 Feather_GM2017Help,GM2017 Message Severity must not be set to Ignore for these to take effect,GM2017 消息严重性不得设置为忽略以使这些生效,,GM2017 Message Severity must not be set to Ignore for these to take effect
-Feather_Profile,Profile,解析,,Feather profile type setting
+Feather_Profile,Profile,配置(建议选第二个),,Feather profile type setting
 Feather_GM1000,GM1000 - No enclosing loop from which to break.,GM1000 - 没有 break 的封闭循环。,,Feather rule
 Feather_GM1001,GM1001 - No enclosing loop from which to continue.,GM1001 - 没有 continue 的封闭循环。,,Feather rule
 Feather_GM1002,GM1002 - globalvar does not support inline initializers.,GM1002 - globalvar 不支持内联初始化。,,Feather rule
@@ -9185,17 +9196,17 @@ RedefineKeys_Reload Images,Reload Images,重新载入图片,,Redefine keys Reloa
 RedefineKeys_Check Localised Strings,Check Localised Strings,检查本地化字符串,,Redefine keys Check Localised Strings string
 RedefineKeys_Debugger : Attach to Process,Debugger : Attach To Process,调试器：附加到进程,,Redefine keys Debugger : Attach to Process string
 RedefineKeys_Undo History,Undo History,撤消历史记录,,Redefine keys Undo History string
-RedefineKeys_Runtime Paths,Runtime Paths,运行库路径,,Redefine keys Runtime Paths string
+RedefineKeys_Runtime Paths,Runtime Paths,运行时路径,,Redefine keys Runtime Paths string
 RedefineKeys_Debug Tools,Debug Tools,调试工具,,Redefine keys Debug Tools string
 RedefineKeys_Use Debug Asset Compiler,Use Debug Asset Compiler,使用调试资源编译器,,Redefine keys Use Debug Asset Compiler string
 RedefineKeys_Use Release Asset Compiler,Use Release Asset Compiler,使用发布资源编译器,,Redefine keys Use Release Asset Compiler string
-RedefineKeys_Use Runtime Asset Compiler,Use Runtime Asset Compiler,使用运行库资源编译器,,Redefine keys Use Runtime Asset Compiler string
+RedefineKeys_Use Runtime Asset Compiler,Use Runtime Asset Compiler,使用运行时资源编译器,,Redefine keys Use Runtime Asset Compiler string
 RedefineKeys_Use Debug Runner,Use Debug Runner,使用调试 Runner,,Redefine keys Use Debug Runner string
 RedefineKeys_Use Release Runner,Use Release Runner,使用发布 Runner,,Redefine keys Use Release Runner string
-RedefineKeys_Use Runtime Runner,Use Runtime Runner,使用运行库 Runner,,Redefine keys Use Runtime Runner string
+RedefineKeys_Use Runtime Runner,Use Runtime Runner,使用运行时 Runner,,Redefine keys Use Runtime Runner string
 RedefineKeys_Use Debug Igor,Use Debug Igor,使用调试 Igor,,Redefine keys Use Debug Igor string
 RedefineKeys_Use Release Igor,Use Release Igor,使用发布 Igor,,Redefine keys Use Release Igor string
-RedefineKeys_Use Runtime Igor,Use Runtime Igor,使用运行库 Igor,,Redefine keys Use Runtime Igor string
+RedefineKeys_Use Runtime Igor,Use Runtime Igor,使用运行时 Igor,,Redefine keys Use Runtime Igor string
 RedefineKeys_Font Viewer,Font Viewer,字体查看器,,Redefine keys Font Viewer string
 RedefineKeys_SCM_Create,SCM Create,代码控制器-创建,,Redefine keys SCM_Create string
 RedefineKeys_SCM_Clone,SCM Clone,代码控制器-克隆,,Redefine keys SCM_Clone string
@@ -9807,11 +9818,11 @@ BugReport_WindowTitle,Report a bug,报告Bug,,bug report window title
 BugReport_WindowTitle_Crash,Report a crash bug,报告崩溃错误,,bug report (crash) window title
 BugReport_Overall,"Thanks for submitting your issues. Before you send this report, please do see <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">How to submit a Bug Report</a>.","感谢您提交问题。在发送此报告之前，请参阅<a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Reporting-Bugs-Via-The-IDE"">如何提交Bug报告</a>。",,bug report dialog
 BugReport_KnownIssues,"Please check the <a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">Known Issues</a> before submitting to make sure that it has not already been reported.","请在提交之前检查 <a href=""https://github.com/YoYoGames/GameMaker-Bugs/issues"">已知问题</a> 以确保尚未报告该问题。",,bug report known issues
-BugReport_SecurityIssues,"If you believe you have found a security vulnerability, please report the issue <a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">here</a>","如果您认为您发现了一个安全漏洞，请在此处报告此问题<a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">这里</a>。",,bug report security issues
+BugReport_SecurityIssues,"If you believe you have found a security vulnerability, please report the issue <a href=""https://github.com/YoYoGames/GameMaker-Bugs/security/policy"">here</a>","如果您认为发现了一个安全漏洞，请在此处<a href="https://github.com/YoYoGames/GameMaker-Bugs/security/policy">报告该问题</a>。",,bug report security issues
 BugReport_AuthGithub,"You can authorise your GitHub account to post issues on the <a href=""{0}"">Accounts page</a>","您可以授权您的 GitHub 帐户在<a href=""{0}"">帐户页面</a>上发布问题",,bug report github auth
 BugReport_CategoryLabel,Issue Category:*,问题类别: *,,bug report issue category label
 BugReport_PleaseSelect,Please Select...,请选择...,,please select
-BugReport_Cat_GeneralIDE,General IDE,IDE全局,,bugreport category label
+BugReport_Cat_GeneralIDE,General IDE,IDE 通用,,bugreport category label
 BugReport_Cat_BuildFail_GMS2,Project Fails to Build (GMS2),项目构建失败 (GMS2),,bugreport category label
 BugReport_Cat_BuildFail_GMRT,Project Fails to Build (GMRT),项目构建失败 (GMRT),,bugreport category label
 BugReport_Cat_CrashUnstable,IDE Crash/Unstable Message,IDE 崩溃/不稳定消息,,bugreport category label
@@ -9834,7 +9845,7 @@ BugReport_DescMinCharWarning,Description should have at least {0} characters,描
 BugReport_Steps,Steps To Reproduce,复现的步骤,,bug report steps
 BugReport_Steps_ProjectTool,Steps To Reproduce (note that you should also use the file-selector below to attach a .zip containing your entire project folder),重现步骤（请使用下方的文件选择器附加包含整个项目文件夹的 .zip 文件）,,project tool cat repro steps text
 BugReport_StepsTT,Describe the steps required to reproduce the bug,描述复现错误所需的步骤,,bug report steps tooltip
-BugReport_AttachHeader,Would you like to privately attach:,您想私密附加：,,bug reporter attach header label
+BugReport_AttachHeader,Would you like to privately attach:,是否添加私有附件：,,bug reporter attach header label
 BugReport_AttachAdditional,additional files,附加文件,,bug report dialog
 BugReport_AttachFiles,AttachFiles,附件文件,,bug report dialog
 BugReport_AttachFilesTT,"Your GameMaker logs are already included automatically, as they are essential to diagnose the issue. Here you can attach screenshots and in-game logs, etc., to give additional information.","您的 GameMaker 日志已经自动包含，因为它们对于诊断问题至关重要。您可以在此处附加截图和游戏内日志等，以提供更多信息。",,bug report dialog
@@ -9959,7 +9970,7 @@ ProjectTool_ForceVERS0,Force VERS0 Conversion if required,如果需要，强制 
 ProjectTool_ForceVERS0_Tooltip,Forces a conversion through VERS0 if it does not completely match up with the current format. Be aware that this may lose data or insert defaults so always ensure project backups are kept,如果与当前格式不完全匹配，则通过 VERS0 强制转换。请注意，这可能会丢失数据或插入默认值，因此始终确保保留项目备份,,Tooltip for ForceVERS0 checkbox
 ProjectLoad_ErrorTitle,Project Load Error,项目加载错误,,Project Load Error Title
 ProjectLoad_ErrorMessage,Load Error: {0},加载错误: {0},,Project Load Error Message
-Display,Display,显示,,GeneralDisplay preferences label
+Display,Display,Display(游戏整个界面),,GeneralDisplay preferences label
 Desktop_MinWindowWidth,Minimum window width,最小窗口宽度,,Preference to set minimum window width
 Desktop_MinWindowHeight,Minimum window height,最小窗口高度,,Preference to set minimum window height
 DocumentWindow2_Title_RoomCreationCode,Room Creation Code,房间创建代码,,Room Creation Code
@@ -10026,7 +10037,7 @@ PrefabBrowser_SortZA,Sort Z-A,排序 Z-A,,The context menu option
 PrefabBrowser_ZoomLevel,Zoom level,缩放级别,,The context menu option
 PrefabBrowser_ShowAll,Show all,显示所有,,The context menu option
 PrefabBrowser_AssetTypes,Asset Types,资源类型,,The sub context menu
-PrefabLibrary,Prefab Library,预制库,,prefab library title
+PrefabLibrary,Prefab Library,预制件库,,prefab library title
 PrefabLibrary_Name,Name,名称,,name
 PrefabLibrary_AssetType,Asset Type,资源类型,,asset type
 PrefabLibrary_Version,Version,版本,,version
@@ -10045,11 +10056,13 @@ PrefabLib_EditCollectionMsg,Open the prefab project in a new IDE instance?,在�
 PrefabLib_ShowInPackageManager,Show in Package Manager,显示在包管理器中,,Show in Package Manager
 PrefabLib_UninstallPrefab,Uninstall Prefab Collection,卸载预制件集,,Uninstall selected Prefab Collection
 PrefabLib_ReinstallPrefab,Reinstall Prefab Collection,重新安装预制件集,,Reinstall selected Prefab Collection
+PrefabLib_UpgradePrefabCollection,Upgrade Prefab Collection,升级预制件集,,Upgrade selected Prefab Collection
 PrefabLib_ReinstallPrefab_Fail,Failed to re-install prefab collections {0},重新安装预制件集 {0} 失败,,Reinstall selected Prefab Collection fail message
+PrefabLib_ChangePrefabCollectionVersions,Change Prefab Collection Versions,修改预制件集版本,,Change Prefab Collection Versions
 Prefab_Library_empty_description,Browse and Install Prefab Collections from the Package Manager,浏览并从包管理器安装预制件集,,Description for when no prefab collections are installed
 Prefab_Library_loading_description,Loading Prefab Collections...,加载预制件集…,,Message when loading Prefab Collections
 ProgressBar_Prefabs_Copying,Prefabs...,预制构件…,,Copying Prefabs progress
-Prefabs_OpenPrefabLibrary,Prefab Library,预制库,,Prefab Library
+Prefabs_OpenPrefabLibrary,Prefab Library,预制件库,,Prefab Library
 Prefabs_CreatePackage,Create Prefab Package,创建预制包,,Create Prefab Package
 Prefabs_IncludeYYZ,Include Prefab Collections with YYZ?,包含 YYZ 中的预制件集吗？,,Include all prefabs in the YYZ export
 PrefabMetadataEditor_DialogTitle,Prefab metadata settings,预制元数据设置,,Dialog title for Prefab metadata settings
@@ -10083,7 +10096,7 @@ PrefabLibrary_Folder_CustomisedPrefabItems,Prefabs,预制件,,Default Asset Brow
 PrefabLibrary_Folder_CustomisedPrefabItemsDependencies,Dependencies,依赖项,,Default Asset Browser folder name for prefab resources additionally brought in because of cycles
 prefablib_layouttype,Layout type,布局类型,,layout type pref
 prefablib_listviewtype,List view type,列表视图类型,,list view type pref
-PrefabPlugin,Prefab Library,预制库,,prefab library preference type name
+PrefabPlugin,Prefab Library,预制件库,,prefab library preference type name
 PrefabLibrary_PrefabInUse,Prefab Library - {0} - is currently in use.,预制库 - {0} - 正在使用中。,,The given prefab library is currently in use
 ListBoxEnum_eLayoutType_Horizontal,Horizontal,水平,,enum type
 ListBoxEnum_eLayoutType_Vertical,Vertical,垂直,,enum type
@@ -10169,6 +10182,17 @@ yyal_init_failed,"You can use GameMaker, but you will not have any audio preview
 PrefabExtractionError,Error extracting prefab - see your ui.log for more details,提取预制件时出错，详情请参阅 ui.log 文件。,,Prefab extraction error
 PrefabExtractErrorTitle,Error extracting prefabs,提取预制件时出错,,prefab extraction error dialog title
 PrefabExtractErrorMsg,"One or more Prefabs failed to extract.\nFor file access errors, please review our <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Permissions-Guide"">Permissions wiki page</a> and follow the steps there which should resolve this.","一个或多个预制件提取失败。\n对于文件访问错误，请查看我们的 <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Permissions-Guide"">权限 Wiki 页面</a> 并按照其中的步骤操作，这应该会解决此问题。",,prefab extract error msg
+PrefabChangeVersionsTitle,Change prefab collection versions,修改预制件集版本,,title for change prefab versions dialog
+PrefabChangeVersionsMessage,The following prefab collections have multiple versions available.\nPlease select the versions you want to use in your game.,以下是拥有多个可用版本的预制件集。\n请选择要在游戏中使用的版本。,,message for change prefab versions dialog
+PrefabChangeVersionSkipComboItem,Skip,跳过,,Skip doing anything with this prefab dependency
+PrefabChangeVersionItemInUse,(In use),在使用中,,This prefab collection version is in use by the project
+PrefabChangeVersionsNoAlternativePrefabVersions,There are no alternate prefab versions for your project,您的项目没有替代的预制件版本,,Message when there are no alternative prefab versions (at all) so we don't show the maintenance dialog.
+PrefabChangeVersionsNoItemsToDo,There are no changes to process,无需处理的变更,,Message when there are no prefab version changes to apply
+PrefabChangeVersionsConfirm,\nFor these changes to take effect we have to close and re-open the project.\n\nYour project will be saved automatically.\nAre you sure?,\n要生效这些更改，我们必须关闭并重新打开项目。\n\n您的项目将自动保存。\n确定吗？,,Confirmation message
+PrefabChangeVersionsChangesComplete,Prefab version changes complete,预制件版本变更已完成,,Message when prefab version changes have been applied
+PrefabChangeVersionsSaveFailed,Cannot change versions as project failed to save,版本无法更改，因为项目保存失败,,Message when prefab version changes cannot be applied due to save failure
+Prefab_Library_DragInconsistentLibs_Title,Inconsistent Prefab Collections,不一致的预制件集,,Title for message when dragging prefab collections with inconsistent versions
+Prefab_Library_DragInconsistentLibs_Message_WithList,To avoid version inconsistencies please select from these collections instead:\n{0},为避免版本不一致，请从以下集合中选择：\n{0},,Inconsistency resolution message on dropping into room editor from prefab library
 SpecError_Title,Language Spec Error,语言规范错误,,language spec error dialog title
 SpecError_Message,Error in GMLSpec file:\n{0}\n\nLanguageSpec: SyncLanguageSpecWithRuntime: {1}\n{2},GMLSpec 文件错误：\n{0}\n\n语言规范：SyncLanguageSpecWithRuntime: {1}\n{2},,language spec error dialog message
 PackageInstall_NoInternet,Package Manager requires an internet connection to install packages. Please check your internet connection and try again.,包管理器需要互联网连接才能安装软件包。请检查您的互联网连接并重试。,null,null
@@ -10191,6 +10215,44 @@ IDEOnBoarding_Ins_Title,Inspector,检查器,,onboarding inspector image title
 IDEOnBoarding_Output_Title,Output Window,输出窗口,,onboarding output window image title
 IDEOnBoarding_Help_Title,Help,帮助,,onboarding help image title
 IDEOnBoarding_AB_Title,Asset Browser,资源浏览器,,onboarding asset browser image title
+PrefabBuilder_Title,Prefab Builder,预制件构建器,,prefab builder
+PrefabBuilder_PackageName,Package Name,程序包名称,,package name
+PrefabBuilder_PublisherName,Publisher Name:,发布者名称︰,,publisher name
+PrefabBuilder_CollectionName,Collection Name:,集合名称：,,Collection Name
+PrefabBuilder_PackageID,Package ID:,程序包 ID:,,Package ID
+PrefabBuilder_Version,Version,版本,,Version
+PrefabBuilder_Keywords,Keywords,关键字,,Keywords
+PrefabBuilder_Icon,Icon,图标,,Icon
+PrefabBuilder_License,License,许可,,License
+PrefabBuilder_LicenseViewTT,View License file,查看许可证文件,,view license file tooltip
+PrefabBuilder_MinIDEVersion,Minimum IDE Version,最低 IDE 版本要求,,Min IDE Version
+PrefabBuilder_ShortDesc,Short Description:,简短描述：,,Short Description
+PrefabBuilder_Desc,Description:,描述：,,Description
+PrefabBuilder_PkgDeps,Package Dependencies:,包依赖项：,,Package Dependencies
+PrefabBuilder_PackageInstall,Package and Install,打包为安装程序,,Package and Install
+PrefabBuilder_Distribute,Distribute,分布,,Distribute
+PrefabBuilder_Assets,Assets,资源,,Assets
+PrefabBuilder_Included,Included,已包含,,Included
+PrefabBuilder_Visible,Visible,可见,,Visible
+PrefabBuilder_Dependencies,Dependencies,依赖项,,Dependencies
+PrefabBuilder_DepsResource,Dependencies: {0},依赖项：{0},,deps <asset name>
+PrefabBuilder_Registries,Distribution Registries,发行版注册表,,Distribution Registries
+PrefabBuilder_AddDepsExplorerTitle,Select Additional Dependencies,选择附加依赖项,,prefab builder asset explorer add deps title
+PrefabBuilder_Name,Name,名称,,Name
+PrefabBuilder_Url,URL,URL,,URL
+PrefabBuilder_Username,Username,用户名,,Username
+PrefabBuilder_Password,Password,密码,,Password
+PrefabBuilder_Publish,Publish,发布者,,Publish
+PrefabBuilder_EditRegistry,Edit Registry Details,编辑注册表详细信息,,edit registry details
+PrefabBuilder_AddRegEntryTT,Add new Registry,添加新注册表,,add new registry entry tooltip
+PrefabBuilder_InvalidPackageId,"The Package ID is not a valid name.\nShould only contain 0-9, a-z, A-Z or _ , and must start with a letter",“包 ID 不是有效的名称。\n应仅包含 0-9、a-z、A-Z 或 _，且必须以字母开头”,,invalid package Id warning
+PrefabBuilder_ValidationError,"Please enter a Collection Name and Package ID\nPackage ID should only contain 0-9, a-z, A-Z or _ , and must start with a letter",“请输入集合名称和包 ID。\n包 ID 应仅包含 0-9、a-z、A-Z 或 _，且必须以字母开头”,,prefab package create validation message
+PrefabBuilder_MaxXY,max {0}x{1},max {0}x{1},,max dimensions label
+PrefabBuilder_MaxImageSizeWarning,Image exceeds maximum size of {0} x {1},图片超过最大尺寸 {0} x {1},,max image size warning
+PrefabBuilder_NoVisibleExportsWarning,It's recommended you have at least one visible asset (e.g. a "ReadMe" Note).\nAre you sure you want to create a Prefab package with no visible assets?,建议至少包含一个可见的资源（例如："ReadMe" 备注）。\n确定要创建一个不包含任何可见资源的预制件包吗？,,prefab builder no visible warning
+PrefabBuilder_RefreshTreeTT,Refresh tree to reflect changes made to project,刷新树结构，以反映项目中所做的更改。
+,,prefab builder refresh tree tooltip
+PrefabBuilder_CollectionRefTT,Added as a Collection Reference for the current project,已作为当前项目的集合引用添加。,,prefab builder collection ref tooltip
 PackageMan_EnableUpdateNotifications,Enable update notifications,启用更新通知,null,null
 PackageMan_DisableUpdateNotifications,Disable update notifications,禁用更新通知,null,null
 Project_Slim,Slimmed,精简,,Create a Slimmed Project
