@@ -6397,6 +6397,7 @@ Debugger_ConnectContinue,Keep trying,保持尝试,,connection continue button la
 Debugger_ConnectTimeoutMsg,The Debugger has not received a response from the target - it may be a network or firewall issue.,调试器尚未收到来自目标的响应-可能是网络或防火墙问题。,,debugger connect timeout msg
 Debugger_ConnectHelpLink,Click here to visit help page,单击此处访问帮助页面,,connection issue help link
 Debugger_ConnectTimeoutTitle,Debugger failed to connect,调试器无法连接,,debugger connect timeout title
+Debugger_CopyCallstack_TT,Copy call stack to clipboard,复制调用堆栈到剪贴板,,debugger copy callstack tooltip
 Textview_Title,Text Viewer,文本查看器,,text view window title
 Textview_Expression,Expression:,表达式：,,text viewer expression label
 Textview_Value,Value:,值：,,text viewer value label
@@ -10182,6 +10183,10 @@ yyal_init_failed,"You can use GameMaker, but you will not have any audio preview
 PrefabExtractionError,Error extracting prefab - see your ui.log for more details,提取预制件时出错，详情请参阅 ui.log 文件。,,Prefab extraction error
 PrefabExtractErrorTitle,Error extracting prefabs,提取预制件时出错,,prefab extraction error dialog title
 PrefabExtractErrorMsg,"One or more Prefabs failed to extract.\nFor file access errors, please review our <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Permissions-Guide"">Permissions wiki page</a> and follow the steps there which should resolve this.","一个或多个预制件提取失败。\n对于文件访问错误，请查看我们的 <a href=""https://github.com/YoYoGames/GameMaker-Bugs/wiki/Permissions-Guide"">权限 Wiki 页面</a> 并按照其中的步骤操作，这应该会解决此问题。",,prefab extract error msg
+DeprecatePrefabVersionsTitle,Change deprecated collection versions,更改已弃用的集合版本,,title for redirecting deprecated prefabs
+DeprecateChangeVersionsMessage,Change unavailable collections to alternative versions,将不可用的集合更改为替代版本,,message for changing unavailable prefab collections to other versions
+DeprecatePackageConfirm,This will change the packages for the selected project.\nDo you wish to continue?,这将更改所选项目的包。\n您是否要继续？,,confirmation message Yes/No
+DeprecatePrefabFailure,Failed to apply the list of changes to the project.,无法将更改列表应用于项目。,,Application failure
 PrefabChangeVersionsTitle,Change prefab collection versions,修改预制件集版本,,title for change prefab versions dialog
 PrefabChangeVersionsMessage,The following prefab collections have multiple versions available.\nPlease select the versions you want to use in your game.,以下是拥有多个可用版本的预制件集。\n请选择要在游戏中使用的版本。,,message for change prefab versions dialog
 PrefabChangeVersionSkipComboItem,Skip,跳过,,Skip doing anything with this prefab dependency
